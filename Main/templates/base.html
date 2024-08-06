@@ -1,37 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Model Viewer</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/FBXLoader.js"></script>
+
     <style>
-        body { margin: 0; }
-        canvas { display: block; }
+      body {
+        margin: 0;
+      }
+      canvas {
+        display: block;
+      }
     </style>
-</head>
-<body>
-    {% load static %}
+  </head>
+  <body>
+    <h1>3D Model Viewer</h1>
+    <div id="model-container" style="width: 100px; height: 100px"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r128/examples/js/loaders/GLTFLoader.js"></script>
     <script>
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
 
-        const loader = new THREE.FBXLoader();
-        loader.load('{% static "3dproject.fbx" %}', function (object) {
-            scene.add(object);
-        });
+      // Добавляем освещение
+      const ambientLight = new THREE.AmbientLight(0x404040);
+      scene.add(ambientLight);
 
-        camera.position.z = 5;
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+      directionalLight.position.set(5, 5, 5).normalize();
+      scene.add(directionalLight);
 
-        function animate() {
-            requestAnimationFrame(animate);
-            renderer.render(scene, camera);
+      let model;
+      const loader = new THREE.GLTFLoader();
+      loader.load(
+        "/static/models3d/3dproject.glb",
+        function (gltf) {
+          model = gltf.scene;
+          scene.add(model);
+        },
+        undefined,
+        function (error) {
+          console.error(error);
         }
-        animate();
+      );
+
+      camera.position.set(15, 15, 15);
+      camera.lookAt(0, 0, 0);
+
+      let isMouseDown = false;
+      let previousMousePosition = { x: 0, y: 0 };
+
+      // Обработчики событий мыши
+      window.addEventListener("mousedown", (event) => {
+        isMouseDown = true;
+        previousMousePosition = { x: event.clientX, y: event.clientY };
+      });
+
+      window.addEventListener("mouseup", () => {
+        isMouseDown = false;
+      });
+
+      window.addEventListener("mousemove", (event) => {
+        if (isMouseDown && model) {
+          const deltaMove = {
+            x: event.clientX - previousMousePosition.x,
+            y: event.clientY - previousMousePosition.y,
+          };
+
+          // Вращаем модель
+          model.rotation.y += deltaMove.x * 0.01; // Вращение по оси Y
+          model.rotation.x += deltaMove.y * 0.01; // Вращение по оси X
+
+          previousMousePosition = { x: event.clientX, y: event.clientY };
+        }
+      });
+
+      function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+      }
+      animate();
     </script>
-</body>
+  </body>
 </html>
