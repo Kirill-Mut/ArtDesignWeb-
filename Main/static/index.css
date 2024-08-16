@@ -1,0 +1,5164 @@
+.modularhouse-main-container {
+  width: 100%;
+  display: flex;
+  z-index: 100;
+  overflow: auto;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+  min-height: 100vh;
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: column;
+  background-color: #D9D9D9;
+}
+.modularhouse-main-modularhouse-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-video-mobile578d489a792cf5177ad6e679fa166677mp4 {
+  width: 1209.5899658203125px;
+  height: 1200px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_yfopzlek2j-ti1m-1500w.png");
+}
+.modularhouse-main-nav {
+  gap: 953.97998046875px;
+  top: 1px;
+  flex: 1;
+  left: -4px;
+  width: 192px;
+  height: 1200px;
+  display: flex;
+  padding: 50px 1px 80.0199966430664px 0;
+  z-index: 1;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F0EDE5;
+}
+.modularhouse-main-link {
+  display: contents;
+}
+.modularhouse-main-logo {
+  display: flex;
+  width: 60px;
+  height: 90px;  
+  padding: 0 0 4px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+}
+.modularhouse-main-linksSocial {
+  width: 191px;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-SocialIcons {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+}
+.facebookLink, .youtubeLink, .instagramLink {
+  display: flex;
+  padding: 0 0 0 30px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-facebookLinkBtn {
+  display: flex;
+  padding: 0 0 4px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-youtubeLinkBtn {
+  display: flex;
+  padding: 3px 0 4px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-instagramLinkBtn {
+  display: flex;
+  padding: 1px 0 4px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-svgFacebook {
+  width: 8px;
+  height: 18px;
+}
+.modularhouse-main-svgYoutube {
+  width: 17px;
+  height: 12px;
+}
+.modularhouse-main-svgInstagram {
+  width: 14px;
+  height: 14px;
+}
+.NavBar {
+  top: 589.7999877929688px;
+  left: 69.2300033569336px;
+  width: 53px;
+  height: auto;
+  z-index: 2;
+  position: absolute;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-horizontal-border1 {
+  gap: 0.0024999999441206455px;
+  width: 191px;
+  height: 50px;
+  display: flex;
+  padding: 12.369999885559082px 60.540000915527344px 12.180000305175781px 60.529998779296875px;
+  z-index: 3;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 1px 0 0;
+  justify-content: center;
+}
+.modularhouse-main-RussianLanguageBtn {
+  display: flex;
+  padding: 0 0 0.8100000023841858px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-RussianLanguage {
+  height: auto;
+  text-align: left;
+  line-height: 24.639999389648438px;
+}
+.modularhouse-main-EnglishLanguageBtn {
+  display: flex;
+  padding: 0 0 0.8100000023841858px 17.1875px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-EnglishLanguage {
+  height: auto;
+  text-align: left;
+  line-height: 24.639999389648438px;
+}
+.sliders {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 1080px;
+  width: 960px;
+  background-color: #86868C;
+  align-items: center;
+  vertical-align:top;
+  
+  
+}
+.slidersHead{
+  height: 250px;
+  width: 500px;
+  color:#F0EDE5;
+  font-size: 56px;
+  font-weight: bold;
+  position: relative;
+  left:70px;
+  bottom: 100px;
+}
+.slidersIcon{
+  height: 100px;
+  width: 100px;
+  right:135px;
+  bottom: 100px;
+  position: relative;
+}
+.slidersBody{
+  position: relative;
+  left:105px;
+  bottom: 80px;
+}
+.slidersStep{
+
+}
+.stepBtn1{
+
+}
+.step1{
+
+}
+.contactBtnContainer{
+
+}
+.contactBtn{
+
+}
+.contactBtnText{
+
+}
+
+
+
+
+
+.modularhouse-main-container105 {
+  width: 1920px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container106 {
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modularhouse-main-container107 {
+  display: flex;
+  padding: 0 0 0 192px;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-main {
+  gap: 120px;
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-section1 {
+  height: 1200px;
+  display: flex;
+  padding: 50px 0 90px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container108 {
+  display: flex;
+  padding: 120px 0 0;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container109 {
+  height: 940px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modularhouse-main-container110 {
+  width: 1209.5899658203125px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 1200px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container111 {
+  width: 864px;
+  height: 744px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container112 {
+  top: 153.32000732421875px;
+  left: 100px;
+  width: 653px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-heading11 {
+  display: flex;
+  padding: 0 0 0.7900000214576721px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text106 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 61.599998474121094px;
+}
+.modularhouse-main-margin11 {
+  width: 75px;
+  display: flex;
+  padding: 30px 0 0;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container113 {
+  width: 75px;
+  display: flex;
+  padding: 0 0 4px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-iconslide2svg {
+  width: 75px;
+  height: 75px;
+  align-self: stretch;
+}
+.modularhouse-main-margin12 {
+  display: flex;
+  padding: 29.280000686645508px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container114 {
+  display: flex;
+  padding: 0 0 0.6700000166893005px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text112 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-margin13 {
+  display: flex;
+  padding: 145px 0 0;
+  z-index: 2;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-container115 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-margin14 {
+  width: 964px;
+  height: 20.799999237060547px;
+  display: flex;
+  padding: 0 0 0 100px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container116 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-containerbutton2 {
+  width: 192px;
+  height: 20.799999237060547px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-button1 {
+  height: 26.600000381469727px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text122 {
+  height: auto;
+  text-align: left;
+  line-height: 26.600000381469727px;
+}
+.modularhouse-main-containerbutton3 {
+  width: 192px;
+  height: 20.799999237060547px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-button2 {
+  height: 26.600000381469727px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text124 {
+  height: auto;
+  text-align: left;
+  line-height: 26.600000381469727px;
+}
+.modularhouse-main-containerbutton4 {
+  width: 192px;
+  height: 20.799999237060547px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-button3 {
+  height: 26.600000381469727px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text126 {
+  height: auto;
+  text-align: left;
+  line-height: 26.600000381469727px;
+}
+.modularhouse-main-containerbutton5 {
+  width: 192px;
+  height: 20.799999237060547px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-button4 {
+  height: 26.600000381469727px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text128 {
+  height: auto;
+  text-align: left;
+  line-height: 26.600000381469727px;
+}
+.modularhouse-main-margin15 {
+  display: flex;
+  padding: 30px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container117 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-horizontal-divider1 {
+  width: 100px;
+  height: 1px;
+}
+.modularhouse-main-horizontal-divider2 {
+  width: 297.5899963378906px;
+  height: 1px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-horizontal-divider3 {
+  top: -6.920000076293945px;
+  left: 290.8800048828125px;
+  width: 10px;
+  height: 1px;
+  position: absolute;
+}
+.modularhouse-main-horizontal-divider4 {
+  top: 7.21999979019165px;
+  left: 290.1700134277344px;
+  width: 10px;
+  height: 1px;
+  position: absolute;
+}
+.modularhouse-main-container118 {
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-section2 {
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-horizontal-divider5 {
+  width: 80px;
+  height: 1px;
+}
+.modularhouse-main-margin16 {
+  display: flex;
+  padding: 0 0 0 20px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container119 {
+  height: 655.6699829101562px;
+  display: flex;
+  padding: 0 0 0 30322px;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container120 {
+  height: 655.6699829101562px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-container121 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container122 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border10 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link12 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-b1201 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext8jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_mgk3xruwh3-baq8-1500h.png");
+}
+.modularhouse-main-container123 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container124 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container125 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconbgif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_udfpmifehi-64t9-200h.png");
+}
+.modularhouse-main-container126 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container127 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border11 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link13 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-a1921 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext1jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_dhtpqcfe61-jx1-1500h.png");
+}
+.modularhouse-main-container128 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container129 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container130 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconagif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_lxmuhowqk0-01ss-200h.png");
+}
+.modularhouse-main-container131 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container132 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border12 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-linkmodel-s1211 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext01jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq__iesr2jwby-x1cp-1500h.png");
+}
+.modularhouse-main-container133 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container134 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container135 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconsgif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_lcsotk7jhj-h4g-200h.png");
+}
+.modularhouse-main-container136 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container137 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border13 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link14 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-i2201 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-i22003jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_nwpib27mfe-zq5n-1500h.png");
+}
+.modularhouse-main-container138 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container139 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container140 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconigif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_uzn-d0zwdk-gur-200h.png");
+}
+.modularhouse-main-container141 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container142 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border14 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link15 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-c1951 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext08jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_2lvwgjiezm-xjd-1500h.png");
+}
+.modularhouse-main-container143 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container144 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container145 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconcgif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_bancb2q-cs-gclh-200h.png");
+}
+.modularhouse-main-container146 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container147 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border15 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link16 {
+  display: contents;
+}
+.modularhouse-main-linkmodelplus1 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-campb02jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_me_kqvx_sp-5ib-1500h.png");
+}
+.modularhouse-main-container148 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container149 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container150 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-icon2gif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_0shojtdra3-5a9-200h.png");
+}
+.modularhouse-main-container151 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container152 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border16 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link17 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-m351 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-frame2campc01jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_e2qi_dxdjr-w0pd-1500h.png");
+}
+.modularhouse-main-container153 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container154 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container155 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-icon35gif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_m-a-exskb7-d51x-200h.png");
+}
+.modularhouse-main-container156 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container157 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border17 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link18 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-cf1 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-campsflaf01jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_tk2ngxcvac-9wu-1500h.png");
+}
+.modularhouse-main-container158 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container159 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container160 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconcfgif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_tqn-affhka-5h78-200h.png");
+}
+.modularhouse-main-container161 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container162 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border18 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link19 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-spa1 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-bania02jpg1 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_gu7ss7pqso-xhak-1500h.png");
+}
+.modularhouse-main-container163 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container164 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container165 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconspagif1 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_zjutr0rsji-tje-200h.png");
+}
+.modularhouse-main-container166 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container167 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border19 {
+  height: 653.7762451171875px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link20 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-b1202 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext8jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_x6xktu7rud-dqmw-1500h.png");
+}
+.modularhouse-main-container168 {
+  gap: -0.007499999832361937px;
+  display: flex;
+  padding: 38.57809829711914px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container169 {
+  gap: 95.19000244140625px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-heading12 {
+  width: 431.84381103515625px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text130 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 46.20000076293945px;
+}
+.modularhouse-main-container170 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.modularhouse-main-text132 {
+  height: auto;
+  text-align: right;
+  line-height: 28px;
+}
+.modularhouse-main-margin17 {
+  display: flex;
+  padding: 33.23749923706055px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container171 {
+  gap: 122.63999938964844px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container172 {
+  gap: -0.699999988079071px;
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container173 {
+  gap: 146.47999572753906px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container174 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text134 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container175 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text136 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-container176 {
+  gap: 120.0199966430664px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container177 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text138 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container178 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text140 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-container179 {
+  gap: 115.27999877929688px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container180 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text142 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container181 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text144 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-margin18 {
+  height: 72px;
+  display: flex;
+  padding: 0 0 0 60px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-container182 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconbgif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_9cyrhgwweu-w7mq-200h.png");
+}
+.modularhouse-main-container183 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container184 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border20 {
+  height: 653.7762451171875px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link21 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-a1922 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext1jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_a6tjzbhu6w-1r2f-1500h.png");
+}
+.modularhouse-main-container185 {
+  gap: -0.007499999832361937px;
+  display: flex;
+  padding: 38.57809829711914px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container186 {
+  gap: 89.33999633789062px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-heading13 {
+  width: 426.84381103515625px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text146 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 46.20000076293945px;
+}
+.modularhouse-main-container187 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.modularhouse-main-text148 {
+  height: auto;
+  text-align: right;
+  line-height: 28px;
+}
+.modularhouse-main-margin19 {
+  display: flex;
+  padding: 33.23749923706055px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container188 {
+  gap: 122.63999938964844px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container189 {
+  gap: -0.699999988079071px;
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container190 {
+  gap: 146.1199951171875px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container191 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text150 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container192 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text152 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-container193 {
+  gap: 121.2699966430664px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container194 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text154 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container195 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text156 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-container196 {
+  gap: 99.76000213623047px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container197 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text158 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container198 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text160 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-margin20 {
+  height: 72px;
+  display: flex;
+  padding: 0 0 0 60px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-container199 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconagif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_v94_kpc6or-vbpu-200h.png");
+}
+.modularhouse-main-container200 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container201 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border21 {
+  height: 653.7762451171875px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-linkmodel-s1212 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext01jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_insisso1y_-besr-1500h.png");
+}
+.modularhouse-main-container202 {
+  gap: -0.007499999832361937px;
+  display: flex;
+  padding: 38.57809829711914px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container203 {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+}
+.modularhouse-main-heading14 {
+  width: 339.5px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text162 {
+  height: auto;
+  text-align: left;
+  line-height: 46.20000076293945px;
+}
+.modularhouse-main-margin21 {
+  display: flex;
+  padding: 33.23749923706055px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container204 {
+  gap: 122.63999938964844px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container205 {
+  gap: -0.699999988079071px;
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container206 {
+  gap: 150.4499969482422px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container207 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text164 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container208 {
+  height: 24px;
+  display: flex;
+  padding: 0 25.719999313354492px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text166 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-container209 {
+  gap: 127.55000305175781px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container210 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text168 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container211 {
+  height: 24px;
+  display: flex;
+  padding: 0 25.719999313354492px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text170 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-container212 {
+  gap: 106.19999694824219px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container213 {
+  height: 24px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text172 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container214 {
+  height: 24px;
+  display: flex;
+  padding: 0 25.719999313354492px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text174 {
+  height: auto;
+  text-align: left;
+  line-height: 23.799999237060547px;
+}
+.modularhouse-main-margin22 {
+  height: 72px;
+  display: flex;
+  padding: 0 0 0 60px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-container215 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconsgif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_hd0hqy7xrt-wkj7-200h.png");
+}
+.modularhouse-main-container216 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container217 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border22 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link22 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-i2202 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-i22003jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_l9on2iviez-got-1500h.png");
+}
+.modularhouse-main-container218 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container219 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container220 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconigif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_yppxm4edux-hbn-200h.png");
+}
+.modularhouse-main-container221 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container222 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border23 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link23 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-c1952 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext08jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_uy8gsuwfwp-ro9c-1500h.png");
+}
+.modularhouse-main-container223 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container224 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container225 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconcgif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_f_zcds8ifu-6hk-200h.png");
+}
+.modularhouse-main-container226 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container227 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border24 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link24 {
+  display: contents;
+}
+.modularhouse-main-linkmodelplus2 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-campb02jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_f9jkkqwgnr-mwkf-1500h.png");
+}
+.modularhouse-main-container228 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container229 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container230 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-icon2gif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_oyi1aesvle-l5i8-200h.png");
+}
+.modularhouse-main-container231 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container232 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border25 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link25 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-m352 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-frame2campc01jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_rtpm5uj74k-8kaw-1500h.png");
+}
+.modularhouse-main-container233 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container234 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container235 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-icon35gif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_9pv-wnninw-vry9-200h.png");
+}
+.modularhouse-main-container236 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container237 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border26 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link26 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-cf2 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-campsflaf01jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_kzwemla5d1-z2oi-1500h.png");
+}
+.modularhouse-main-container238 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container239 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container240 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconcfgif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_yblnnjmibg-fuv9-200h.png");
+}
+.modularhouse-main-container241 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container242 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border27 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link27 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-spa2 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-bania02jpg2 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_pn9t4x0ygi-tuqd-1500h.png");
+}
+.modularhouse-main-container243 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container244 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container245 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconspagif2 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_e0y-1g0hdj-ghd-200h.png");
+}
+.modularhouse-main-container246 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container247 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border28 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link28 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-b1203 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext8jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_p_fm5pvmb3-r70x-1500h.png");
+}
+.modularhouse-main-container248 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container249 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container250 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconbgif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_l-mnl1nhh2-uetm-200h.png");
+}
+.modularhouse-main-container251 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container252 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border29 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link29 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-a1923 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext1jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_plf5ip4zkp-73j-1500h.png");
+}
+.modularhouse-main-container253 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container254 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container255 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconagif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_5w_8whuibp-qwyp7-200h.png");
+}
+.modularhouse-main-container256 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container257 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border30 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-linkmodel-s1213 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext01jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_cghwzcupsy-lvuq-1500h.png");
+}
+.modularhouse-main-container258 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container259 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container260 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconsgif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_cp9wxj1pbm-zzwc-200h.png");
+}
+.modularhouse-main-container261 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container262 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border31 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link30 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-i2203 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-i22003jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_um90bmwapj-onaq-1500h.png");
+}
+.modularhouse-main-container263 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container264 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container265 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconigif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_cpymkdmes7-905-200h.png");
+}
+.modularhouse-main-container266 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container267 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border32 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link31 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-c1953 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-ext08jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_oizdwqpesl-rrrq-1500h.png");
+}
+.modularhouse-main-container268 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container269 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container270 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconcgif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_x52zo3n95r-riep-200h.png");
+}
+.modularhouse-main-container271 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container272 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border33 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link32 {
+  display: contents;
+}
+.modularhouse-main-linkmodelplus3 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-campb02jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_jsrmydmqmb-lixc-1500h.png");
+}
+.modularhouse-main-container273 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container274 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container275 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-icon2gif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_ix4rq3qn7l-jkje-200h.png");
+}
+.modularhouse-main-container276 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container277 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border34 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link33 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-m353 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-frame2campc01jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_i2ob702kfd-c3k-1500h.png");
+}
+.modularhouse-main-container278 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container279 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container280 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-icon35gif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_vwmfk7woxj-voqw-200h.png");
+}
+.modularhouse-main-container281 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container282 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border35 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link34 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-cf3 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-campsflaf01jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_d-nquyllbu-qd8-1500h.png");
+}
+.modularhouse-main-container283 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container284 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container285 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconcfgif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_h9gsth2_zu-wlpk-200h.png");
+}
+.modularhouse-main-container286 {
+  height: 655.6699829101562px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container287 {
+  display: flex;
+  padding: 0 20px 2px 2px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-border36 {
+  height: 653.6699829101562px;
+  display: flex;
+  padding: 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-link35 {
+  display: contents;
+}
+.modularhouse-main-linkmodel-spa3 {
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-bania02jpg3 {
+  width: 643px;
+  height: 422.3900146484375px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_efrmx1-vpd-77zb-1500h.png");
+}
+.modularhouse-main-container288 {
+  display: flex;
+  padding: 118.69999694824219px 38.57809829711914px 38.58000183105469px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container289 {
+  display: flex;
+  padding: 0 0 0 493.8399963378906px;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container290 {
+  height: 72px;
+  display: flex;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.modularhouse-main-iconspagif3 {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_3iokdl88eh-gm0q-200h.png");
+}
+.modularhouse-main-sectionmargin1 {
+  display: flex;
+  padding: 120px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-section3 {
+  display: flex;
+  padding: 0 192px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-container291 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container292 {
+  height: 292.75px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container293 {
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-margin23 {
+  width: 80.62999725341797px;
+  height: 33.599998474121094px;
+  display: flex;
+  padding: 26px 0 6.599999904632568px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-horizontal-divider6 {
+  width: 81px;
+  height: 1px;
+}
+.modularhouse-main-heading2margin1 {
+  width: 225.25px;
+  height: 33.599998474121094px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-heading21 {
+  top: -0.800000011920929px;
+  left: 20px;
+  width: 205px;
+  height: 34.38999938964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text176 {
+  height: auto;
+  text-align: left;
+  line-height: 33.599998474121094px;
+}
+.modularhouse-main-margin24 {
+  display: flex;
+  padding: 0 0 0 60px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container294 {
+  width: 838.4099731445312px;
+  height: 292.75px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container295 {
+  top: 0px;
+  left: 0px;
+  width: 419px;
+  height: 126.37999725341797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-heading310 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text178 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-margin25 {
+  display: flex;
+  padding: 20px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container296 {
+  width: 419.20001220703125px;
+  height: 78.37999725341797px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-imgmargin1 {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  display: flex;
+  padding: 4px 24px 0 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-prem1svg {
+  width: 36px;
+  height: 72px;
+}
+.modularhouse-main-container297 {
+  top: -0.8100000023841858px;
+  left: 60px;
+  width: 359px;
+  display: flex;
+  padding: 0 10.960000038146973px 0.7900000214576721px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text180 {
+  height: auto;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-container298 {
+  top: 0px;
+  left: 459.2099914550781px;
+  width: 419px;
+  height: 126.37999725341797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-heading311 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text188 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-margin26 {
+  display: flex;
+  padding: 20px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container299 {
+  width: 419.20001220703125px;
+  height: 78.37999725341797px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-imgmargin2 {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  display: flex;
+  padding: 4px 24px 0 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-prem2svg {
+  width: 36px;
+  height: 72px;
+}
+.modularhouse-main-container300 {
+  top: -0.8100000023841858px;
+  left: 60px;
+  width: 359px;
+  display: flex;
+  padding: 0 28.280000686645508px 0.7900000214576721px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text190 {
+  height: auto;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-container301 {
+  top: 166.3800048828125px;
+  left: 0px;
+  width: 419px;
+  height: 126.37999725341797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-heading312 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text198 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-margin27 {
+  display: flex;
+  padding: 20px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container302 {
+  width: 419.20001220703125px;
+  height: 78.37999725341797px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-imgmargin3 {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  display: flex;
+  padding: 4px 24px 0 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-prem3svg {
+  width: 36px;
+  height: 72px;
+}
+.modularhouse-main-container303 {
+  top: -0.8100000023841858px;
+  left: 60px;
+  width: 360px;
+  display: flex;
+  padding: 0 2.5999999046325684px 0.7900000214576721px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text200 {
+  height: auto;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-container304 {
+  top: 166.3800048828125px;
+  left: 459.2099914550781px;
+  width: 419px;
+  height: 126.37999725341797px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-heading313 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text208 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-margin28 {
+  display: flex;
+  padding: 20px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container305 {
+  width: 419.20001220703125px;
+  height: 78.37999725341797px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-imgmargin4 {
+  top: 0px;
+  left: 0px;
+  width: 60px;
+  display: flex;
+  padding: 4px 24px 0 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-prem4svg {
+  width: 36px;
+  height: 72px;
+}
+.modularhouse-main-container306 {
+  top: -0.8100000023841858px;
+  left: 60px;
+  width: 359px;
+  display: flex;
+  padding: 0 55.34000015258789px 0.7900000214576721px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text210 {
+  height: auto;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-sectionmargin2 {
+  display: flex;
+  padding: 105px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-section4 {
+  display: flex;
+  padding: 0 192px 0 0;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+.modularhouse-main-container307 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container308 {
+  height: 284px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container309 {
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-margin29 {
+  width: 80.62999725341797px;
+  height: 33.599998474121094px;
+  display: flex;
+  padding: 26px 0 6.599999904632568px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-horizontal-divider7 {
+  width: 81px;
+  height: 1px;
+}
+.modularhouse-main-heading2margin2 {
+  width: 82.52999877929688px;
+  height: 33.599998474121094px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-heading22 {
+  top: -0.800000011920929px;
+  left: 20px;
+  width: 63px;
+  height: 34.38999938964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text218 {
+  height: auto;
+  text-align: left;
+  line-height: 33.599998474121094px;
+}
+.modularhouse-main-margin30 {
+  display: flex;
+  padding: 0 0 0 60px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container310 {
+  height: 284px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-background-horizontal-border1 {
+  display: flex;
+  padding: 0 0 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(69, 69, 69, 1);
+  border-style: solid;
+  border-width: 0 0 1px;
+  flex-direction: column;
+}
+.modularhouse-main-button5 {
+  width: 838.4099731445312px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-margin31 {
+  top: 2px;
+  left: 0px;
+  width: 802px;
+  display: flex;
+  padding: 12px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container311 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-heading314 {
+  height: 28px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text220 {
+  height: auto;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-marginbutton1 {
+  top: 4px;
+  left: 802.4099731445312px;
+  width: 48px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container312 {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 24px;
+  justify-content: center;
+}
+.modularhouse-main-svg14 {
+  width: 24px;
+  height: 24px;
+}
+.modularhouse-main-background-horizontal-border2 {
+  display: flex;
+  padding: 0 0 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(69, 69, 69, 1);
+  border-style: solid;
+  border-width: 0 0 1px;
+  flex-direction: column;
+}
+.modularhouse-main-button6 {
+  width: 838.4099731445312px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-margin32 {
+  top: 2px;
+  left: 0px;
+  width: 802px;
+  display: flex;
+  padding: 12px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container313 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-heading315 {
+  height: 28px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text222 {
+  height: auto;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-marginbutton2 {
+  top: 4px;
+  left: 802.4099731445312px;
+  width: 48px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container314 {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 24px;
+  justify-content: center;
+}
+.modularhouse-main-svg15 {
+  width: 24px;
+  height: 24px;
+}
+.modularhouse-main-background-horizontal-border3 {
+  display: flex;
+  padding: 0 0 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(69, 69, 69, 1);
+  border-style: solid;
+  border-width: 0 0 1px;
+  flex-direction: column;
+}
+.modularhouse-main-button7 {
+  width: 838.4099731445312px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-margin33 {
+  top: 2px;
+  left: 0px;
+  width: 802px;
+  display: flex;
+  padding: 12px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container315 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-heading316 {
+  height: 28px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text224 {
+  height: auto;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-marginbutton3 {
+  top: 4px;
+  left: 802.4099731445312px;
+  width: 48px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container316 {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 24px;
+  justify-content: center;
+}
+.modularhouse-main-svg16 {
+  width: 24px;
+  height: 24px;
+}
+.modularhouse-main-background-horizontal-border4 {
+  display: flex;
+  padding: 0 0 1px;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(69, 69, 69, 1);
+  border-style: solid;
+  border-width: 0 0 1px;
+  flex-direction: column;
+}
+.modularhouse-main-button8 {
+  width: 838.4099731445312px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-margin34 {
+  top: 2px;
+  left: 0px;
+  width: 802px;
+  display: flex;
+  padding: 12px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container317 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-heading317 {
+  height: 28px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text226 {
+  height: auto;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-marginbutton4 {
+  top: 4px;
+  left: 802.4099731445312px;
+  width: 48px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container318 {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 24px;
+  justify-content: center;
+}
+.modularhouse-main-svg17 {
+  width: 24px;
+  height: 24px;
+}
+.modularhouse-main-button9 {
+  width: 838.4099731445312px;
+  height: 56px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-margin35 {
+  top: 2px;
+  left: 0px;
+  width: 802px;
+  display: flex;
+  padding: 12px 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container319 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-heading318 {
+  height: 28px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text228 {
+  height: auto;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-marginbutton5 {
+  top: 4px;
+  left: 802.4099731445312px;
+  width: 48px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container320 {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 24px;
+  justify-content: center;
+}
+.modularhouse-main-svg18 {
+  width: 24px;
+  height: 24px;
+}
+.modularhouse-main-sectionmargin3 {
+  display: flex;
+  padding: 120px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-section5 {
+  display: flex;
+  padding: 0 192px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-container321 {
+  display: flex;
+  padding: 0 0 0 100px;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container322 {
+  width: 537.5900268554688px;
+  height: 803.4400024414062px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container323 {
+  top: 0px;
+  left: -100px;
+  width: 500px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-margin36 {
+  width: 80.62999725341797px;
+  height: 33.599998474121094px;
+  display: flex;
+  padding: 26px 0 6.599999904632568px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-horizontal-divider8 {
+  width: 81px;
+  height: 1px;
+}
+.modularhouse-main-heading2margin3 {
+  width: 250.63999938964844px;
+  height: 33.599998474121094px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-heading23 {
+  top: -0.800000011920929px;
+  left: 20px;
+  width: 231px;
+  height: 34.38999938964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text230 {
+  height: auto;
+  text-align: left;
+  line-height: 33.599998474121094px;
+}
+.modularhouse-main-margin37 {
+  top: 33.5989990234375px;
+  left: 0px;
+  width: 538px;
+  height: 769.8419799804688px;
+  display: flex;
+  padding: 131.14100646972656px 0;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container324 {
+  width: 537.5900268554688px;
+  display: flex;
+  padding: 40px 0 0;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container325 {
+  gap: -5.6843418860808015e-14px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modularhouse-main-container326 {
+  gap: 59.28499984741211px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-heading319 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text232 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-container327 {
+  width: 200px;
+  display: flex;
+  padding: 0 0 0.675000011920929px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text236 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-form1 {
+  display: flex;
+  padding: 60px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container328 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container329 {
+  display: flex;
+  padding: 16px 0 34px;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-label1 {
+  width: 43.91999816894531px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container330 {
+  display: flex;
+  padding: 0 0 0.7900000214576721px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text244 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-container331 {
+  width: 537.5900268554688px;
+  height: 32px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-horizontal-borderinput1 {
+  top: 12px;
+  left: 0px;
+  width: 538px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.41999998688697815);
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.modularhouse-main-container332 {
+  display: flex;
+  padding: 16px 0 34px;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-label2 {
+  width: 110.05999755859375px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container333 {
+  display: flex;
+  padding: 0 0 0.7900000214576721px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text246 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-containerinput1 {
+  width: 537.5900268554688px;
+  height: 32px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-horizontal-border2 {
+  top: 12px;
+  left: 0px;
+  width: 538px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.41999998688697815);
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.modularhouse-main-container334 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-buttonbutton1 {
+  height: 38px;
+  display: flex;
+  padding: 12px 31px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+}
+.modularhouse-main-container335 {
+  display: flex;
+  padding: 0 14.8100004196167px;
+  align-items: center;
+  justify-content: center;
+}
+.modularhouse-main-text248 {
+  height: auto;
+  text-align: center;
+  line-height: 14px;
+}
+.modularhouse-main-margin38 {
+  display: flex;
+  padding: 0 0 0 60px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container336 {
+  height: 803.4400024414062px;
+  display: flex;
+  padding: 0 0 0 8379.58984375px;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container337 {
+  height: 803.4400024414062px;
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-container338 {
+  height: 803.4400024414062px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container339 {
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container340 {
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: center;
+}
+.modularhouse-main-slide1jpgsvg {
+  width: 838px;
+  height: 803px;
+  flex-grow: 1;
+  align-self: stretch;
+}
+.modularhouse-main-margin39 {
+  display: flex;
+  padding: 180px 0 60px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container341 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container342 {
+  display: flex;
+  padding: 67.19999694824219px 0 0 100px;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-container343 {
+  width: 576px;
+  height: 913.3200073242188px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-margin40 {
+  top: 0px;
+  left: -100px;
+  width: 500px;
+  display: flex;
+  padding: 0 0 60px;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container344 {
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-margin41 {
+  width: 80.62999725341797px;
+  height: 33.599998474121094px;
+  display: flex;
+  padding: 26px 0 6.599999904632568px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-horizontal-divider9 {
+  width: 81px;
+  height: 1px;
+}
+.modularhouse-main-heading2margin4 {
+  width: 180.5500030517578px;
+  height: 33.599998474121094px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-heading24 {
+  top: -0.800000011920929px;
+  left: 20px;
+  width: 161px;
+  height: 34.38999938964844px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text250 {
+  height: auto;
+  text-align: left;
+  line-height: 33.599998474121094px;
+}
+.modularhouse-main-container345 {
+  top: 93.58999633789062px;
+  left: 0px;
+  width: 576px;
+  height: 819.72998046875px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-container346 {
+  height: 819.72998046875px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container347 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-container348 {
+  width: 180px;
+  height: 496.19000244140625px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-andrey2png {
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 408px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_kl6wdzjmru-cy1j-500h.png");
+}
+.modularhouse-main-container349 {
+  top: 442px;
+  left: 0px;
+  width: 180px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text252 {
+  height: auto;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-container350 {
+  top: 478px;
+  left: 0px;
+  width: 180px;
+  display: flex;
+  opacity: 0.60;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text254 {
+  height: auto;
+  text-align: left;
+  line-height: 18.200000762939453px;
+}
+.modularhouse-main-margin42 {
+  height: 496.19000244140625px;
+  display: flex;
+  padding: 0 0 0 26.8799991607666px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container351 {
+  width: 180px;
+  height: 496.19000244140625px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-alexey2png {
+  top: 0px;
+  left: 0px;
+  width: 180px;
+  height: 408px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-size: cover;
+  background-image: url("../static/images/tq_kxlqjrummr-ul0s-500h.png");
+}
+.modularhouse-main-container352 {
+  top: 442px;
+  left: 0px;
+  width: 180px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text256 {
+  height: auto;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-container353 {
+  top: 478px;
+  left: 0px;
+  width: 180px;
+  display: flex;
+  opacity: 0.60;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text258 {
+  height: auto;
+  text-align: left;
+  line-height: 18.200000762939453px;
+}
+.modularhouse-main-margin43 {
+  display: flex;
+  padding: 48px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container354 {
+  gap: -0.6000000238418579px;
+  display: flex;
+  padding: 0 0 0.5899999737739563px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-margin44 {
+  display: flex;
+  padding: 0 0 5px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container355 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text260 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-text262 {
+  height: auto;
+  text-align: left;
+  line-height: 25.200000762939453px;
+}
+.modularhouse-main-margin45 {
+  display: flex;
+  padding: 20px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container356 {
+  gap: -0.6000000238418579px;
+  display: flex;
+  padding: 0 0 0.5899999737739563px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-margin46 {
+  display: flex;
+  padding: 0 0 5px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container357 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text264 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 28px;
+}
+.modularhouse-main-text266 {
+  height: auto;
+  text-align: left;
+  line-height: 25.200000762939453px;
+}
+.modularhouse-main-margin47 {
+  display: flex;
+  padding: 48px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container358 {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-svg19 {
+  width: 60px;
+  height: 90px;
+}
+.modularhouse-main-margin48 {
+  display: flex;
+  padding: 0 0 0 28px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.modularhouse-main-container359 {
+  width: 267.1400146484375px;
+  height: 91.16999816894531px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.modularhouse-main-container360 {
+  top: -0.699999988079071px;
+  left: 0px;
+  width: 267px;
+  display: flex;
+  padding: 0 0 0.6899999976158142px;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text268 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-margin49 {
+  top: 22.389999389648438px;
+  left: 0px;
+  width: 267px;
+  display: flex;
+  padding: 23.299999237060547px 0 0;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container361 {
+  display: flex;
+  padding: 0 0 0.6899999976158142px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text270 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-container362 {
+  top: 68.08000183105469px;
+  left: 0px;
+  width: 267px;
+  display: flex;
+  padding: 0 0 0.6899999976158142px;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text272 {
+  height: auto;
+  text-align: left;
+  line-height: 22.399999618530273px;
+}
+.modularhouse-main-margin50 {
+  display: flex;
+  padding: 0 0 0 284px;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.modularhouse-main-container363 {
+  gap: 97.73999786376953px;
+  width: 576px;
+  height: 980.52001953125px;
+  display: flex;
+  padding: 66.38999938964844px 0 230.00999450683594px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.modularhouse-main-heading25 {
+  display: flex;
+  padding: 0 0 0.7900000214576721px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text274 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 33.599998474121094px;
+}
+.modularhouse-main-margin51 {
+  display: flex;
+  padding: 38.400001525878906px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-form2 {
+  gap: -0.800000011920929px;
+  display: flex;
+  padding: 60px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container364 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-container365 {
+  display: flex;
+  padding: 16px 0 34px;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-label3 {
+  width: 43.91999816894531px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container366 {
+  display: flex;
+  padding: 0 0 0.800000011920929px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text276 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-containerinput2 {
+  width: 576px;
+  height: 32px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-horizontal-border3 {
+  top: 12px;
+  left: 0px;
+  width: 576px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.41999998688697815);
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.modularhouse-main-container367 {
+  display: flex;
+  padding: 16px 0 34px;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-label4 {
+  width: 110.05999755859375px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container368 {
+  display: flex;
+  padding: 0 0 0.800000011920929px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text278 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-container369 {
+  width: 576px;
+  height: 32px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-horizontal-borderinput2 {
+  top: 12px;
+  left: 0px;
+  width: 576px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.41999998688697815);
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.modularhouse-main-container370 {
+  display: flex;
+  padding: 16px 0 34px;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-label5 {
+  width: 41.220001220703125px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-container371 {
+  display: flex;
+  padding: 0 0 0.800000011920929px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-text280 {
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-container372 {
+  width: 576px;
+  height: 32px;
+  display: flex;
+  z-index: 1;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.modularhouse-main-horizontal-borderinput3 {
+  top: 12px;
+  left: 0px;
+  width: 576px;
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-color: rgba(0, 0, 0, 0.41999998688697815);
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.modularhouse-main-label6 {
+  gap: 10.010000228881836px;
+  display: flex;
+  padding: 0 0 3.990000009536743px;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-containerinput3 {
+  gap: 499.1099853515625px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex-shrink: 0;
+  justify-content: space-between;
+}
+.modularhouse-main-container373 {
+  height: 20px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text282 {
+  height: auto;
+  text-align: left;
+  line-height: 19.600000381469727px;
+}
+.modularhouse-main-container374 {
+  height: 20px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-text284 {
+  height: auto;
+  text-align: left;
+  line-height: normal;
+}
+.modularhouse-main-textarea {
+  width: 576px;
+  height: 96px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-self: stretch;
+  align-items: flex-start;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 0 0 1px;
+}
+.modularhouse-main-container375 {
+  display: flex;
+  padding: 40.810001373291016px 0 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.modularhouse-main-buttonbutton2 {
+  height: 38px;
+  display: flex;
+  padding: 12px 31px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+}
+.modularhouse-main-container376 {
+  display: flex;
+  padding: 0 24.1200008392334px 0 24.110000610351562px;
+  align-items: center;
+  justify-content: center;
+}
+.modularhouse-main-text285 {
+  height: auto;
+  text-align: center;
+  line-height: 14px;
+}
+.modularhouse-main-container377 {
+  width: 152px;
+  display: flex;
+  z-index: 1;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-buttonbutton3 {
+  height: 38px;
+  display: flex;
+  padding: 12px 31px;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 1px;
+  justify-content: center;
+}
+.modularhouse-main-container378 {
+  display: flex;
+  padding: 0 10.0600004196167px 0 10.050000190734863px;
+  align-items: center;
+  justify-content: center;
+}
+.modularhouse-main-text287 {
+  height: auto;
+  text-align: center;
+  line-height: 14px;
+}
+.modularhouse-main-footer {
+  display: flex;
+  padding: 14.5px 832.3099975585938px 14.5px 832.2999877929688px;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+}
+.modularhouse-main-text289 {
+  height: auto;
+  text-align: left;
+  line-height: 21px;
+}
