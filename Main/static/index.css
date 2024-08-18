@@ -1,4 +1,18 @@
+*{
+  border: none;
+}
+body::-webkit-scrollbar {
+  width: 6px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(136, 136, 136);    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+}
 .modularhouse-main-container {
+  border:none;
   width: 100%;
   display: flex;
   z-index: 100;
@@ -12,6 +26,7 @@
   background-color: #D9D9D9;
 }
 .modularhouse-main-modularhouse-main {
+  border:none;
   width: 100%;
   height: auto;
   display: flex;
@@ -43,7 +58,7 @@
   display: flex;
   padding: 50px 1px 80.0199966430664px 0;
   z-index: 1;
-  position: absolute;
+  position: fixed;
   align-items: center;
   flex-shrink: 0;
   border-color: rgba(79, 79, 79, 1);
@@ -64,102 +79,103 @@
   align-items: flex-start;
   flex-direction: column;
 }
-}
-.modularhouse-main-linksSocial {
-  width: 191px;
+.linksSocial {
+  width: 192px;
+  height: 50px;
+  z-index: 2;
+  position: fixed;
+  text-align: center;
+  line-height: 22.399999618530273px;
   display: flex;
-  z-index: 1;
-  align-items: center;
-  flex-shrink: 0;
   flex-direction: column;
-  justify-content: center;
-}
-.modularhouse-main-SocialIcons {
-  display: flex;
-  align-self: stretch;
-  align-items: center;
+  top:830px;
+  white-space:nowrap;
+  display: inline-block;
 }
 .facebookLink, .youtubeLink, .instagramLink {
+  height: 50px;
+  width: 50px;
+  white-space:nowrap;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center; 
+}
+.facebookLinkBtn, .youtubeLinkBtn, .instagramLinkBtn{
+  height: 50px;
+  width: 50px;
   display: flex;
-  padding: 0 0 0 30px;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center; 
 }
-.modularhouse-main-facebookLinkBtn {
-  display: flex;
-  padding: 0 0 4px;
-  align-items: flex-start;
-  flex-direction: column;
+.svgFacebook {
+  width: 18px;
+  height: 23px;
 }
-.modularhouse-main-youtubeLinkBtn {
-  display: flex;
-  padding: 3px 0 4px;
-  align-items: flex-start;
-  flex-direction: column;
+.svgYoutube {
+  width: 27px;
+  height: 22px;
 }
-.modularhouse-main-instagramLinkBtn {
-  display: flex;
-  padding: 1px 0 4px;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.modularhouse-main-svgFacebook {
-  width: 8px;
-  height: 18px;
-}
-.modularhouse-main-svgYoutube {
-  width: 17px;
-  height: 12px;
-}
-.modularhouse-main-svgInstagram {
-  width: 14px;
-  height: 14px;
+.svgInstagram {
+  width: 24px;
+  height: 24px;
 }
 .NavBar {
-  top: 589.7999877929688px;
-  left: 69.2300033569336px;
-  width: 53px;
-  height: auto;
+  width: 192px;
+  height: 500px;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   text-align: left;
   line-height: 22.399999618530273px;
+  display: flex;
+  flex-direction: column;
+  top:300px;
+}
+.NavBarItem{
+  width: 192px;
+  height: 50px;
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+  
 }
 .modularhouse-main-horizontal-border1 {
-  gap: 0.0024999999441206455px;
-  width: 191px;
+  width: 192px;
   height: 50px;
-  display: flex;
-  padding: 12.369999885559082px 60.540000915527344px 12.180000305175781px 60.529998779296875px;
-  z-index: 3;
-  align-items: center;
-  flex-shrink: 0;
-  border-color: rgba(79, 79, 79, 1);
-  border-style: solid;
-  border-width: 1px 0 0;
-  justify-content: center;
+  z-index: 2;
+  position: fixed;
+  text-align: left;
+  line-height: 22.399999618530273px;
+  flex-direction: column;
+  top:910px;
+  white-space:nowrap;
+  display: inline-block;
+  
 }
 .modularhouse-main-RussianLanguageBtn {
-  display: flex;
-  padding: 0 0 0.8100000023841858px;
   align-items: flex-start;
   flex-direction: column;
+  height: 50px;
+  width: 95px;
 }
 .modularhouse-main-RussianLanguage {
   height: auto;
   text-align: left;
-  line-height: 24.639999389648438px;
+  height: 50px;
 }
 .modularhouse-main-EnglishLanguageBtn {
-  display: flex;
-  padding: 0 0 0.8100000023841858px 17.1875px;
   align-items: flex-start;
   flex-direction: column;
+  height: 50px;
+  width: 95px;
 }
 .modularhouse-main-EnglishLanguage {
   height: auto;
   text-align: left;
-  line-height: 24.639999389648438px;
+  height: 50px;
 }
 .sliders {
   display: flex;
@@ -207,10 +223,19 @@
 
 }
 .contactBtnContainer{
-
+display: flex;
+position: absolute;
+z-index: 2;
+left:1600px;
+top:60px;
+height: 35px;
+width: 160px;
 }
 .contactBtn{
-
+background-color: #616163;
+color:#F0EDE5;
+height: 35px;
+width: 160px;
 }
 .contactBtnText{
 
