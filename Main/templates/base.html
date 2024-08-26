@@ -1,3 +1,1340 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>exported project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background-color: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font"/>
+    <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"/>
+  </head>
+  <body>
+    <div>
+      <link href="../static/index.css" rel="stylesheet" />
+      <div class="modularhouse-main-container">
+        <div class="modularhouse-main-modularhouse-main">
+          <div class="modularhouse-main-nav">
+            <a href="https://modular-house.by/" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link">
+                <img alt="SVG2471" src="../static/images/svg2471.svg" class="modularhouse-main-logo"/>
+            </a>
+            
+            <span class="NavBar">
+              <span class="NavBarItem">МЕНЮ</span>
+              <span class="NavBarItem">ГЛАВНАЯ</span>
+              <span class="NavBarItem">О НАС</span>
+              <span class="NavBarItem">ПРОЕКТЫ</span>
+              <span class="NavBarItem">КОНТАКТЫ</span>
+            </span>
+            <div class="linksSocial">
+              <div class="facebookLink">
+                <a href="https://www.facebook.com/BYhome.zrobim/" target="_blank" rel="noreferrer noopener" class="facebookLinkBtn">
+                  <img alt="facebook" src="../static/images/svg2472.svg" class="svgFacebook"/>
+                </a>
+              </div>
+              <div class="youtubeLink">
+                <a href="https://www.youtube.com/channel/UCxc3agJ3TIg4H0dilD-yBlQ" target="_blank" rel="noreferrer noopener" class="youtubeLinkBtn">
+                  <img alt="youtube" src="../static/images/svg2473-ylg8.svg" class="svgYoutube"/>
+                </a>
+              </div>
+              <div class="instagramLink">
+                <a href="https://www.instagram.com/by___home/" target="_blank" rel="noreferrer noopener" class="instagramLinkBtn">
+                  <img alt="instagram" src="../static/images/svg2473-z2vc.svg" class="svgInstagram"/>
+                </a>
+              </div>
+            </div>  
+            <div class="modularhouse-main-horizontal-border1">            
+              <button class="modularhouse-main-RussianLanguageBtn">
+                <span class="modularhouse-main-RussianLanguage">RU</span>
+              </button>
+              <button class="modularhouse-main-EnglishLanguageBtn">
+                <span class="modularhouse-main-EnglishLanguage">EN</span>
+              </button>
+            </div>
+          </div>
+          <div class="sliders">
+                <div class="slidersHead">
+                    <span>НЕ СТРОИМ,</span>
+                    <br />
+                    <span>А СОБИРАЕМ</span>
+                    <br />
+                    <span>ДОМА</span>
+                </div>
+                <div class="slidersIcon">
+                    <img alt="iconslide2svg2423" src="../static/images/iconslide2svg2423-40mg.svg" class="modularhouse-main-iconslide2svg"/>
+                </div>
+                <div class="slidersBody">
+                      <span>Преимущество модульных домов в том, что их можно конфигурировать</span><br />
+                      <span>перед строительством и расширять дом путем добавления модулей в</span><br />
+                      <span>будущем. Модули производятся на заводе, где осуществляется должный</span><br />
+                      <span>контроль качества, а затем доставляются и собираются на участке под</span><br />
+                      <span>техническим надзором.</span>
+                </div>
+          </div>
+          <div class="slidersStep">
+                  <button class="stepBtn1">
+                    <span class="step1">01</span>
+                  </button>
+                  <button class="stepBtn2">
+                    <span class="step2">02</span>
+                  </button>
+                  <button class="stepBtn3">
+                    <span class="step3">03</span>
+                  </button>
+                  <button class="stepBtn4">
+                    <span class="step4">04</span>
+                  </button>
+          </div>
+          <div class="modularhouse-main-container118">
+            <div class="modularhouse-main-section2">
+              <img alt="HorizontalDivider2461" src="../static/images/horizontaldivider2461-n2fr-200h.png" class="modularhouse-main-horizontal-divider5"/>
+              <div class="modularhouse-main-margin16">
+                <div class="modularhouse-main-container119">
+                  <div class="modularhouse-main-container120">
+                    <div class="modularhouse-main-container121">
+                      <div class="modularhouse-main-container122">
+                        <div class="modularhouse-main-border10">
+                          <a href="https://modular-house.by/what-we-do/modelB120" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link12">
+                            <div class="modularhouse-main-linkmodel-b1201">
+                              <div class="modularhouse-main-ext8jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container123">
+                            <div class="modularhouse-main-container124">
+                              <div class="modularhouse-main-container125">
+                                <div class="modularhouse-main-iconbgif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container126">
+                      <div class="modularhouse-main-container127">
+                        <div class="modularhouse-main-border11">
+                          <a href="https://modular-house.by/what-we-do/modelA192" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link13">
+                            <div class="modularhouse-main-linkmodel-a1921">
+                              <div class="modularhouse-main-ext1jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container128">
+                            <div class="modularhouse-main-container129">
+                              <div class="modularhouse-main-container130">
+                                <div class="modularhouse-main-iconagif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container131">
+                      <div class="modularhouse-main-container132">
+                        <div class="modularhouse-main-border12">
+                          <div class="modularhouse-main-linkmodel-s1211">
+                            <div class="modularhouse-main-ext01jpg1"></div>
+                          </div>
+                          <div class="modularhouse-main-container133">
+                            <div class="modularhouse-main-container134">
+                              <div class="modularhouse-main-container135">
+                                <div class="modularhouse-main-iconsgif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container136">
+                      <div class="modularhouse-main-container137">
+                        <div class="modularhouse-main-border13">
+                          <a href="https://modular-house.by/what-we-do/modelI220" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link14">
+                            <div class="modularhouse-main-linkmodel-i2201">
+                              <div class="modularhouse-main-i22003jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container138">
+                            <div class="modularhouse-main-container139">
+                              <div class="modularhouse-main-container140">
+                                <div class="modularhouse-main-iconigif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container141">
+                      <div class="modularhouse-main-container142">
+                        <div class="modularhouse-main-border14">
+                          <a href="https://modular-house.by/what-we-do/modelC195" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link15">
+                            <div class="modularhouse-main-linkmodel-c1951">
+                              <div class="modularhouse-main-ext08jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container143">
+                            <div class="modularhouse-main-container144">
+                              <div class="modularhouse-main-container145">
+                                <div class="modularhouse-main-iconcgif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container146">
+                      <div class="modularhouse-main-container147">
+                        <div class="modularhouse-main-border15">
+                          <a href="https://modular-house.by/what-we-do/modelplus" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link16">
+                            <div class="modularhouse-main-linkmodelplus1">
+                              <div class="modularhouse-main-campb02jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container148">
+                            <div class="modularhouse-main-container149">
+                              <div class="modularhouse-main-container150">
+                                <div class="modularhouse-main-icon2gif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container151">
+                      <div class="modularhouse-main-container152">
+                        <div class="modularhouse-main-border16">
+                          <a href="https://modular-house.by/what-we-do/modelM35" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link17">
+                            <div class="modularhouse-main-linkmodel-m351">
+                              <div class="modularhouse-main-frame2campc01jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container153">
+                            <div class="modularhouse-main-container154">
+                              <div class="modularhouse-main-container155">
+                                <div class="modularhouse-main-icon35gif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container156">
+                      <div class="modularhouse-main-container157">
+                        <div class="modularhouse-main-border17">
+                          <a href="https://modular-house.by/what-we-do/modelCF" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link18">
+                            <div class="modularhouse-main-linkmodel-cf1">
+                              <div class="modularhouse-main-campsflaf01jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container158">
+                            <div class="modularhouse-main-container159">
+                              <div class="modularhouse-main-container160">
+                                <div class="modularhouse-main-iconcfgif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container161">
+                      <div class="modularhouse-main-container162">
+                        <div class="modularhouse-main-border18">
+                          <a href="https://modular-house.by/what-we-do/modelSPA" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link19">
+                            <div class="modularhouse-main-linkmodel-spa1">
+                              <div class="modularhouse-main-bania02jpg1"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container163">
+                            <div class="modularhouse-main-container164">
+                              <div class="modularhouse-main-container165">
+                                <div class="modularhouse-main-iconspagif1"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container166">
+                      <div class="modularhouse-main-container167">
+                        <div class="modularhouse-main-border19">
+                          <a href="https://modular-house.by/what-we-do/modelB120" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link20">
+                            <div class="modularhouse-main-linkmodel-b1202">
+                              <div class="modularhouse-main-ext8jpg2"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container168">
+                            <div class="modularhouse-main-container169">
+                              <div class="modularhouse-main-heading12">
+                                <span class="modularhouse-main-text130 modularHouse.byMontserratBold42">
+                                  <span>Model B</span>
+                                </span>
+                              </div>
+                              <div class="modularhouse-main-container170">
+                                <span class="modularhouse-main-text132 modularHouse.byMontserratMedium20lower">
+                                  <span>от $ 54 571</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="modularhouse-main-margin17">
+                              <div class="modularhouse-main-container171">
+                                <div class="modularhouse-main-container172">
+                                  <div class="modularhouse-main-container173">
+                                    <div class="modularhouse-main-container174">
+                                      <span class="modularhouse-main-text134 modularHouse.byMontserratRegular16">
+                                        <span>Общая площадь:</span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container175">
+                                      <span class="modularhouse-main-text136 modularHouse.byMontserratSemiBold17">
+                                        <span>120.60 м²</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="modularhouse-main-container176">
+                                    <div class="modularhouse-main-container177">
+                                      <span class="modularhouse-main-text138 modularHouse.byMontserratRegular16">
+                                        <span>Эффективная площадь:</span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container178">
+                                      <span class="modularhouse-main-text140 modularHouse.byMontserratSemiBold17">
+                                        <span>84.30 м²</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="modularhouse-main-container179">
+                                    <div class="modularhouse-main-container180">
+                                      <span class="modularhouse-main-text142 modularHouse.byMontserratRegular16">
+                                        <span> Площадь базового дома: </span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container181">
+                                      <span class="modularhouse-main-text144 modularHouse.byMontserratSemiBold17">
+                                        <span>51.4 м²</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modularhouse-main-margin18">
+                                  <div class="modularhouse-main-container182">
+                                    <div class="modularhouse-main-iconbgif2"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container183">
+                      <div class="modularhouse-main-container184">
+                        <div class="modularhouse-main-border20">
+                          <a href="https://modular-house.by/what-we-do/modelA192" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link21">
+                            <div class="modularhouse-main-linkmodel-a1922">
+                              <div class="modularhouse-main-ext1jpg2"></div>
+                            </div>
+                          </a>
+                          <div
+                            class="modularhouse-main-container185">
+                            <div class="modularhouse-main-container186">
+                              <div class="modularhouse-main-heading13">
+                                <span class="modularhouse-main-text146 modularHouse.byMontserratBold42">
+                                  <span>Model A</span>
+                                </span>
+                              </div>
+                              <div class="modularhouse-main-container187">
+                                <span class="modularhouse-main-text148 modularHouse.byMontserratMedium20lower">
+                                  <span>от $ 56 668</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="modularhouse-main-margin19">
+                              <div
+                                class="modularhouse-main-container188">
+                                <div class="modularhouse-main-container189">
+                                  <div class="modularhouse-main-container190">
+                                    <div class="modularhouse-main-container191">
+                                      <span class="modularhouse-main-text150 modularHouse.byMontserratRegular16">
+                                        <span>Общая площадь:</span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container192">
+                                      <span class="modularhouse-main-text152 modularHouse.byMontserratSemiBold17">
+                                        <span>192.00 м²</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="modularhouse-main-container193">
+                                    <div class="modularhouse-main-container194">
+                                      <span class="modularhouse-main-text154 modularHouse.byMontserratRegular16">
+                                        <span>Эффективная площадь:</span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container195">
+                                      <span class="modularhouse-main-text156 modularHouse.byMontserratSemiBold17">
+                                        <span>125.61 м²</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="modularhouse-main-container196">
+                                    <div class="modularhouse-main-container197">
+                                      <span class="modularhouse-main-text158 modularHouse.byMontserratRegular16">
+                                        <span>Площадь базового дома: </span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container198">
+                                      <span class="modularhouse-main-text160 modularHouse.byMontserratSemiBold17">
+                                        <span>66.09 м²</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modularhouse-main-margin20">
+                                  <div class="modularhouse-main-container199">
+                                    <div class="modularhouse-main-iconagif2"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container200">
+                      <div class="modularhouse-main-container201">
+                        <div class="modularhouse-main-border21">
+                          <div class="modularhouse-main-linkmodel-s1212">
+                            <div class="modularhouse-main-ext01jpg2"></div>
+                          </div>
+                          <div class="modularhouse-main-container202">
+                            <div class="modularhouse-main-container203">
+                              <div class="modularhouse-main-heading14">
+                                <span class="modularhouse-main-text162 modularHouse.byMontserratBold42">
+                                  <span>Model S</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="modularhouse-main-margin21">
+                              <div class="modularhouse-main-container204">
+                                <div class="modularhouse-main-container205">
+                                  <div class="modularhouse-main-container206">
+                                    <div class="modularhouse-main-container207">
+                                      <span class="modularhouse-main-text164 modularHouse.byMontserratRegular16">
+                                        <span>Общая площадь:</span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container208">
+                                      <span class="modularhouse-main-text166 modularHouse.byMontserratSemiBold17">
+                                        <span>121.00</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="modularhouse-main-container209">
+                                    <div class="modularhouse-main-container210">
+                                      <span class="modularhouseby-main-text168 modularHouse.byMontserratRegular16">
+                                        <span>Эффективная площадь:</span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container211">
+                                      <span class="modularhouse-main-text170 modularHouse.byMontserratSemiBold17">
+                                        <span>71.22</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="modularhouse-main-container212">
+                                    <div class="modularhouse-main-container213">
+                                      <span class="modularhouse-main-text172 modularHouse.byMontserratRegular16">
+                                        <span>Площадь базового дома: </span>
+                                      </span>
+                                    </div>
+                                    <div class="modularhouse-main-container214">
+                                      <span class="modularhouse-main-text174 modularHouse.byMontserratSemiBold17">
+                                        <span>71.22</span>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modularhouse-main-margin22">
+                                  <div class="modularhouse-main-container215">
+                                    <div class="modularhouse-main-iconsgif2"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container216">
+                      <div class="modularhouse-main-container217">
+                        <div class="modularhouse-main-border22">
+                          <a href="https://modular-house.by/what-we-do/modelI220" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link22">
+                            <div class="modularhouse-main-linkmodel-i2202">
+                              <div class="modularhouse-main-i22003jpg2"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container218">
+                            <div class="modularhouse-main-container219">
+                              <div class="modularhouse-main-container220">
+                                <div class="modularhouse-main-iconigif2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container221">
+                      <div class="modularhouse-main-container222">
+                        <div class="modularhouse-main-border23">
+                          <a href="https://modular-house.by/what-we-do/modelC195" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link23">
+                            <div class="modularhouse-main-linkmodel-c1952">
+                              <div class="modularhouse-main-ext08jpg2"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container223">
+                            <div class="modularhouse-main-container224">
+                              <div class="modularhouse-main-container225">
+                                <div class="modularhouse-main-iconcgif2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container226">
+                      <div class="modularhouse-main-container227">
+                        <div class="modularhouse-main-border24">
+                          <a href="https://modular-house.by/what-we-do/modelplus" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link24">
+                            <div class="modularhouse-main-linkmodelplus2">
+                              <div class="modularhouse-main-campb02jpg2"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container228">
+                            <div class="modularhouse-main-container229">
+                              <div class="modularhouse-main-container230">
+                                <div class="modularhouse-main-icon2gif2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container231">
+                      <div class="modularhouse-main-container232">
+                        <div class="modularhouse-main-border25">
+                          <a href="https://modular-house.by/what-we-do/modelM35" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link25">
+                            <div class="modularhouse-main-linkmodel-m352">
+                              <div class="modularhouse-main-frame2campc01jpg2"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container233">
+                            <div class="modularhouse-main-container234">
+                              <div class="modularhouse-main-container235">
+                                <div class="modularhouse-main-icon35gif2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container236">
+                      <div class="modularhouse-main-container237">
+                        <div class="modularhouse-main-border26">
+                          <a href="https://modular-house.by/what-we-do/modelCF" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link26">
+                            <div class="modularhouse-main-linkmodel-cf2">
+                              <div class="modularhouse-main-campsflaf01jpg2"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container238">
+                            <div class="modularhouse-main-container239">
+                              <div class="modularhouse-main-container240">
+                                <div class="modularhouse-main-iconcfgif2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container241">
+                      <div class="modularhouse-main-container242">
+                        <div class="modularhouse-main-border27">
+                          <a href="https://modular-house.by/what-we-do/modelSPA" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link27">
+                            <div class="modularhouse-main-linkmodel-spa2">
+                              <div class="modularhouse-main-bania02jpg2"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container243">
+                            <div class="modularhouse-main-container244">
+                              <div class="modularhouse-main-container245">
+                                <div class="modularhouse-main-iconspagif2"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container246">
+                      <div class="modularhouse-main-container247">
+                        <div class="modularhouse-main-border28">
+                          <a href="https://modular-house.by/what-we-do/modelB120" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link28">
+                            <div class="modularhouse-main-linkmodel-b1203">
+                              <div class="modularhouse-main-ext8jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container248">
+                            <div class="modularhouse-main-container249">
+                              <div class="modularhouse-main-container250">
+                                <div class="modularhouse-main-iconbgif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container251">
+                      <div class="modularhouse-main-container252">
+                        <div class="modularhouse-main-border29">
+                          <a href="https://modular-house.by/what-we-do/modelA192" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link29">
+                            <div class="modularhouse-main-linkmodel-a1923">
+                              <div class="modularhouse-main-ext1jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container253">
+                            <div class="modularhouse-main-container254">
+                              <div class="modularhouse-main-container255">
+                                <div class="modularhouse-main-iconagif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container256">
+                      <div class="modularhouse-main-container257">
+                        <div class="modularhouse-main-border30">
+                          <div class="modularhouse-main-linkmodel-s1213">
+                            <div class="modularhouse-main-ext01jpg3"></div>
+                          </div>
+                          <div class="modularhouse-main-container258">
+                            <div class="modularhouse-main-container259">
+                              <div class="modularhouse-main-container260">
+                                <div class="modularhouse-main-iconsgif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container261">
+                      <div class="modularhouse-main-container262">
+                        <div class="modularhouse-main-border31">
+                          <a href="https://modular-house.by/what-we-do/modelI220" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link30">
+                            <div class="modularhouse-main-linkmodel-i2203">
+                              <div class="modularhouse-main-i22003jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container263">
+                            <div class="modularhouse-main-container264">
+                              <div class="modularhouse-main-container265">
+                                <div class="modularhouse-main-iconigif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container266">
+                      <div class="modularhouse-main-container267">
+                        <div class="modularhouse-main-border32">
+                          <a href="https://modular-house.by/what-we-do/modelC195" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link31">
+                            <div class="modularhouse-main-linkmodel-c1953">
+                              <div class="modularhouse-main-ext08jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container268">
+                            <div class="modularhouse-main-container269">
+                              <div class="modularhouse-main-container270">
+                                <div class="modularhouse-main-iconcgif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container271">
+                      <div class="modularhouse-main-container272">
+                        <div class="modularhouse-main-border33">
+                          <a href="https://modular-house.by/what-we-do/modelplus" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link32">
+                            <div class="modularhouse-main-linkmodelplus3">
+                              <div class="modularhouse-main-campb02jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container273">
+                            <div class="modularhouse-main-container274">
+                              <div class="modularhouse-main-container275">
+                                <div class="modularhouse-main-icon2gif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container276">
+                      <div class="modularhouse-main-container277">
+                        <div class="modularhouse-main-border34">
+                          <a href="https://modular-house.by/what-we-do/modelM35" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link33">
+                            <div class="modularhouse-main-linkmodel-m353">
+                              <div class="modularhouse-main-frame2campc01jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container278">
+                            <div class="modularhouse-main-container279">
+                              <div class="modularhouse-main-container280">
+                                <div class="modularhouse-main-icon35gif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container281">
+                      <div class="modularhouse-main-container282">
+                        <div class="modularhouse-main-border35">
+                          <a href="https://modular-house.by/what-we-do/modelCF" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link34">
+                            <div class="modularhouse-main-linkmodel-cf3">
+                              <div class="modularhouse-main-campsflaf01jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container283">
+                            <div class="modularhouse-main-container284">
+                              <div class="modularhouse-main-container285">
+                                <div class="modularhouse-main-iconcfgif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container286">
+                      <div class="modularhouse-main-container287">
+                        <div class="modularhouse-main-border36">
+                          <a href="https://modular-house.by/what-we-do/modelSPA" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link35">
+                            <div class="modularhouse-main-linkmodel-spa3">
+                              <div class="modularhouse-main-bania02jpg3"></div>
+                            </div>
+                          </a>
+                          <div class="modularhouse-main-container288">
+                            <div class="modularhouse-main-container289">
+                              <div class="modularhouse-main-container290">
+                                <div class="modularhouse-main-iconspagif3"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modularhouse-main-sectionmargin1">
+              <div class="modularhouse-main-section3">
+                <div class="modularhouse-main-container291">
+                  <div class="modularhouse-main-container292">
+                    <div class="modularhouse-main-container293">
+                      <div class="modularhouse-main-margin23">
+                        <img alt="HorizontalDivider2441" src="../static/images/horizontaldivider2441-5x7-200h.png" class="modularhouse-main-horizontal-divider6"/>
+                      </div>
+                      <div class="modularhouse-main-heading2margin1">
+                        <div class="modularhouse-main-heading21">
+                          <span class="modularhouse-main-text176 modularHouse.byMontserratSemiBold28upper">
+                            <span>ПРЕИМУЩЕСТВА</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modularhouse-main-margin24">
+                  <div class="modularhouse-main-container294">
+                    <div class="modularhouse-main-container295">
+                      <div class="modularhouse-main-heading310">
+                        <span class="modularhouse-main-text178 modularHouse.byMontserratMedium20upper">
+                          <span>ЭНЕРГОЭФФЕКТИВНОСТЬ</span>
+                        </span>
+                      </div>
+                      <div class="modularhouse-main-margin25">
+                        <div class="modularhouse-main-container296">
+                          <div class="modularhouse-main-imgmargin1">
+                            <img alt="prem1svg2442" src="../static/images/prem1svg2442-12j.svg" class="modularhouse-main-prem1svg"/>
+                          </div>
+                          <div class="modularhouse-main-container297">
+                            <span class="modularhouse-main-text180 modularHouse.byMontserratRegular14">
+                              <span>Дома проектируются в соответствии</span><br />
+                              <span>с нормативами и утепляются с</span><br />
+                              <span>применением современных</span><br />
+                              <span>материалов, поэтому в них не</span><br />
+                              <span>холодно зимой и не жарко летом.</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container298">
+                      <div class="modularhouse-main-heading311">
+                        <span class="modularhouse-main-text188 modularHouse.byMontserratMedium20upper">
+                          <span>ЭКОНОМИЧНОСТЬ</span>
+                        </span>
+                      </div>
+                      <div class="modularhouse-main-margin26">
+                        <div class="modularhouse-main-container299">
+                          <div class="modularhouse-main-imgmargin2">
+                            <img alt="prem2svg2444" src="../static/images/prem2svg2444-o01.svg" class="modularhouse-main-prem2svg"/>
+                          </div>
+                          <div class="modularhouse-main-container300">
+                            <span class="modularhouse-main-text190 modularHouse.byMontserratRegular14">
+                              <span>Конструкции, произведенные на</span><br />
+                              <span>заводе, надежнее, дешевле и</span><br />
+                              <span>устанавливаются готовыми</span><br />
+                              <span>модулями, что значительно экономит</span><br />
+                              <span>время и средства.</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container301">
+                      <div class="modularhouse-main-heading312">
+                        <span class="modularhouse-main-text198 modularHouse.byMontserratMedium20upper">
+                          <span>АДАПТИРУЕМОСТЬ</span>
+                        </span>
+                      </div>
+                      <div class="modularhouse-main-margin27">
+                        <div class="modularhouse-main-container302">
+                          <div class="modularhouse-main-imgmargin3">
+                            <img alt="prem3svg2445" src="../static/images/prem3svg2445-qkhd.svg" class="modularhouse-main-prem3svg"/>
+                          </div>
+                          <div class="modularhouse-main-container303">
+                            <span class="modularhouse-main-text200 modularHouse.byMontserratRegular14">
+                              <span>В будущем можно достраивать</span><br />
+                              <span>дополнительные жилые или</span><br />
+                              <span>нежилые модули (гараж, терраса).</span><br />
+                              <span>Так, дом будет увеличиваться вместе</span><br />
+                              <span>с ростом семьи.</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container304">
+                      <div class="modularhouse-main-heading313">
+                        <span class="modularhouse-main-text208 modularHouse.byMontserratMedium20upper">
+                          <span>СКОРОСТЬ</span>
+                        </span>
+                      </div>
+                      <div class="modularhouse-main-margin28">
+                        <div class="modularhouse-main-container305">
+                          <div class="modularhouse-main-imgmargin4">
+                            <img alt="prem4svg2447" src="../static/images/prem4svg2447-4qpq.svg" class="modularhouse-main-prem4svg"/>
+                          </div>
+                          <div class="modularhouse-main-container306">
+                            <span class="modularhouse-main-text210 modularHouse.byMontserratRegular14">
+                              <span>Модули быстро собираются на</span><br />
+                              <span>строительной площадке, так как все</span><br />
+                              <span>несущие элементы, коммуникации и</span><br />
+                              <span>материалы фасада устанавливаются</span><br />
+                              <span>на производстве.</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modularhouse-main-sectionmargin2">
+              <div class="modularhouse-main-section4">
+                <div class="modularhouse-main-container307">
+                  <div class="modularhouse-main-container308">
+                    <div class="modularhouse-main-container309">
+                      <div class="modularhouse-main-margin29">
+                        <img alt="HorizontalDivider2448" src="../static/images/horizontaldivider2448-h0ym-200h.png" class="modularhouse-main-horizontal-divider7"/>
+                      </div>
+                      <div class="modularhouse-main-heading2margin2">
+                        <div class="modularhouse-main-heading22">
+                          <span class="modularhouse-main-text218 modularHouse.byMontserratSemiBold28upper">
+                            <span>ОТВЕТЫ НА ВОПРОСЫ</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modularhouse-main-margin30">
+                  <div class="modularhouse-main-container310">
+                    <div class="modularhouse-main-background-horizontal-border1">
+                      <button class="modularhouse-main-button5">
+                        <div class="modularhouse-main-margin31">
+                          <div class="modularhouse-main-container311">
+                            <div class="modularhouse-main-heading314">
+                              <span class="modularhouse-main-text220 modularHouse.byMontserratMedium20">
+                                <span>Насколько тепло зимой в модульных домах?</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="modularhouse-main-marginbutton1">
+                        <div class="modularhouse-main-container312">
+                          <img alt="SVG2450" src="../static/images/svg2450-clte.svg" class="modularhouse-main-svg14"/>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="modularhouse-main-background-horizontal-border2">
+                      <button class="modularhouse-main-button6">
+                        <div class="modularhouse-main-margin32">
+                          <div class="modularhouse-main-container313">
+                            <div class="modularhouse-main-heading315">
+                              <span class="modularhouse-main-text222 modularHouse.byMontserratMedium20">
+                                <span>Можно ли собрать такой дом самостоятельно?</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="modularhouse-main-marginbutton2">
+                        <div class="modularhouse-main-container314">
+                          <img alt="SVG2451" src="../static/images/svg2451-pdyj.svg" class="modularhouse-main-svg15"/>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="modularhouse-main-background-horizontal-border3">
+                      <button class="modularhouse-main-button7">
+                        <div class="modularhouse-main-margin33">
+                          <div class="modularhouse-main-container315">
+                            <div class="modularhouse-main-heading316">
+                              <span class="modularhouse-main-text224 modularHouse.byMontserratMedium20">
+                                <span>Можно ли изменить проект модульного дома?</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="modularhouse-main-marginbutton3">
+                        <div class="modularhouse-main-container316">
+                          <img alt="SVG2452" src="../static/images/svg2452-a00k.svg" class="modularhouse-main-svg16"/>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="modularhouse-main-background-horizontal-border4">
+                      <button class="modularhouse-main-button8">
+                        <div class="modularhouse-main-margin34">
+                          <div class="modularhouse-main-container317">
+                            <div class="modularhouse-main-heading317">
+                              <span class="modularhouse-main-text226 modularHouse.byMontserratMedium20">
+                                <span>Осуществляете ли доставку домокомплектов в другие страны?</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </button>
+                      <button class="modularhouse-main-marginbutton4">
+                        <div class="modularhouse-main-container318">
+                          <img alt="SVG2453" src="../static/images/svg2453-78g.svg" class="modularhouse-main-svg17"/>
+                        </div>
+                      </button>
+                    </div>
+                    <button class="modularhouse-main-button9">
+                      <div class="modularhouse-main-margin35">
+                        <div class="modularhouse-main-container319">
+                          <div class="modularhouse-main-heading318">
+                            <span class="modularhouse-main-text228 modularHouse.byMontserratMedium20">
+                              <span>В какие сроки дом может быть установлен на участке?</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </button>
+                    <button class="modularhouse-main-marginbutton5">
+                      <div class="modularhouse-main-container320">
+                        <img  alt="SVG2454" src="../static/images/svg2454-vgs5.svg" class="modularhouse-main-svg18"/>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modularhouse-main-sectionmargin3">
+              <div class="modularhouse-main-section5">
+                <div class="modularhouse-main-container321">
+                  <div class="modularhouse-main-container322">
+                    <div class="modularhouse-main-container323">
+                      <div class="modularhouse-main-margin36">
+                        <img alt="HorizontalDivider2455" src="../static/images/horizontaldivider2455-5vng-200h.png" class="modularhouse-main-horizontal-divider8"/>
+                      </div>
+                      <div class="modularhouse-main-heading2margin3">
+                        <div class="modularhouse-main-heading23">
+                          <span class="modularhouse-main-text230 modularHouse.byMontserratSemiBold28upper">
+                            <span>ПРИГЛАШАЕМ</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-margin37">
+                      <div class="modularhouse-main-container324">
+                        <div class="modularhouse-main-container325">
+                          <div class="modularhouse-main-container326">
+                            <div class="modularhouse-main-heading319">
+                              <span class="modularhouse-main-text232 modularHouse.byMontserratMedium20">
+                                <span>В готовый модульный дом в Санкт-Петербурге</span><br />
+                                <span>на ознакомительную экскурсию.</span>
+                              </span>
+                            </div>
+                            <div class="modularhouse-main-container327">
+                              <span class="modularhouse-main-text236 modularHouse.byMontserratRegular16">
+                                <span>Оставьте заявку и наш</span><br />
+                                <span>менеджер свяжется с</span><br />
+                                <span>вами для уточнения</span><br />
+                                <span>даты и времени</span><br />
+                                <span>экскурсии.</span>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="modularhouse-main-form1">
+                            <div class="modularhouse-main-container328">
+                              <div class="modularhouse-main-container329">
+                                <div class="modularhouse-main-label1">
+                                  <div class="modularhouse-main-container330">
+                                    <span class="modularhouse-main-text244 modularHouse.byMontserratRegular141">
+                                      <span>Имя</span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="modularhouse-main-container331">
+                                  <input type="text" placeholder="" class="modularhouse-main-horizontal-borderinput1"/>
+                                </div>
+                              </div>
+                              <div class="modularhouse-main-container332">
+                                <div class="modularhouse-main-label2">
+                                  <div class="modularhouse-main-container333">
+                                    <span class="modularhouse-main-text246 modularHouse.byMontserratRegular141">
+                                      <span>Телефон</span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="modularhouse-main-containerinput1">
+                                  <div class="modularhouse-main-horizontal-border2">
+                                    <input type="text" placeholder="" class="modularhouse-main-horizontal-borderinput1"/>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modularhouse-main-container334">
+                              <button class="modularhouse-main-buttonbutton1">
+                                <div class="modularhouse-main-container335">
+                                  <span class="modularhouse-main-text248 modularHouse.byMontserratRegular14upper">
+                                    <span>записаться</span>
+                                  </span>
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modularhouse-main-margin38">
+                  <div class="modularhouse-main-container336">
+                    <div class="modularhouse-main-container337">
+                      <div class="modularhouse-main-container338">
+                        <div class="modularhouse-main-container339">
+                          <div class="modularhouse-main-container340">
+                            <img alt="slide1jpgsvg2459" src="../static/images/slide1jpgsvg2459-z7b.svg" class="modularhouse-main-slide1jpgsvg"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modularhouse-main-margin39">
+              <div class="modularhouse-main-container341">
+                <div class="modularhouse-main-container342">
+                  <div class="modularhouse-main-container343">
+                    <div class="modularhouse-main-margin40">
+                      <div class="modularhouse-main-container344">
+                        <div class="modularhouse-main-margin41">
+                          <img alt="HorizontalDivider2460" src="../static/images/horizontaldivider2460-aq07-200h.png" class="modularhouse-main-horizontal-divider9"/>
+                        </div>
+                        <div class="modularhouse-main-heading2margin4">
+                          <div class="modularhouse-main-heading24">
+                            <span class="modularhouse-main-text250 modularHouse.byMontserratSemiBold28upper">
+                              <span>КОНТАКТЫ</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modularhouse-main-container345">
+                      <div class="modularhouse-main-container346">
+                        <div class="modularhouse-main-container347">
+                          <div class="modularhouse-main-container348">
+                            <div class="modularhouse-main-andrey2png"></div>
+                            <div class="modularhouse-main-container349">
+                              <span class="modularhouse-main-text252 modularHouse.byMontserratRegular20title">
+                                <span>Петр Карастоянов</span>
+                              </span>
+                            </div>
+                            <div class="modularhouse-main-container350">
+                              <span class="modularhouse-main-text254 modularHouse.byMontserratRegular13">
+                                <span>CEO &amp; FOUNDER</span>
+                              </span>
+                            </div>
+                          </div>
+                          <div class="modularhouse-main-margin42">
+                            <div class="modularhouse-main-container351">
+                              <div class="modularhouse-main-alexey2png"></div>
+                              <div class="modularhouse-main-container352">
+                                <span class="modularhouse-main-text256 modularHouse.byMontserratRegular20title">
+                                  <span>Влад Самбурский</span>
+                                </span>
+                              </div>
+                              <div class="modularhouse-main-container353">
+                                <span class="modularhouse-main-text258 modularHouse.byMontserratRegular13">
+                                  <span>CEO &amp; FOUNDER</span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modularhouse-main-margin43">
+                          <div class="modularhouse-main-container354">
+                            <div class="modularhouse-main-margin44">
+                              <div class="modularhouse-main-container355">
+                                <span class="modularhouse-main-text260 modularHouse.byMontserratRegular20">
+                                  <span>Производство модульных домов в Санкт-Петербурге:</span>
+                                </span>
+                              </div>
+                            </div>
+                            <span class="modularhouse-main-text262 modularHouse.byMontserratSemiBold18">
+                              <span>+7 926 704 45 34</span>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="modularhouse-main-margin47">
+                          <div class="modularhouse-main-container358">
+                            <img alt="SVG2463" src="../static/images/svg2463-8dpy.svg" class="modularhouse-main-svg19"/>
+                            <div class="modularhouse-main-margin48">
+                              <div class="modularhouse-main-container359">
+                                <div class="modularhouse-main-container360">
+                                  <span class="modularhouse-main-text268 modularHouse.byMontserratRegular16">
+                                    <span>Головной офис:</span>
+                                  </span>
+                                </div>
+                                <div class="modularhouse-main-margin49">
+                                  <div class="modularhouse-main-container361">
+                                    <span class="modularhouse-main-text270 modularHouse.byMontserratRegular16">
+                                      <span>Санкт-Петербург</span>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="modularhouse-main-container362">
+                                  <span class="modularhouse-main-text272 modularHouse.byMontserratRegular16">
+                                    <span>Невский проспект, д. 118, 1 этаж</span>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modularhouse-main-margin50">
+                  <div class="modularhouse-main-container363">
+                    <div class="modularhouse-main-heading25">
+                      <span class="modularhouse-main-text274 modularHouse.byMontserratSemiBold28upper">
+                        <span>НАПИШИТЕ НАМ</span>
+                      </span>
+                    </div>
+                    <div class="modularhouse-main-margin51">
+                      <div class="modularhouse-main-form2">
+                        <div class="modularhouse-main-container364">
+                          <div class="modularhouse-main-container365">
+                            <div class="modularhouse-main-label3">
+                              <div class="modularhouse-main-container366">
+                                <span class="modularhouse-main-text276 modularHouse.byMontserratRegular141">
+                                  <span>Имя</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="modularhouse-main-containerinput2">
+                              <div class="modularhouse-main-horizontal-border3">
+                                <input type="text" placeholder="" class="modularhouse-main-horizontal-borderinput2"/>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modularhouse-main-container367">
+                            <div class="modularhouse-main-label4">
+                              <div class="modularhouse-main-container368">
+                                <span class="modularhouse-main-text278 modularHouse.byMontserratRegular141">
+                                  <span>Телефон</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="modularhouse-main-container369">
+                              <input type="text" placeholder="" class="modularhouse-main-horizontal-borderinput2"/>
+                            </div>
+                          </div>
+                          <div class="modularhouse-main-container370">
+                            <div class="modularhouse-main-label5">
+                              <div class="modularhouse-main-container371">
+                                <span class="modularhouse-main-text280 modularHouse.byMontserratRegular141">
+                                  <span>Email</span>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="modularhouse-main-container372">
+                              <input type="text" placeholder="" class="modularhouse-main-horizontal-borderinput3"/>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modularhouse-main-label6">
+                          <div class="modularhouse-main-containerinput3">
+                            <div class="modularhouse-main-container373">
+                              <span class="modularhouse-main-text282 modularHouse.byMontserratRegular142">
+                                <span>Сообщение...</span>
+                              </span>
+                            </div>
+                            <div class="modularhouse-main-container374">
+                              <span class="modularhouse-main-text284 modularHouse.byMontserratRegular161">
+                                *
+                              </span>
+                            </div>
+                          </div>
+                          <div class="modularhouse-main-textarea">
+                            <input type="text" placeholder="" class="modularhouse-main-horizontal-borderinput3"/>
+                          </div>
+                        </div>
+                        <div class="modularhouse-main-container375">
+                          <button class="modularhouse-main-buttonbutton2">
+                            <div class="modularhouse-main-container376">
+                              <span class="modularhouse-main-text285 modularHouse.byMontserratRegular14upper">
+                                <span>отправить</span>
+                              </span>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contactBtnContainer">
+            <button class="contactBtn">
+                <span class="contactBtnText">СВЯЗАТЬСЯ</span>
+              </div>
+            </button>
+          </div>
+                  <div class="modularhouse-main-footer"><span class=""> © 2024 | ИП "Art-studio "Petr 1"</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
 <script type="module">
     import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js';
     import { ColladaLoader } from 'https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/loaders/ColladaLoader.js';
