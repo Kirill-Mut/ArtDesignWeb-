@@ -1,0 +1,5 @@
+<form method="post" accept-charset="utf-8">
+    {% csrf_token %}
+    {{ form.as_table  }}
+    <button type="submit" >Войти</button>
+  </form>

@@ -1,0 +1,11 @@
+
+<form method="post" accept-charset="utf-8" class="my-form" action="{% url 'register' %}">
+    <h1>Создать аккаунт</h1>
+    {% csrf_token %}
+    {{ registration_form.as_table }}
+    <button type="submit">Зарегистрироваться</button>
+    
+    {% if error_message %}
+        <span class="error">{{ error_message }}</span>
+    {% endif %}
+</form>

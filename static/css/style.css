@@ -1,0 +1,49 @@
+* {box-sizing: border-box;}
+  body {
+    margin: 0;
+    font-size: 18px;
+    font-family: Ubuntu, Raleway,  Open Sans, Montserrat;
+    transition: background-color .5s;
+    cursor: pointer;
+    height: 100%;
+    color: #ffffff;
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(0,33,55) 3%, rgb(0,47,85) 38%, rgb(29,51,74) 68%, rgba(26,71,128) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed; 
+  }
+
+
+  .navbar {
+    overflow: hidden;
+    background-color: #002F55;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%; /* Используем полную ширину окна */
+    height: 70px; /* Фиксированная высота панели */
+    display: flex; /* Используем flex для выравнивания */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: space-between; /* Распределение элементов по всей ширине */
+    padding: 0 20px; /* Отступы слева и справа для всей панели */
+}
+
+/* Стили для ссылок в навигации */
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    padding: 20px 15px; /* Отступы вокруг текста */
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    height: 70px; /* Фиксированная высота для ссылок */
+    text-align: center;
+}
+
+/* Эффект при наведении на ссылки */
+.navbar a:hover {
+    background: #0095B6;
+    color: #ffffff;
+}

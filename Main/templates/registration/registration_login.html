@@ -1,0 +1,50 @@
+{% load static %}
+
+<HEAD>
+    <META charset="utf-8">
+    <META name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/autoriz.css?v=50' %}?version={{ random_number }}">
+    <link type="image/png" sizes="32x32" rel="icon" href="/static/images/favicon-32x32.png">
+    <TITLE>SWIM-CENTER: Авторизация</TITLE>
+</HEAD>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form method="post" class="my-form" action="{% url 'login' %}">
+            <h1>Авторизация</h1>
+            <div class="social-container"></div> {% csrf_token %} {{ form.as_table }}<button type="submit">Войти</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form method="post" class="my-form" action="{% url 'register' %}">
+            <h1>Создать аккаунт</h1>
+            <div class="social-container"></div> {% csrf_token %} {{ registration_form.as_table }}<button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-right">
+                <h1>Добро пожаловать !</h1>
+                <h3>После регистрации вы сможете оставлять отзывы о бассейне и тренерском составе</h3><button class="ghost" id="signUp">Войти</button>
+            </div>
+            <div class="overlay-panel overlay-left">
+                <h1>Добро пожаловать !</h1>
+                <h3>Чтобы создать аккаунт нажмите на кнопку ниже</h3><button class="ghost" id="signIn">Зарегистрироваться</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
+<script>
+    const a = document.getElementById('signUp'),
+        b = document.getElementById('signIn'),
+        c = document.getElementById('container');
+    a.addEventListener('click', () => {
+        c.classList.add("right-panel-active")
+    }), b.addEventListener('click', () => {
+        c.classList.remove("right-panel-active")
+    });
+</script>

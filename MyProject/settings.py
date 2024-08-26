@@ -75,11 +75,15 @@ WSGI_APPLICATION = 'MyProject.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+       'default': {
+           'ENGINE': 'django.db.backends.mysql',
+           'NAME': 'mydatabase',
+           'USER': 'root',
+           'PASSWORD': 'ZRrYA+cb?Z!08Z=W{?@9am–mVQk+Ym}mR;bYhZ,6',
+           'HOST': '127.0.0.1',  
+           'PORT': '3306',       
+       }
+   }
 
 
 # Password validation
@@ -111,6 +115,17 @@ TIME_ZONE = 'Asia/Yekaterinburg'
 USE_I18N = True
 
 USE_TZ = True
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mail.ru'  # SMTP-сервер Mail.ru
+EMAIL_PORT = 587  # Порт для TLS
+EMAIL_USE_TLS = True  # Использовать TLS
+EMAIL_HOST_USER = 'bublichenko.nik@mail.ru'  # Ваш email
+EMAIL_HOST_PASSWORD = 'LxwDbN88AJpaD2JdazC4'  # Ваш пароль
+
+
+
 
 
 LOGIN_REDIRECT_URL = '/'
