@@ -5,8 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login
 from .models import Application
-
-
+from .models import House
 
 
 class RegistrationForm(UserCreationForm):
@@ -53,3 +52,11 @@ class ApplicationForm(forms.ModelForm):
             'email': 'Электронная почта',
             'message': 'Сообщение',
         }
+
+
+
+class HouseForm(forms.ModelForm):
+    class Meta:
+        model = House
+        fields = ['title', 'model_3d', 'description', 'total_area', 'effective_area', 
+                  'price', 'rooms', 'blueprint', 'exterior_photos', 'interior_photos']

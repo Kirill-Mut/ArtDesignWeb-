@@ -1,0 +1,6 @@
+<h1>Вы уверены, что хотите удалить "{{ house.title }}"?</h1>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Удалить</button>
+</form>
+<a href="{% url 'house_list' %}">Отмена</a>

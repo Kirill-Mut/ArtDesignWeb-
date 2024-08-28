@@ -1,0 +1,13 @@
+<h1>{{ house.title }}</h1>
+<p>{{ house.description }}</p>
+<p>Общая площадь: {{ house.total_area }} м²</p>
+<p>Эффективная площадь: {{ house.effective_area }} м²</p>
+<p>Цена: {{ house.price }} руб.</p>
+<p>Комнаты: {{ house.rooms }}</p>
+<img src="{{ house.model_3d.url }}" alt="3D модель">
+<img src="{{ house.blueprint.url }}" alt="Чертеж">
+<img src="{{ house.exterior_photos.url }}" alt="Фотография дома">
+<img src="{{ house.interior_photos.url }}" alt="Фотография интерьера">
+<a href="{% url 'house_update' house.pk %}">Редактировать</a>
+<a href="{% url 'house_delete' house.pk %}">Удалить</a>
+<a href="{% url 'house_list' %}">Назад к списку</a>

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm
 from django.contrib.auth import login
@@ -7,8 +7,20 @@ User = settings.AUTH_USER_MODEL
 from .forms import RegistrationForm
 from django.core.mail import send_mail
 from .forms import ApplicationForm
-
-
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import House
+from .forms import HouseForm
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import render, redirect
+from .models import House
+from .forms import HouseForm
+from django.shortcuts import render, redirect
+from .forms import HouseForm
+from .models import House
+from .forms import HouseForm
+from django.shortcuts import render, redirect, get_object_or_404
+from .models import House
+from .forms import HouseForm 
 
 def base(request):
     return render(request, 'base.html')
@@ -101,4 +113,53 @@ def application_view(request):
     
     return render(request, 'application_form.html', {'form': form})
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def house_list(request):
+    houses = House.objects.all()
+    return render(request, 'house_list.html', {'houses': houses})
+
+def house_detail(request, pk):
+    house = get_object_or_404(House, pk=pk)
+    return render(request, 'house_detail.html', {'house': house})
+
+def house_create(request):
+    if request.method == "POST":
+        form = HouseForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('house_list')
+    else:
+        form = HouseForm()
+    return render(request, 'house_form.html', {'form': form})
+
+def house_update(request, pk):
+    house = get_object_or_404(House, pk=pk)
+    if request.method == "POST":
+        form = HouseForm(request.POST, request.FILES, instance=house)
+        if form.is_valid():
+            form.save()
+            return redirect('house_detail', pk=house.pk)
+    else:
+        form = HouseForm(instance=house)
+    return render(request, 'house_form.html', {'form': form})
+
+def house_delete(request, pk):
+    house = get_object_or_404(House, pk=pk)
+    if request.method == "POST":
+        house.delete()
+        return redirect('house_list')
+    return render(request, 'house_confirm_delete.html', {'house': house})
 
