@@ -1,0 +1,11 @@
+<h1>Список контактов</h1>
+<a href="{% url 'contacts_create' %}">Добавить новый контакт</a>
+<ul>
+    {% for contact in contacts %}
+        <li>
+            {{ contact.platform }} - <a href="{{ contact.url }}">{{ contact.url }}</a>
+            <a href="{% url 'contacts_update' contact.pk %}">Редактировать</a>
+            <a href="{% url 'contacts_delete' contact.pk %}">Удалить</a>
+        </li>
+    {% endfor %}
+</ul>

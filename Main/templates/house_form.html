@@ -1,7 +1,130 @@
-<h1>{% if form.instance.pk %}Редактировать{% else %}Добавить{% endif %} дом</h1>
+<h1>{% if house_form.instance.pk %}Редактировать{% else %}Добавить{% endif %} дом</h1>
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ house_form.as_p }}
+
+    <h2>Внешние фотографии</h2>
+    <div id="exterior-photo-section">
+        {{ exterior_photo_formset.management_form }}
+        {% for photo_form in exterior_photo_formset %}
+            <div class="exterior-photo-form">
+                {% if photo_form.instance.pk %}
+                    <img src="{{ photo_form.instance.photo.url }}" alt="Внешняя фотография" width="100">
+                {% endif %}
+                {{ photo_form.as_p }}
+                <button type="button" class="remove-exterior-photo">Удалить внешнюю фотографию</button>
+            </div>
+            <hr>
+        {% endfor %}
+        <!-- Добавление пустой формы для новой внешней фотографии -->
+        <div class="exterior-photo-form">
+            {{ exterior_photo_formset.empty_form.as_p }}
+            <button type="button" class="remove-exterior-photo">Удалить внешнюю фотографию</button>
+        </div>
+    </div>
+    <button type="button" id="add-exterior-photo">Добавить внешнюю фотографию</button>
+
+    <h2>Внутренние фотографии</h2>
+    <div id="interior-photo-section">
+        {{ interior_photo_formset.management_form }}
+        {% for photo_form in interior_photo_formset %}
+            <div class="interior-photo-form">
+                {% if photo_form.instance.pk %}
+                    <img src="{{ photo_form.instance.photo.url }}" alt="Внутренняя фотография" width="100">
+                {% endif %}
+                {{ photo_form.as_p }}
+                <button type="button" class="remove-interior-photo">Удалить внутреннюю фотографию</button>
+            </div>
+            <hr>
+        {% endfor %}
+        <!-- Добавление пустой формы для новой внутренней фотографии -->
+        <div class="interior-photo-form">
+            {{ interior_photo_formset.empty_form.as_p }}
+            <button type="button" class="remove-interior-photo">Удалить внутреннюю фотографию</button>
+        </div>
+    </div>
+    <button type="button" id="add-interior-photo">Добавить внутреннюю фотографию</button>
+
+    <h2>Комнаты</h2>
+    <div id="room-section">
+        {{ room_formset.management_form }}
+        {% for room_form in room_formset %}
+            <div class="room-form">
+                {{ room_form.as_p }}
+                <button type="button" class="remove-room">Удалить комнату</button>
+            </div>
+            <hr>
+        {% endfor %}
+        <!-- Добавление пустой формы для новой комнаты -->
+        <div class="room-form">
+            {{ room_formset.empty_form.as_p }}
+            <button type="button" class="remove-room">Удалить комнату</button>
+        </div>
+    </div>
+    <button type="button" id="add-room">Добавить комнату</button>
+
     <button type="submit">Сохранить</button>
 </form>
-<a href="{% url 'house_list' %}">Назад к списку</a>
+
+<!-- JavaScript для динамического добавления и удаления форм -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Добавление комнаты
+        $('#add-room').click(function() {
+            var formset = $('#room-section');
+            var totalForms = formset.find('input[name$=TOTAL_FORMS]');
+            var currentFormCount = parseInt(totalForms.val());
+            var newForm = formset.find('.room-form:first').clone();
+            newForm.find('input').each(function() {
+                var name = $(this).attr('name').replace(/-\d+-/, '-' + currentFormCount + '-');
+                $(this).attr('name', name).val('');
+            });
+            formset.append(newForm);
+            totalForms.val(currentFormCount + 1);
+        });
+
+        // Удаление комнаты
+        $(document).on('click', '.remove-room', function() {
+            $(this).closest('.room-form').remove();
+        });
+
+        // Добавление внешней фотографии
+        $('#add-exterior-photo').click(function() {
+            var formset = $('#exterior-photo-section');
+            var totalForms = formset.find('input[name$=TOTAL_FORMS]');
+            var currentFormCount = parseInt(totalForms.val());
+            var newForm = formset.find('.exterior-photo-form:first').clone();
+            newForm.find('input').each(function() {
+                var name = $(this).attr('name').replace(/-\d+-/, '-' + currentFormCount + '-');
+                $(this).attr('name', name).val('');
+            });
+            formset.append(newForm);
+            totalForms.val(currentFormCount + 1);
+        });
+
+        // Удаление внешней фотографии
+        $(document).on('click', '.remove-exterior-photo', function() {
+            $(this).closest('.exterior-photo-form').remove();
+        });
+
+        // Добавление внутренней фотографии
+        $('#add-interior-photo').click(function() {
+            var formset = $('#interior-photo-section');
+            var totalForms = formset.find('input[name$=TOTAL_FORMS]');
+            var currentFormCount = parseInt(totalForms.val());
+            var newForm = formset.find('.interior-photo-form:first').clone();
+            newForm.find('input').each(function() {
+                var name = $(this).attr('name').replace(/-\d+-/, '-' + currentFormCount + '-');
+                $(this).attr('name', name).val('');
+            });
+            formset.append(newForm);
+            totalForms.val(currentFormCount + 1);
+        });
+
+        // Удаление внутренней фотографии
+        $(document).on('click', '.remove-interior-photo', function() {
+            $(this).closest('.interior-photo-form').remove();
+        });
+    });
+</script>

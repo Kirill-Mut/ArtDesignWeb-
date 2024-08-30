@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate, login
 from .models import Application
-from .models import House
-
+from .models import House, ExteriorPhoto, InteriorPhoto, Room
+from .models import Contacts
 
 class RegistrationForm(UserCreationForm):
     email = forms.EmailField(required=True)
@@ -54,9 +54,49 @@ class ApplicationForm(forms.ModelForm):
         }
 
 
+class ContactsForm(forms.ModelForm):
+    class Meta:
+        model = Contacts
+        fields = ['platform', 'url']
+
+
+
 
 class HouseForm(forms.ModelForm):
     class Meta:
         model = House
         fields = ['title', 'model_3d', 'description', 'total_area', 'effective_area', 
-                  'price', 'rooms', 'blueprint', 'exterior_photos', 'interior_photos']
+                  'price', 'blueprint']
+
+class ExteriorPhotoForm(forms.ModelForm):
+    class Meta:
+        model = ExteriorPhoto
+        fields = ['photo']
+
+class InteriorPhotoForm(forms.ModelForm):
+    class Meta:
+        model = InteriorPhoto
+        fields = ['photo']
+
+class RoomForm(forms.ModelForm):
+    class Meta:
+        model = Room
+        fields = ['name', 'area']
+        
+class RoomFormSet(forms.BaseInlineFormSet):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for form in self.forms:
+            form.empty_permitted = True
+
+RoomFormSet = forms.inlineformset_factory(
+    House, Room, form=RoomForm, formset=RoomFormSet, extra=0, can_delete=False
+)
+
+ExteriorPhotoFormSet = forms.inlineformset_factory(
+    House, ExteriorPhoto, form=ExteriorPhotoForm, extra=0, can_delete=False
+)
+
+InteriorPhotoFormSet = forms.inlineformset_factory(
+    House, InteriorPhoto, form=InteriorPhotoForm, extra=0, can_delete=False
+)
