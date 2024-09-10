@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ house.title }}</title>
+    <link rel="stylesheet" href="{% static 'administration/css/house_detail_style.css' %}">
+</head>
+<body>
+    <h1>{{ house.title }}</h1>
+    <p>{{ house.description }}</p>
+    <p>Общая площадь: {{ house.total_area }} м²</p>
+    <p>Эффективная площадь: {{ house.effective_area }} м²</p>
+    <p>Цена: {{ house.price }} руб.</p>
+    <p>Чертеж: <a href="{{ house.blueprint.url }}">Скачать</a></p>
+
+    <h2>Внешние фотографии</h2>
+    <div class="photo-gallery">
+        {% for photo in house.exterior_photos.all %}
+            <img src="{{ photo.photo.url }}" alt="Внешняя фотография дома">
+        {% endfor %}
+    </div>
+
+    <h2>Внутренние фотографии</h2>
+    <div class="photo-gallery">
+        {% for photo in house.interior_photos.all %}
+            <img src="{{ photo.photo.url }}" alt="Внутренняя фотография дома">
+        {% endfor %}
+    </div>
+
+    <h2>Комнаты</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Площадь</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for room in house.rooms.all %}
+            <tr>
+                <td>{{ room.name }}</td>
+                <td>{{ room.area }} м²</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="actions">
+        <a href="{% url 'house_update' house.pk %}">Редактировать</a>
+        <a href="{% url 'house_delete' house.pk %}">Удалить</a>
+        <a href="{% url 'house_list' %}">Назад к списку</a>
+    </div>
+</body>
+</html>

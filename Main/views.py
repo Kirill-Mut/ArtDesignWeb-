@@ -126,7 +126,7 @@ def application_view(request):
 
 def contacts_list(request):
     contacts = Contacts.objects.all()
-    return render(request, 'contacts_list.html', {'contacts': contacts})
+    return render(request, 'administration/contacts_list.html', {'contacts': contacts})
 
 # Функция для создания нового контакта
 def contacts_create(request):
@@ -137,7 +137,7 @@ def contacts_create(request):
             return redirect('contacts_list')
     else:
         form = ContactsForm()
-    return render(request, 'contacts_form.html', {'form': form})
+    return render(request, 'administration/contacts_form.html', {'form': form})
 
 # Функция для редактирования существующего контакта
 def contacts_update(request, pk):
@@ -149,7 +149,7 @@ def contacts_update(request, pk):
             return redirect('contacts_list')
     else:
         form = ContactsForm(instance=contact)
-    return render(request, 'contacts_form.html', {'form': form})
+    return render(request, 'administration/contacts_form.html', {'form': form})
 
 # Функция для удаления контакта
 def contacts_delete(request, pk):
@@ -157,7 +157,7 @@ def contacts_delete(request, pk):
     if request.method == "POST":
         contact.delete()
         return redirect('contacts_list')
-    return render(request, 'contacts_confirm_delete.html', {'contact': contact})
+    return render(request, 'administration/contacts_confirm_delete.html', {'contact': contact})
 
 
 
@@ -166,11 +166,11 @@ def contacts_delete(request, pk):
 
 def house_list(request):
     houses = House.objects.all()
-    return render(request, 'house_list.html', {'houses': houses})
+    return render(request, 'administration/house_list.html', {'houses': houses})
 
 def house_detail(request, pk):
     house = get_object_or_404(House, pk=pk)
-    return render(request, 'house_detail.html', {'house': house})
+    return render(request, 'administration/house_detail.html', {'house': house})
 
 def house_create(request):
     if request.method == "POST":
@@ -207,7 +207,7 @@ def house_create(request):
         interior_photo_formset = InteriorPhotoFormSet(queryset=InteriorPhoto.objects.none())
         room_formset = RoomFormSet(queryset=Room.objects.none())
 
-    return render(request, 'house_form.html', {
+    return render(request, 'administration/house_form.html', {
         'house_form': house_form,
         'exterior_photo_formset': exterior_photo_formset,
         'interior_photo_formset': interior_photo_formset,
@@ -236,7 +236,7 @@ def house_update(request, pk):
     else:
         house_form = HouseForm(instance=house)
     
-    return render(request, 'house_form.html', {
+    return render(request, 'administration/house_form.html', {
         'house_form': house_form,
         'room_formset': room_formset,
         'exterior_photo_formset': exterior_photo_formset,
@@ -248,5 +248,5 @@ def house_delete(request, pk):
     if request.method == "POST":
         house.delete()
         return redirect('house_list')
-    return render(request, 'house_confirm_delete.html', {'house': house})
+    return render(request, 'administration/house_confirm_delete.html', {'house': house})
 

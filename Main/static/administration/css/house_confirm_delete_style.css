@@ -1,0 +1,37 @@
+body {
+    background-color: #F0EDE5;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2b2b2b;
+}
+
+form {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #D0893F;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+}
+
+button:hover {
+    background-color: #18181A;
+}
+
+a {
+    color: #D0893F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2b2b2b;
+}

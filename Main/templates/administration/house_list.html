@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список домов</title>
+    <link rel="stylesheet" href="{% static 'administration/css/house_list_style.css' %}">
+</head>
+<body>
+    <h1>Список домов</h1>
+    <a href="{% url 'house_create' %}">Добавить новый дом</a>
+    <ul>
+        {% for house in houses %}
+            <li>
+                <a href="{% url 'house_detail' house.pk %}">{{ house.title }}</a>
+                <a href="{% url 'house_update' house.pk %}">Редактировать</a>
+                <a href="{% url 'house_delete' house.pk %}">Удалить</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
