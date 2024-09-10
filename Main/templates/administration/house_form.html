@@ -23,16 +23,16 @@
                         <img src="{{ photo_form.instance.photo.url }}" alt="Внешняя фотография" width="100">
                     {% endif %}
                     {{ photo_form.as_p }}
-                    <button type="button" class="remove-exterior-photoBtn">Удалить внешнюю фотографию Btn</button>
+                    <button type="button" class="remove-exterior-photoBtn">Удалить внешнюю фотографию</button>
                 </div>
                 <hr>
             {% endfor %}
             <div class="exterior-photo-form">
                 {{ exterior_photo_formset.empty_form.as_p }}
-                <button type="button" class="remove-exterior-photoBtn">Удалить внешнюю фотографию Btn</button>
+                <button type="button" class="remove-exterior-photoBtn">Удалить внешнюю фотографию</button>
             </div>
         </div>
-        <button type="button" class="add-exterior-photoBtn" id="add-exterior-photo">Добавить внешнюю фотографию Btn</button>
+        <button type="button" class="add-exterior-photoBtn" id="add-exterior-photo">Добавить внешнюю фотографию</button>
 
         <h2>Внутренние фотографии</h2>
         <div id="interior-photo-section">
@@ -43,16 +43,16 @@
                         <img src="{{ photo_form.instance.photo.url }}" alt="Внутренняя фотография" width="100">
                     {% endif %}
                     {{ photo_form.as_p }}
-                    <button type="button" class="remove-interior-photoBtn">Удалить внутреннюю фотографию Btn</button>
+                    <button type="button" class="remove-interior-photoBtn">Удалить внутреннюю фотографию</button>
                 </div>
                 <hr>
             {% endfor %}
             <div class="interior-photo-form">
                 {{ interior_photo_formset.empty_form.as_p }}
-                <button type="button" class="remove-interior-photoBtn">Удалить внутреннюю фотографию Btn</button>
+                <button type="button" class="remove-interior-photoBtn">Удалить внутреннюю фотографию</button>
             </div>
         </div>
-        <button type="button" class="add-interior-photoBtn" id="add-interior-photo">Добавить внутреннюю фотографию Btn</button>
+        <button type="button" class="add-interior-photoBtn" id="add-interior-photo">Добавить внутреннюю фотографию</button>
 
         <h2>Комнаты</h2>
         <div id="room-section">
@@ -60,19 +60,19 @@
             {% for room_form in room_formset %}
                 <div class="room-form">
                     {{ room_form.as_p }}
-                    <button type="button" class="remove-roomBtn">Удалить комнату Btn</button>
+                    <button type="button" class="remove-roomBtn">Удалить комнату</button>
                 </div>
                 <hr>
             {% endfor %}
             <div class="room-form">
                 {{ room_formset.empty_form.as_p }}
-                <button type="button" class="remove-roomBtn">Удалить комнату Btn</button>
+                <button type="button" class="remove-roomBtn">Удалить комнату</button>
             </div>
         </div>
-        <button type="button" class="add-roomBtn" id="add-room">Добавить комнату Btn</button>
+        <button type="button" class="add-roomBtn" id="add-room">Добавить комнату</button>
 
         <hr> 
-        <button type="submit">Сохранить Btn</button>
+        <button type="submit">Сохранить</button>
     </form>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
