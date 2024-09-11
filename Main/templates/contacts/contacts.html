@@ -101,19 +101,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
-      <link href="../static/index.css" rel="stylesheet" />
+      <link href="../static/contactsStyle.css" rel="stylesheet" />
       <div class="modularhouse-main-container">
         <div class="modularhouse-main-modularhouse-main">
           <div class="modularhouse-main-nav">
             <a href="https://modular-house.by/" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link">
                 <img alt="SVG2471" src="../static/images/svg2471.svg" class="modularhouse-main-logo"/>
             </a>
-            
             <span class="NavBar">
-              <a href="{% url 'base' %}" class="navbarA"><span class="NavBarItem">МЕНЮ</span></a>
-              <a href="{% url 'about_us' %}" class="navbarA"><span class="NavBarItem">О НАС</span></a>
-              <a href="{% url 'projects' %}" class="navbarA"><span class="NavBarItem">ПРОЕКТЫ</span></a>
-              <a href="{% url 'contacts' %}" class="navbarA"><span class="NavBarItem">КОНТАКТЫ</span></a>
+              <a href="#" class="navbarA"><span class="NavBarItem">МЕНЮ</span></a>
+              <a href="#" class="navbarA"><span class="NavBarItem">О НАС</span></a>
+              <a href="#" class="navbarA"><span class="NavBarItem">ПРОЕКТЫ</span></a>
+              <a href="#" class="navbarA"><span class="NavBarItem">КОНТАКТЫ</span></a>
             </span>
             <div class="linksSocial">
               <div class="facebookLink">
@@ -133,291 +132,9 @@
               </div>
             </div>  
           </div>
-          <div class="sliders">
-                <div class="slidersHead">
-                    <span id ="phrase" class="fade">НЕ СТРОИМ,
-                    СОБИРАЕМ
-                    ДОМА
-                  </span>
-                </div>
-                <div class="slidersIcon">
-                    <img alt="iconslide2svg2423" src="../static/images/iconslide2svg2423-40mg.svg" class="modularhouse-main-iconslide2svg"/>
-                </div>
-                <div class="slidersBody">
-                      <span id="phraseDown">Преимущество модульных домов в том, что их можно конфигурировать перед строительством и расширять дом путем добавления модулей в будущем. Модули производятся на заводе, где осуществляется должный контроль качества, а затем доставляются и собираются на участке под техническим надзором.</span>
-                </div>
-        </div>
           <div class="modularhouse-main-container-home">
-            <section class="container mb-5">
-              <div class="marquee-wrapper" style="user-select: none;">
-                  <div class="marquee-content scrollingX">
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <div class="groupFooterCatalog">
-                                    <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  </div>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                  </div>
-              </div>
-          </section>
-            <div class="advantages">
-              <div class="advantagesHead">
-                <div class="advantagesLine">
-                  <img alt="HorizontalDivider2441" src="../static/images/horizontaldivider2441-5x7-200h.png" class="divider-image"/>
-                  <span class="advantages-title">ПРЕИМУЩЕСТВА</span>
-                </div>
-                        
-              </div>
-              <div class="advantagesBody">
-                    <div class="advantagesInfo">
-                      <div class="title">
-                          <span>ЭНЕРГОЭФФЕКТИВНОСТЬ</span>
-                      </div>
-                        <div class="advantagesInfoSection">
-                            <img alt="prem1svg2442" src="../static/images/prem1svg2442-12j.svg" class=""/>
-                            <span class="advantagesInfoText">
-                              <span>Дома проектируются в соответствии с нормативами и утепляются с применением современных материалов, поэтому в них не холодно зимой и не жарко летом.</span>
-                        </div>
-                    </div>
-                    <div class="advantagesInfo">
-                      <div class="title">
-                          <span>ЭКОНОМИЧНОСТЬ</span>
-                      </div>
-                      <div class="advantagesInfoSection">
-                            <img alt="prem2svg2444" src="../static/images/prem2svg2444-o01.svg" class=""/>
-                            <span class="advantagesInfoText">
-                              <span>Конструкции, произведенные на заводе, надежнее, дешевле и устанавливаются готовыми модулями, что значительно экономит время и средства.</span>
-                          </div>
-                        </div>
-                    <div class="advantagesInfo">
-                      <div class="title">
-                          <span>АДАПТИРУЕМОСТЬ</span>
-                      </div>
-                      <div class="advantagesInfoSection">
-                            <img alt="prem3svg2445" src="../static/images/prem3svg2445-qkhd.svg" class=""/>
-                            <span class="advantagesInfoText">
-                              <span>В будущем можно достраивать дополнительные жилые или нежилые модули (гараж, терраса). Так, дом будет увеличиваться вместе с ростом семьи.</span>
-                          </div>
-                        </div>
-                    <div class="advantagesInfo">
-                      <div class="title">
-                          <span>СКОРОСТЬ</span>
-                      </div>
-                      <div class="advantagesInfoSection">
-                            <img alt="prem4svg2447" src="../static/images/prem4svg2447-4qpq.svg" class="a"/>
-                            <span class="advantagesInfoText">
-                              <span>Модули быстро собираются на строительной площадке, так как все несущие элементы, коммуникации и материалы фасада устанавливаются на производстве.</span>
-                          </div>
-                    </div>
-              </div>
-            </div>
-            <div class="questions">
-              <div class="questionsHead">
-                <div class="advantagesLine">
-                  <img alt="HorizontalDivider2448" src="../static/images/horizontaldivider2448-h0ym-200h.png" class="divider-image"/>
-                  <span>ОТВЕТЫ НА ВОПРОСЫ</span>
-                </div>
-              </div>
-                      <div class="questionsBody">
-                            <div class="faq-item">
-                              <button class="faq-button" onclick="toggleAnswer(this)">
-                                <div class="">
-                                        <span class="questionsList">Насколько тепло зимой в модульных домах?</span>
-                                </div>
-                                <div class="">
-                                  <img alt="SVG2450" src="../static/images/plus.svg" class="iconFaq"/>
-                                </div>
-                                <div class="circle"></div>
-                              </button>
-                              <div class="faq-content">
-                                <p class="faqP">Теплее, чем в традиционных домах, так как стены почти полностью состоят из утеплителя. В модульном доме устанавливаются все необходимые инженерные коммуникации: отопление, вентиляция, канализация.</p>
-                            </div>
-                            <div class="separator"></div>
-                            </div>
-                            <div class="faq-item">
-                              <button class="faq-button" onclick="toggleAnswer(this)">
-                                <div class="">
-                                        <span class="questionsList">Можно ли собрать такой дом самостоятельно?</span>
-                                    </div>
-                                <div class="">
-                                  <img alt="SVG2451" src="../static/images/plus.svg" class="iconFaq"/>
-                                </div>
-                                <div class="circle"></div>
-                              </button>
-                              <div class="faq-content">
-                                <p>Можно, но не нужно. У нас работает опытная профессиональная команда и мы отвечаем за качество установки и дальнейшей эксплуатации домов. Если же сборка происходит без нашего участия, возрастает риск ошибок и вытекающих из них последствий.</p>
-                            </div>
-                            <div class="separator"></div>
-                            </div>
-                            <div class="faq-item">
-                              <button class="faq-button" onclick="toggleAnswer(this)">
-                                <div class="">
-                                        <span class="questionsList">Можно ли изменить проект модульного дома?</span>
-                                </div>
-                                <div class="">
-                                  <img alt="SVG2452" src="../static/images/plus.svg" class="iconFaq"/>
-                                </div>
-                                <div class="circle"></div>
-                              </button>
-                              <div class="faq-content">
-                                <p>Да, мы можем разработать полностью уникальный проект. Но быстрее и доступнее будет возведение типовых домов, в которых можно менять конфигурацию модулей и состав помещений.</p>
-                            </div>
-                            <div class="separator"></div>
-                            </div>
-                            <div class="faq-item">
-                              <button class="faq-button" onclick="toggleAnswer(this)">
-                                <div class="">
-                                        <span class="questionsList">Осуществляете ли доставку домокомплектов в другие страны?</span>
-                                    </div>
-                                <div class="">
-                                  <img alt="SVG2453" src="../static/images/plus.svg" class="iconFaq"/>
-                                </div>
-                                <div class="circle"></div>
-                              </button>
-                              <div class="faq-content">
-                                <p>Мы осуществляем свободную доставку по Беларуси и России. Возможность и способы доставки в страны ЕС обсуждаются индивидуально.</p>
-                            </div>
-                            <div class="separator"></div>
-                            </div>
-                            <div class="faq-item">
-                                  <button class="faq-button" onclick="toggleAnswer(this)">
-                                      <div class="">
-                                        <span class="questionsList">В какие сроки дом может быть установлен на участке?</span>
-                                      </div>
-                                  <div class="">
-                                    <img  alt="SVG2454" src="../static/images/plus.svg" class="iconFaq"/>
-                                  </div>
-                                  <div class="circle"></div>
-                                </button>
-                                <div class="faq-content">
-                                  <p>Каркас дома собирается около 2-ух недель. Сроки готовности по отделке, монтажу окон и кровли дополнительно составляют 2-3 месяца, но если дом доставляется готовыми модулями вместе с отделкой, то дом может быть собран в течение недели.</p>
-                              </div>
-                              <div class="separator"></div>
-                            </div>
-            </div></div>
-            <div class="invitation">
-                      <div class="invitationHead">
-                      </div>
-                    <div class="invitationBody">
-                          <div class="">
-                            <img alt="slide1jpgsvg2459" src="../static/images/slide1jpgsvg2459-z7b.svg" class=""/>
-                          </div>
-                    </div>
-            </div>
             <div class="contacts">
               <div class="contactsHead">
-                <div class="advantagesLine">
-                  <img alt="HorizontalDivider2460" src="../static/images/horizontaldivider2460-aq07-200h.png" class="divider-image"/> 
-                  <span>КОНТАКТЫ</span>                  
-                </div>
                 <div class="contactsInfo">
                   <div class="personal">
                     <div class="person">
@@ -496,21 +213,10 @@
                       </form>
                 </div>
               </div>
-          <div class="contactBtnContainer">
-            <div class="center">
-              <button class="contactBtn">
-                <svg id = "btnSvg" width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                </svg>
-                <span class="contactBtnText">СВЯЗАТЬСЯ</span>
-              </button>
-            </div>
-          </div>
               <div class="modularhouse-main-footer"><span class="footerText"> © 2024 | ИП "Art-studio "Petr 1"</span></div>
             </div>
           </div>
           </div>        
   </body>
-    <script src="../static/script.js"></script>
+    <script src="../static/contactsScript.js"></script>
 </html>

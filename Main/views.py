@@ -29,6 +29,15 @@ from .forms import HouseForm, ExteriorPhotoForm, InteriorPhotoForm, RoomForm
 def base(request):
     return render(request, 'base.html')
 
+def projects(request):
+    return render(request, 'projects/projects.html')
+
+def contacts(request):
+    return render(request, 'contacts/contacts.html')
+
+def about_us(request):
+    return render(request, 'about_us/about_us.html')
+
 def login(request):
     return render(request, 'registration/login.html')
 
