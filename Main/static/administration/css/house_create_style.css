@@ -39,12 +39,6 @@ button {
     margin-bottom: 10px; 
 }
 
-.add-exterior-photoBtn, .remove-exterior-photoBtn,
-.add-interior-photoBtn, .remove-interior-photoBtn,
-.add-roomBtn, .remove-roomBtn {
-    width: 200px; 
-}
-
 button:hover {
     background-color: #18181A;
 }

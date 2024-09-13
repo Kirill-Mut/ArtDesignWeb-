@@ -31,15 +31,15 @@ class House(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=10)
     blueprint = models.FileField(upload_to='blueprints/')
 
-class ExteriorPhoto(models.Model):
-    house = models.ForeignKey(House, on_delete=models.CASCADE, related_name='exterior_photos')
-    photo = models.ImageField(upload_to='exterior_photos/')
+class InternalPhoto(models.Model):
+    filename = models.ImageField(upload_to='internal_photos/')
+    house = models.ForeignKey(House, related_name='internal_photos', on_delete=models.CASCADE)
 
-class InteriorPhoto(models.Model):
-    house = models.ForeignKey(House, on_delete=models.CASCADE, related_name='interior_photos')
-    photo = models.ImageField(upload_to='interior_photos/')
+class ExternalPhoto(models.Model):
+    filename = models.ImageField(upload_to='external_photos/')
+    house = models.ForeignKey(House, related_name='external_photos', on_delete=models.CASCADE)
 
 class Room(models.Model):
-    house = models.ForeignKey(House, on_delete=models.CASCADE, related_name='rooms')
-    name = models.CharField(max_length=100)  
-    area = models.FloatField()
+    name = models.CharField(max_length=255)
+    total_area = models.IntegerField()
+    house = models.ForeignKey(House, related_name='rooms', on_delete=models.CASCADE)

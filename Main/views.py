@@ -8,23 +8,11 @@ from .forms import RegistrationForm
 from django.core.mail import send_mail
 from .forms import ApplicationForm
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import House
-from .forms import HouseForm
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
-from .models import House
-from .forms import HouseForm
-from django.shortcuts import render, redirect
-from .forms import HouseForm
-from .models import House
-from .forms import HouseForm
-from django.shortcuts import render, redirect, get_object_or_404
-from .models import House, ExteriorPhoto, InteriorPhoto, Room
-from .forms import HouseForm, ExteriorPhotoForm, InteriorPhotoForm, RoomForm, ExteriorPhotoFormSet, InteriorPhotoFormSet,RoomFormSet
+from .models import House, InternalPhoto, ExternalPhoto, Room
+from .forms import HouseForm, InternalPhotoForm, ExternalPhotoForm, RoomForm
 from .models import Contacts
 from .forms import ContactsForm
-from .models import House, ExteriorPhoto, InteriorPhoto, Room
-from .forms import HouseForm, ExteriorPhotoForm, InteriorPhotoForm, RoomForm
+
 
 def base(request):
     return render(request, 'base.html')
@@ -106,8 +94,6 @@ def registration_login_view(request):
 
 
 
-
-
 def application_view(request):
     if request.method == 'POST':
         form = ApplicationForm(request.POST)
@@ -128,16 +114,10 @@ def application_view(request):
 
 
 
-
-
-
-
-
 def contacts_list(request):
     contacts = Contacts.objects.all()
     return render(request, 'administration/contacts_list.html', {'contacts': contacts})
 
-# Функция для создания нового контакта
 def contacts_create(request):
     if request.method == "POST":
         form = ContactsForm(request.POST)
@@ -148,7 +128,6 @@ def contacts_create(request):
         form = ContactsForm()
     return render(request, 'administration/contacts_form.html', {'form': form})
 
-# Функция для редактирования существующего контакта
 def contacts_update(request, pk):
     contact = get_object_or_404(Contacts, pk=pk)
     if request.method == "POST":
@@ -160,7 +139,6 @@ def contacts_update(request, pk):
         form = ContactsForm(instance=contact)
     return render(request, 'administration/contacts_form.html', {'form': form})
 
-# Функция для удаления контакта
 def contacts_delete(request, pk):
     contact = get_object_or_404(Contacts, pk=pk)
     if request.method == "POST":
@@ -170,86 +148,100 @@ def contacts_delete(request, pk):
 
 
 
-
-
-
 def house_list(request):
     houses = House.objects.all()
     return render(request, 'administration/house_list.html', {'houses': houses})
 
-def house_detail(request, pk):
-    house = get_object_or_404(House, pk=pk)
+def house_detail(request, house_id):
+    house = get_object_or_404(House, id=house_id)
     return render(request, 'administration/house_detail.html', {'house': house})
 
 def house_create(request):
-    if request.method == "POST":
+    if request.method == 'POST':
         house_form = HouseForm(request.POST, request.FILES)
-        exterior_photo_formset = ExteriorPhotoFormSet(request.POST, request.FILES)
-        interior_photo_formset = InteriorPhotoFormSet(request.POST, request.FILES)
-        room_formset = RoomFormSet(request.POST)
 
-        if house_form.is_valid() and exterior_photo_formset.is_valid() and interior_photo_formset.is_valid() and room_formset.is_valid():
+        # Получаем данные для фотографий и комнат
+        internal_photos = request.FILES.getlist('internal_photos[]')
+        external_photos = request.FILES.getlist('external_photos[]')
+        room_names = request.POST.getlist('room_names[]')
+        room_areas = request.POST.getlist('room_areas[]')
+
+        if house_form.is_valid():
             house = house_form.save()
 
-            # Сохранение внешних фотографий
-            exterior_photos = exterior_photo_formset.save(commit=False)
-            for photo in exterior_photos:
-                photo.house = house
-                photo.save()
-
             # Сохранение внутренних фотографий
-            interior_photos = interior_photo_formset.save(commit=False)
-            for photo in interior_photos:
-                photo.house = house
-                photo.save()
+            for photo in internal_photos:
+                InternalPhoto.objects.create(filename=photo, house=house)
+
+            # Сохранение внешних фотографий
+            for photo in external_photos:
+                ExternalPhoto.objects.create(filename=photo, house=house)
 
             # Сохранение комнат
-            rooms = room_formset.save(commit=False)
-            for room in rooms:
-                room.house = house
-                room.save()
+            for name, area in zip(room_names, room_areas):
+                if name and area:  # Проверяем, что поля не пустые
+                    Room.objects.create(name=name, total_area=area, house=house)
+
+            return redirect('house_list')  # Перенаправляем на список домов
+    else:
+        house_form = HouseForm()
+
+    return render(request, 'administration/house_create.html', {
+        'house_form': house_form,
+    })
+
+def house_edit(request, house_id):
+    house = get_object_or_404(House, id=house_id)
+
+    if request.method == 'POST':
+        house_form = HouseForm(request.POST, request.FILES, instance=house)
+
+        # Получаем данные для фотографий и комнат
+        internal_photos = request.FILES.getlist('internal_photos[]')
+        external_photos = request.FILES.getlist('external_photos[]')
+        room_names = request.POST.getlist('room_names[]')
+        room_areas = request.POST.getlist('room_areas[]')
+        internal_photo_ids = request.POST.getlist('internal_photo_ids[]')
+        external_photo_ids = request.POST.getlist('external_photo_ids[]')
+
+        if house_form.is_valid():
+            house = house_form.save()
+
+            # Обработка внутренних фотографий
+            for i, photo_id in enumerate(internal_photo_ids):
+                if i < len(internal_photos) and internal_photos[i]:  # Если загружен новый файл
+                    internal_photo = InternalPhoto.objects.get(id=photo_id)
+                    internal_photo.filename = internal_photos[i]  # Заменяем файл
+                    internal_photo.save()
+
+            # Обработка внешних фотографий
+            for i, photo_id in enumerate(external_photo_ids):
+                if i < len(external_photos) and external_photos[i]:  # Если загружен новый файл
+                    external_photo = ExternalPhoto.objects.get(id=photo_id)
+                    external_photo.filename = external_photos[i]  # Заменяем файл
+                    external_photo.save()
+
+            # Сохранение комнат
+            Room.objects.filter(house=house).delete()  # Удаляем старые комнаты
+            for name, area in zip(room_names, room_areas):
+                if name and area:  # Проверяем, что поля не пустые
+                    Room.objects.create(name=name, total_area=area, house=house)
 
             return redirect('house_list')
     else:
-        house_form = HouseForm()
-        exterior_photo_formset = ExteriorPhotoFormSet(queryset=ExteriorPhoto.objects.none())
-        interior_photo_formset = InteriorPhotoFormSet(queryset=InteriorPhoto.objects.none())
-        room_formset = RoomFormSet(queryset=Room.objects.none())
-
-    return render(request, 'administration/house_form.html', {
-        'house_form': house_form,
-        'exterior_photo_formset': exterior_photo_formset,
-        'interior_photo_formset': interior_photo_formset,
-        'room_formset': room_formset,
-    })
-
-def house_update(request, pk):
-    house = get_object_or_404(House, pk=pk)
-    
-    room_formset = RoomFormSet(instance=house)
-    exterior_photo_formset = ExteriorPhotoFormSet(instance=house)
-    interior_photo_formset = InteriorPhotoFormSet(instance=house)
-    
-    if request.method == "POST":
-        house_form = HouseForm(request.POST, request.FILES, instance=house)
-        room_formset = RoomFormSet(request.POST, instance=house)
-        exterior_photo_formset = ExteriorPhotoFormSet(request.POST, request.FILES, instance=house)
-        interior_photo_formset = InteriorPhotoFormSet(request.POST, request.FILES, instance=house)
-        
-        if house_form.is_valid() and room_formset.is_valid() and exterior_photo_formset.is_valid() and interior_photo_formset.is_valid():
-            house = house_form.save()
-            room_formset.save()
-            exterior_photo_formset.save()
-            interior_photo_formset.save()
-            return redirect('house_detail', pk=house.pk)
-    else:
         house_form = HouseForm(instance=house)
-    
-    return render(request, 'administration/house_form.html', {
+
+    # Получаем фотографии и комнаты для отображения в шаблоне
+    internal_photos = house.internal_photos.all()
+    external_photos = house.external_photos.all()
+    rooms = house.rooms.all()
+
+    return render(request, 'administration/house_edit.html', {
+        'house': house,
         'house_form': house_form,
-        'room_formset': room_formset,
-        'exterior_photo_formset': exterior_photo_formset,
-        'interior_photo_formset': interior_photo_formset,
+        'internal_photos': internal_photos,
+        'external_photos': external_photos,
+        'rooms': rooms,
     })
 
 def house_delete(request, pk):

@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактирование дома</title>
+    <link rel="stylesheet" href="{% static 'administration/css/house_edit_style.css' %}">
+</head>
+<body>
+    <h1>Редактировать дом</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ house_form.as_p }}
+
+        <h2>Внутренние фотографии</h2>
+        <div id="internal-photo-container">
+            {% for photo in internal_photos %}
+                <div class="internal-photo">
+                    <img src="{{ photo.filename.url }}" alt="Внутренняя фотография" style="max-width: 200px; max-height: 150px;">
+                    <input type="file" name="internal_photos[]" multiple>
+                    <input type="hidden" name="internal_photo_ids[]" value="{{ photo.id }}">
+                    <button type="button" class="remove-internal-photo">Удалить</button>
+                </div>
+            {% endfor %}
+            <div class="internal-photo">
+                <input type="file" name="internal_photos[]" multiple>
+                <button type="button" class="add-internal-photo">Добавить внутреннюю фотографию</button>
+            </div>
+        </div>
+
+        <h2>Внешние фотографии</h2>
+        <div id="external-photo-container">
+            {% for photo in external_photos %}
+                <div class="external-photo">
+                    <img src="{{ photo.filename.url }}" alt="Внешняя фотография" style="max-width: 200px; max-height: 150px;">
+                    <input type="file" name="external_photos[]" multiple>
+                    <input type="hidden" name="external_photo_ids[]" value="{{ photo.id }}">
+                    <button type="button" class="remove-external-photo">Удалить</button>
+                </div>
+            {% endfor %}
+            <div class="external-photo">
+                <input type="file" name="external_photos[]" multiple>
+                <button type="button" class="add-external-photo">Добавить внешнюю фотографию</button>
+            </div>
+        </div>
+
+        <h2>Комнаты</h2>
+        <div id="room-container">
+            {% for room in rooms %}
+                <div class="room">
+                    <input type="text" name="room_names[]" value="{{ room.name }}" placeholder="Название комнаты">
+                    <input type="number" name="room_areas[]" value="{{ room.total_area }}" placeholder="Площадь комнаты (м²)">
+                    <button type="button" class="remove-room">Удалить</button>
+                </div>
+            {% endfor %}
+            <div class="room">
+                <input type="text" name="room_names[]" placeholder="Название комнаты">
+                <input type="number" name="room_areas[]" placeholder="Площадь комнаты (м²)">
+            </div>
+        </div>
+        <button type="button" id="add-room">Добавить комнату</button>
+
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <script src="{% static 'administration/js/house_edit_js.js' %}"></script>
+</body>
+</html>
