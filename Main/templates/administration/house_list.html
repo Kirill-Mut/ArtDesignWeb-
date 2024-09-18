@@ -14,7 +14,7 @@
         {% for house in houses %}
             <li>
                 <a href="{% url 'house_detail' house.pk %}">{{ house.title }}</a>
-                <a href="{% url 'house_update' house.pk %}">Редактировать</a>
+                <a href="{% url 'house_edit' house.pk %}">Редактировать</a>
                 <a href="{% url 'house_delete' house.pk %}">Удалить</a>
             </li>
         {% endfor %}

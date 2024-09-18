@@ -18,15 +18,19 @@
 
     <h2>Внешние фотографии</h2>
     <div class="photo-gallery">
-        {% for photo in house.exterior_photos.all %}
-            <img src="{{ photo.photo.url }}" alt="Внешняя фотография дома">
+        {% for photo in house.external_photos.all %}
+            <img src="{{ photo.filename.url }}" alt="Внешняя фотография дома" style="max-width: 300px; max-height: 200px;">
+        {% empty %}
+            <p>Нет внешних фотографий.</p>
         {% endfor %}
     </div>
 
     <h2>Внутренние фотографии</h2>
     <div class="photo-gallery">
-        {% for photo in house.interior_photos.all %}
-            <img src="{{ photo.photo.url }}" alt="Внутренняя фотография дома">
+        {% for photo in house.internal_photos.all %}
+            <img src="{{ photo.filename.url }}" alt="Внутренняя фотография дома" style="max-width: 300px; max-height: 200px;">
+        {% empty %}
+            <p>Нет внутренних фотографий.</p>
         {% endfor %}
     </div>
 
@@ -42,14 +46,18 @@
             {% for room in house.rooms.all %}
             <tr>
                 <td>{{ room.name }}</td>
-                <td>{{ room.area }} м²</td>
+                <td>{{ room.total_area }} м²</td>
             </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="2">Нет комнат.</td>
+                </tr>
             {% endfor %}
         </tbody>
     </table>
 
     <div class="actions">
-        <a href="{% url 'house_update' house.pk %}">Редактировать</a>
+        <a href="{% url 'house_edit' house.pk %}">Редактировать</a>
         <a href="{% url 'house_delete' house.pk %}">Удалить</a>
         <a href="{% url 'house_list' %}">Назад к списку</a>
     </div>

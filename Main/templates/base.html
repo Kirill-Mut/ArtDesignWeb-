@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="english">
   <head>
@@ -147,127 +148,34 @@
                       <span id="phraseDown">Преимущество модульных домов в том, что их можно конфигурировать перед строительством и расширять дом путем добавления модулей в будущем. Модули производятся на заводе, где осуществляется должный контроль качества, а затем доставляются и собираются на участке под техническим надзором.</span>
                 </div>
         </div>
-          <div class="modularhouse-main-container-home">
-            <section class="container mb-5">
+        <div class="modularhouse-main-container-home">
+          <section class="container mb-5">
               <div class="marquee-wrapper" style="user-select: none;">
-                  <div class="marquee-content scrollingX">
+                  <div class="marquee-content">
+                      {% for house in houses %}
                       <div class="card-testimonial">
                           <article>
                               <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
+                                  <source media="(min-width: 768px)" srcset="{{ house.main_photo.url }}">
+                                  <img class="img-prevModel" src="{{ house.main_photo.url }}" alt="{{ house.title }}">
                               </picture>
                               <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <div class="groupFooterCatalog">
-                                    <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
+                                  <div class="FooterMainCatalogSlidersElement">
+                                      <h1 class="NameModelMainCatalogSlidersElement">{{ house.title }}</h1>
+                                      <p class="PriceModelMainCatalogSlidersElement">от {{ house.price }}</p>
+                                      <p class="totalArea">Общая площадь: {{ house.total_area }} м²</p>
+                                      <p class="effectiveArea">Эффективная площадь: {{ house.effective_area }} м²</p>
                                   </div>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
                               </article>
                           </article>
                       </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
-                      <div class="card-testimonial">
-                          <article>
-                              <picture>
-                                  <source media="(min-width: 768px)" srcset="../static/images/2campc_01.jpg">
-                                  <img class="img-prevModel" src="../static/images/2campc_01.jpg">
-                              </picture>
-                              <article class="short-description">
-                                <div class="FooterMainCatalogSlidersElement">
-                                  <h1 class="NameModelMainCatalogSlidersElement">Model A</h1>
-                                  <p class="PriceModelMainCatalogSlidersElement">от </p>
-                                  <p class="totalArea">Общая площадь: </p>
-                                  <p class="effectiveArea">Эффективная площадь: </p>
-                                </div>
-                              </article>
-                          </article>
-                      </div>
+                      {% endfor %}
                   </div>
               </div>
+
+              <script src="{% static '/script.js' %}"></script>
           </section>
+      </div>
             <div class="advantages">
               <div class="advantagesHead">
                 <div class="advantagesLine">
