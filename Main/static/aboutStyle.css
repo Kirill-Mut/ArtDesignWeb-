@@ -1,0 +1,785 @@
+/*---------------------HOME----------------------------*/
+*{
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F0EDE5;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  overflow-y: scroll;   
+}
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(136, 136, 136);
+  border-radius: 20px;
+}
+.modularhouse-main-container {
+  border:none;
+  width: 100%;
+  height: 4100px;
+  display: flex;
+  z-index: 100;
+  align-items: center;
+  border-color: var(--dl-color-theme-neutral-dark);
+  border-width: 1px;
+  flex-direction: column;
+}
+.modularhouse-main-modularhouse-main {
+  border:none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.modularhouse-main-video-mobile578d489a792cf5177ad6e679fa166677mp4 {
+  width: 1209.5899658203125px;
+  height: 1200px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  align-self: stretch;
+  align-items: flex-start;
+  background-size: cover;
+  background-image: url("../static/images/tq_yfopzlek2j-ti1m-1500w.png");
+}
+.modularhouse-main-footer{
+  width: 100%;
+  background: #18181A;
+  color:#F0EDE5;
+  height: 35px;
+  margin-top:350px;
+  z-index: -1;
+  display: flex;
+}
+.footerText{
+  margin-left:700px;
+  vertical-align:middle;
+}
+/*---------------------HOME-END----------------------------*/
+/*---------------------SLIDERS----------------------------*/
+.sliders {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  height: 1080px;
+  width: 960px;
+  background-color: #656466;
+  align-items: center;
+  vertical-align:top;
+}
+.slidersHead{
+  height: 250px;
+  width: 500px;
+  color:#F0EDE5;
+  font-size: 56px;
+  font-weight: bold;
+  position: relative;
+  left:70px;
+  bottom: 100px;
+}
+.slidersIcon{
+  height: 100px;
+  width: 100px;
+  right:135px;
+  bottom: 100px;
+  position: relative;
+}
+.slidersBody{
+  position: relative;
+  left:115px;
+  bottom: 80px;
+  height: 200px;
+  width: 600px;
+  line-height: 23px;
+  letter-spacing: normal;
+}
+.contactBtn, .submitBtn{
+background-color: #D0893F;
+color:#F0EDE5;
+height: 35px;
+width: 160px;
+}
+.fade {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+/*---------------------SLIDERS-END----------------------------*/
+/*---------------------NAVBAR----------------------------*/
+.modularhouse-main-nav {
+  gap: 953.97998046875px;
+  top: 1px;
+  flex: 1;
+  left: -4px;
+  width: 192px;
+  height: 1200px;
+  display: flex;
+  padding: 50px 1px 80.0199966430664px 0;
+  z-index: 1;
+  position: fixed;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F0EDE5;
+}
+.modularhouse-main-link {
+  display: contents;
+}
+.modularhouse-main-logo {
+  display: flex;
+  width: 60px;
+  height: 90px;  
+  padding: 0 0 4px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.linksSocial {
+  width: 192px;
+  height: 50px;
+  z-index: 2;
+  position: fixed;
+  text-align: center;
+  line-height: 22.399999618530273px;
+  display: flex;
+  flex-direction: column;
+  top:900px;
+  white-space:nowrap;
+  display: inline-block;
+}
+.facebookLink, .youtubeLink, .instagramLink {
+  height: 50px;
+  width: 50px;
+  white-space:nowrap;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center; 
+}
+.facebookLinkBtn, .youtubeLinkBtn, .instagramLinkBtn{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center; 
+}
+.svgFacebook {
+  width: 18px;
+  height: 23px;
+}
+.svgYoutube {
+  width: 27px;
+  height: 22px;
+}
+.svgInstagram {
+  width: 24px;
+  height: 24px;
+}
+.NavBar {
+  width: 192px;
+  height: 500px;
+  z-index: 2;
+  position: fixed;
+  text-align: left;
+  line-height: 22.399999618530273px;
+  display: flex;
+  flex-direction: column;
+  top:350px;
+}
+
+.navbarA{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.navbarA span{
+  position: relative;
+  z-index: 2;
+}
+
+.navbarA:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #2b2b2b;
+  transition: all .35s;
+}
+
+.navbarA:hover{
+  color: #fff;
+}
+
+.navbarA:hover:after{
+  width: 96%;
+}
+
+.NavBarItem{
+  width: 192px;
+  height: 50px;
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+}
+/*---------------------NAVBAR-END----------------------------*/
+.modularhouse-main-container-home {
+  display: flex;
+  z-index: 0;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  left:186px;
+  height: 100%;
+}
+/*---------------------CAROUSEL-START-----------------------*/
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+.FooterMainCatalogSlidersElement{
+  height: 200px;
+  padding: 20px;
+  display: flex; /* Используем Flexbox */
+  flex-wrap: wrap; /* Позволяем элементам переноситься на следующую строку */
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.marquee-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+}
+.marquee-wrapper .marquee-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 1rem;
+  cursor: grab;
+}
+.marquee-wrapper .marquee-content .card-testimonial {
+  width: 630px;
+  height: 600px;
+  color: #252525;
+  border: 1px solid #252525;
+  transition: transform 0.5s ease;
+
+}
+.marquee-wrapper .marquee-content .card-testimonial picture{
+    overflow: hidden;
+    width:628px;
+    height:400px;
+}
+.img-prevModel{
+  width: 100%; /* Изображение занимает всю ширину слайда */
+  transition: transform 0.5s ease; /* Плавный переход для эффекта приближения */
+}
+.img-prevModel:hover{
+  transform: scale(1.1); /* Увеличение изображения при наведении */
+}
+.marquee-wrapper .marquee-content .card-testimonial article picture {
+  position: relative;
+  min-width: 200px;
+}
+.marquee-wrapper .marquee-content .card-testimonial article picture img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 15%;
+     object-position: 50% 15%;
+}
+.marquee-wrapper .marquee-content .card-testimonial article h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-block: 1rem;
+}
+.marquee-wrapper .marquee-content .card-testimonial article article.short-description p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 1024px) {
+  .marquee-wrapper {
+    overflow: auto;
+  }
+}
+.scrollingX {
+  animation: scroll 45s linear infinite;
+}
+.marquee-wrapper:hover .scrollingX {
+  animation-play-state: paused;
+}
+/*@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}*/
+.NameModelMainCatalogSlidersElement{
+  font-size: 46px;
+  font-weight: bold;
+  margin-right: 300px;
+}
+.groupFooterCatalog{
+  display: flex; /* Используем Flexbox для первой строки */
+  margin-bottom: 45px; /* Отступ между строками */
+}
+.totalArea, .effectiveArea{
+  width: 580px;
+  margin-bottom: -12px;
+}
+.effectiveArea{
+  margin-top:-25px;
+}
+/*---------------------CAROUSEL-END-----------------------*/
+.advantages, .questions, .invitation, .contacts{ 
+  height: 450px; 
+  width: 100%; 
+  display: flex;
+  margin-top:35px;
+} 
+.advantagesBody{ 
+  height: 450px; 
+  width: 1000px; 
+  display: flex;
+  flex-wrap: wrap; 
+}
+.advantagesHead, .questionsHead, .invitationHead, .contactsHead{
+  width: 700px;
+  font-size: 32px;
+}
+.advantagesLine{
+  display: flex; /* Используем Flexbox для размещения элементов в строку */
+  align-items: center; /* Выравниваем элементы по вертикали по центру */
+}
+.advantagesInfo{
+  width: 50%; 
+  box-sizing: border-box; 
+  padding: 10px; 
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+}
+.advantagesInfoSection{
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+}
+.title{
+  margin-bottom: 10px;
+  text-align:left;
+  font-size: 24px;
+}
+.advantagesInfoText{
+  width: 290px;
+  text-align:left;
+  margin-left:20px;
+}
+.advantage-image{
+  margin-right: 20px;
+}
+.divider-image {
+  margin-right: 10px; /* Отступ между изображением и текстом */
+}
+.invitation{
+  height: auto;
+}
+/*---------------------BTN-START-----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+.contactBtnContainer {
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  left:1470px;
+  top:-750px;
+  height: 35px;
+  width: 160px;  
+}
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+.contactBtn, .submitBtn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background-color:#D0893F;
+  border: 1px solid #F0EDE5;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #18181A;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+  z-index: 2;
+}
+.contactBtn:hover {
+  transition: 1s ease-in-out;
+  background: #18181A;
+}
+.contactBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+.contactBtn span {
+  color: #F0EDE5;
+  font-size: 18px;
+  font-weight: 100;
+}
+.submitBtn:hover {
+  transition: 1s ease-in-out;
+  background: #18181A;
+}
+.submitBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+.submitBtn span {
+  color: #F0EDE5;
+  font-size: 18px;
+  font-weight: 100;
+}
+/*---------------------BTN-END-----------------------*/
+/*---------------------FAQ-END-----------------------*/
+.questionsBody{ 
+  height: 200px; 
+  width: 1000px; 
+  display: flex;
+  flex-wrap: wrap; 
+}
+.faq-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F0EDE5;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 85%;
+  position: relative; /* Для позиционирования круга */
+}
+.questionsList{
+  font-size: 24px;
+}
+.separator {
+  height: 2px; /* Высота полосы */
+  width: 85%;
+  background-color: #ccc; /* Цвет полосы */
+  transition: opacity 0.3s ease; /* Плавный переход */
+}
+
+.faq-content {
+  max-height: 0;
+  width: 80%;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  margin-left:10px;
+}
+.faq-content.show {
+  max-height: 100px; /* Достаточно для текста */
+  width: 80%;
+  margin-left:10px;
+  opacity: 1;
+}
+.faq-item {
+  margin-bottom: -1px;
+  position: relative; /* Для позиционирования круга */
+}
+.circle {
+  position: absolute;
+  width: 40px; /* Размер круга */
+  height: 40px; /* Размер круга */
+  background-color: rgba(128, 128, 128, 0.5); /* Полупрозрачный серый цвет */
+  border-radius: 50%; /* Круглая форма */
+  top: 50%; /* Центр по вертикали */
+  left: 97.5%; /* Центр по горизонтали */
+  transform: translate(-50%, -50%); /* Центрирование */
+  opacity: 0; /* Изначально невидимый */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Плавная анимация */
+}
+.faq-button:active .circle {
+  opacity: 1; /* Появление круга при нажатии */
+  transform: translate(-50%, -50%) scale(1.5); /* Увеличение размера при нажатии */
+}
+.iconFaq{
+  width: 20px; /* Размер круга */
+  height: 20px; /* Размер круга */
+}
+/*---------------------FAQ-END-----------------------*/
+/*---------------------contacts-START-----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.contactsBody{
+  max-width: 800px;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+
+}
+.contactsInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top:25px;
+}
+
+.personal {
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+  width: 400px;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: 90px; /* Убираем отступы */
+}
+.numberContacts, .officeInfo{
+  margin-left:90px;
+}
+.numberContacts{
+  width: 400px;
+  right:100px;
+}
+.persImg{
+  width: 140px;
+  height: 290px;
+}
+.namePerson{
+  font-size: 24px;
+}
+.jobTitle, .officeText{
+  font-size: 14px;
+}
+.productionText{
+  font-size: 24px;
+  right: 100px;
+}
+.numberText{
+  font-size: 24px;
+  font-weight: bolder;
+}
+.person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numberContacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.officeInfo {
+  display: flex;
+  align-items: center;
+}
+
+.officeDetails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px; /* Отступ между изображением и текстом */
+}
+
+
+
+.contactsBodyText{
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  background:#252525;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inputField{
+  background: #F0EDE5;
+
+}
+.contactsBody form{
+  padding: 30px 0 0 0;
+}
+.contactsBody form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data-contactsBody{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data-contactsBody input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data-contactsBody input,
+.textarea textarea:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.input-data-contactsBody input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data-contactsBody input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data-contactsBody label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background:#F0EDE5;
+}
+.input-data-contactsBody .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data-contactsBody .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data-contactsBody input:focus ~ .underline:before,
+.input-data-contactsBody input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data-contactsBody{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data-contactsBody .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background:#252525;
+  transition: all 0.4s;
+}
+.submit-btn .input-data-contactsBody:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data-contactsBody input{
+  background: none;
+  border: none;
+  color: #D9D9D9;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .contactsBody .text{
+    font-size: 30px;
+  }
+  .contactsBody form{
+    padding: 10px 0 0 0;
+  }
+  .contactsBody form .form-row{
+    display: block;
+  }
+  form .form-row .input-data-contactsBody{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data-contactsBody{
+    width: 40%!important;
+  }
+}
+/*---------------------contacts-END-----------------------*/
+
+

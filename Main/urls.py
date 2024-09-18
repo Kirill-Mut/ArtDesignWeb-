@@ -32,7 +32,7 @@ urlpatterns = [
     path('contacts/new/', contacts_create, name='contacts_create'),
     path('contacts/<int:pk>/edit/', contacts_update, name='contacts_update'),
     path('contacts/<int:pk>/delete/', contacts_delete, name='contacts_delete'),
-    path('contacts/', contacts, name='contacts'),
+    path('contactss/', contacts, name='contacts'),
     path('projects/', projects, name='projects'),
     path('about_us/', about_us, name='about_us'),
     

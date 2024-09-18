@@ -101,33 +101,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   </head>
   <body>
-      <link href="../static/contactsStyle.css" rel="stylesheet" />
+      <link href="../../static/contactsStyle.css" rel="stylesheet" />
       <div class="modularhouse-main-container">
         <div class="modularhouse-main-modularhouse-main">
           <div class="modularhouse-main-nav">
             <a href="https://modular-house.by/" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link">
-                <img alt="SVG2471" src="../static/images/svg2471.svg" class="modularhouse-main-logo"/>
+                <img alt="SVG2471" src="../../static/images/svg2471.svg" class="modularhouse-main-logo"/>
             </a>
             <span class="NavBar">
-              <a href="#" class="navbarA"><span class="NavBarItem">МЕНЮ</span></a>
-              <a href="#" class="navbarA"><span class="NavBarItem">О НАС</span></a>
-              <a href="#" class="navbarA"><span class="NavBarItem">ПРОЕКТЫ</span></a>
-              <a href="#" class="navbarA"><span class="NavBarItem">КОНТАКТЫ</span></a>
+              <a href="{% url 'base' %}" class="navbarA"><span class="NavBarItem">МЕНЮ</span></a>
+              <a href="{% url 'about_us' %}" class="navbarA"><span class="NavBarItem">О НАС</span></a>
+              <a href="{% url 'projects' %}" class="navbarA"><span class="NavBarItem">ПРОЕКТЫ</span></a>
+              <a href="{% url 'contacts' %}" class="navbarA"><span class="NavBarItem">КОНТАКТЫ</span></a>
             </span>
             <div class="linksSocial">
               <div class="facebookLink">
                 <a href="https://www.facebook.com/BYhome.zrobim/" target="_blank" rel="noreferrer noopener" class="facebookLinkBtn">
-                  <img alt="facebook" src="../static/images/svg2472.svg" class="svgFacebook"/>
+                  <img alt="facebook" src="../../static/images/svg2472.svg" class="svgFacebook"/>
                 </a>
               </div>
               <div class="youtubeLink">
                 <a href="https://www.youtube.com/channel/UCxc3agJ3TIg4H0dilD-yBlQ" target="_blank" rel="noreferrer noopener" class="youtubeLinkBtn">
-                  <img alt="youtube" src="../static/images/svg2473-ylg8.svg" class="svgYoutube"/>
+                  <img alt="youtube" src="../../static/images/svg2473-ylg8.svg" class="svgYoutube"/>
                 </a>
               </div>
               <div class="instagramLink">
                 <a href="https://www.instagram.com/by___home/" target="_blank" rel="noreferrer noopener" class="instagramLinkBtn">
-                  <img alt="instagram" src="../static/images/svg2473-z2vc.svg" class="svgInstagram"/>
+                  <img alt="instagram" src="../../static/images/svg2473-z2vc.svg" class="svgInstagram"/>
                 </a>
               </div>
             </div>  
@@ -138,14 +138,14 @@
                 <div class="contactsInfo">
                   <div class="personal">
                     <div class="person">
-                      <img class="persImg" src="../static/images/person1.png"/>
+                      <img class="persImg" src="../../static/images/person1.png"/>
                         <span class="namePerson">Петр Карастоянов</span>
                       <div class="">
                         <span class="jobTitle">CEO &amp; FOUNDER</span>
                       </div>
                     </div>
                     <div class="person" id="personMargin">
-                      <img class="persImg" src="../static/images/person2.png"/>
+                      <img class="persImg" src="../../static/images/person2.png"/>
                         <span class="namePerson">Влад Самбурский</span>
                       <div class="">
                         <span class="jobTitle">CEO &amp; FOUNDER</span>
@@ -157,7 +157,7 @@
                     <span class="numberText">+7 926 704 45 34</span>
                   </div>
                   <div class="officeInfo">
-                      <img alt="SVG2463" src="../static/images/svg2463-8dpy.svg" class=""/>
+                      <img alt="SVG2463" src="../../static/images/svg2463-8dpy.svg" class=""/>
                       <div class="officeDetails">
                         <span class="officeText">Головной офис:</span>
                       </br>
@@ -218,5 +218,5 @@
           </div>
           </div>        
   </body>
-    <script src="../static/contactsScript.js"></script>
+    <script src="../../static/contactsScript.js"></script>
 </html>
