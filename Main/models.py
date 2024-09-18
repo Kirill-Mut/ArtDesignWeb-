@@ -30,6 +30,7 @@ class House(models.Model):
     effective_area = models.FloatField()
     price = models.DecimalField(decimal_places=2, max_digits=10)
     blueprint = models.FileField(upload_to='blueprints/')
+    main_photo = models.ImageField(upload_to='main_photos/', default='Main\static\images\tq__iesr2jwby-x1cp-1500h.png')
 
 class InternalPhoto(models.Model):
     filename = models.ImageField(upload_to='internal_photos/')

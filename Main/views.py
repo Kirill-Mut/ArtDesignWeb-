@@ -15,7 +15,9 @@ from .forms import ContactsForm
 
 
 def base(request):
-    return render(request, 'base.html')
+    houses = House.objects.all()
+    return render(request, 'base.html', {'houses': houses})
+
 
 def projects(request):
     return render(request, 'projects/projects.html')

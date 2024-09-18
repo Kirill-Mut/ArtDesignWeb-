@@ -63,7 +63,7 @@ class ContactsForm(forms.ModelForm):
 class HouseForm(forms.ModelForm):
     class Meta:
         model = House
-        fields = ['title', 'model_3d', 'description', 'total_area', 'effective_area', 'price', 'blueprint']
+        fields = ['title', 'model_3d', 'description', 'total_area', 'effective_area', 'price', 'blueprint', 'main_photo']
 
 class InternalPhotoForm(forms.ModelForm):
     class Meta:
