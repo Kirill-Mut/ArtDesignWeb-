@@ -37,6 +37,9 @@ def about_us(request):
 def login(request):
     return render(request, 'registration/login.html')
 
+def projectDetails(request):
+    return render(request, 'projects/projectDetails.html')
+
 
 
 def registration_view(request):

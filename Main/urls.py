@@ -1,7 +1,7 @@
 from django.urls import path, include
 from Main import views
 from . import views
-from .views import base, registration_login_view, application_view, house_list, house_detail, house_create, house_edit, house_delete, projects, contacts, about_us
+from .views import base, registration_login_view, application_view, house_list, house_detail, house_create, house_edit, house_delete, projects, contacts, about_us, projectDetails
 from .views import contacts_create, contacts_delete, contacts_list, contacts_update
 
 
@@ -33,6 +33,7 @@ urlpatterns = [
     path('contactss/', contacts, name='contacts'),
     path('projects/', projects, name='projects'),
     path('about_us/', about_us, name='about_us'),
+    path('projectDetails/<int:house_id>/', projectDetails, name='projectDetails'),
     
 
 ]
