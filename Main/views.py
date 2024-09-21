@@ -168,7 +168,7 @@ def contacts_delete(request, pk):
     return render(request, 'administration/contacts_confirm_delete.html', {'contact': contact})
 
 
-@user_passes_test(lambda u: u.is_superuser)
+#@user_passes_test(lambda u: u.is_superuser)
 def house_list(request):
     houses = House.objects.all()
     return render(request, 'administration/house_list.html', {'houses': houses})
