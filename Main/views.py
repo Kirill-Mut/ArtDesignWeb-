@@ -45,8 +45,10 @@ def about_us(request):
 def login(request):
     return render(request, 'registration/login.html')
 
-def projectDetails(request):
-    return render(request, 'projects/projectDetails.html')
+
+def projectDetails(request, house_id):
+    house = get_object_or_404(House, id=house_id)
+    return render(request, 'projects/projectDetails.html', {'house': house})
 
 
 
