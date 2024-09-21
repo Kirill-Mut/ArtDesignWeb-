@@ -12,7 +12,13 @@ from .models import House, InternalPhoto, ExternalPhoto, Room
 from .forms import HouseForm, InternalPhotoForm, ExternalPhotoForm, RoomForm
 from .models import Contacts
 from .forms import ContactsForm
-
+from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import user_passes_test
+from django.contrib.auth.decorators import permission_required
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import User
+User = settings.AUTH_USER_MODEL
 
 def base(request):
     houses = House.objects.all()
@@ -149,7 +155,7 @@ def contacts_delete(request, pk):
     return render(request, 'administration/contacts_confirm_delete.html', {'contact': contact})
 
 
-
+@user_passes_test(lambda u: u.is_superuser)
 def house_list(request):
     houses = House.objects.all()
     return render(request, 'administration/house_list.html', {'houses': houses})
