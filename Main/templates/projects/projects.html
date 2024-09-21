@@ -133,44 +133,54 @@
               </div>
             </div>  
           </div>
+
           <div class="modularhouse-main-container-home">
-            <div class="catalog">
-              <div class="catalogElement">
-                <img class="catalogElementImg">
-              </div>
-              <div class="catalogElement">
-                <img class="catalogElementImg">
-              </div>
-              <div class="catalogElement">
-                <img class="catalogElementImg">
-              </div>
-              <div class="catalogElement">
-                <img class="catalogElementImg">
-              </div>
-              <div class="catalogElement">
-                <img class="catalogElementImg">
-              </div>
-            </div>
-            <div class="ProjectSelect">
-              <img class="ProjectSelectImg">
-              <div class="ProjectSelectName">Model A</div>
-              <div class="ProjectSelectDescription">Дом для семьи из 3-5 человек. Сочетает в себе традиционные элементы и характерные черты скандинавского минимализма.</div>
-              <div class="informationList">
-                <div class="totalAreaInfo">
-                  <div class="totalAreaHead">Общая площадь: </div>
-                  <div class="totalAreaBody">120.60 м²</div>
+            <section class="container mb-5">
+                <h2>Количество домов: {{ houses.count }}</h2> <!-- Отображение количества домов -->
+                <div class="content-wrapper">
+                    <!-- Слайдер -->
+                    <div class="house-slider" style="flex: 1; max-width: 25%;"> <!-- Уменьшаем размер слайдера -->
+                        <div class="marquee-wrapper" style="user-select: none;">
+                            <div class="marquee-content">
+                                {% for house in houses %}
+                                <div class="card-testimonial" style="cursor: pointer;" onclick="location.href='?house_id={{ house.id }}';"> <!-- Клик для выбора дома -->
+                                    <article>
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="{{ house.main_photo.url }}">
+                                            <img class="catalogElementImg" src="{{ house.main_photo.url }}" alt="{{ house.title }}">
+                                        </picture>
+                                        <article class="short-description">
+                                            <div class="FooterMainCatalogSlidersElement">
+                                                <h1 class="NameModelMainCatalogSlidersElement">{{ house.title }}</h1>
+                                                <p class="PriceModelMainCatalogSlidersElement">от {{ house.price }} руб.</p>
+                                                <p class="totalArea">Общая площадь: {{ house.total_area }} м²</p>
+                                                <p class="effectiveArea">Эффективная площадь: {{ house.effective_area }} м²</p>
+                                                <p class="roomsCount">Количество комнат: {{ house.rooms.count }}</p> <!-- Количество комнат -->
+                                            </div>
+                                        </article>
+                                    </article>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Информация о выбранном доме -->
+                    <div class="ProjectSelect" style="flex: 3; margin-left: 20px;"> <!-- Увеличиваем ширину информации о доме -->
+                        {% if selected_house %}
+                        <img class="ProjectSelectImg" src="{{ selected_house.main_photo.url }}" alt="{{ selected_house.title }}">
+                        <div class="ProjectSelectName">{{ selected_house.title }}</div>
+                        <div class="ProjectSelectDescription">{{ selected_house.description }}</div> <!-- Описание дома -->
+                        <div class="totalAreaBody">{{ selected_house.total_area }} м²</div> <!-- Общая площадь -->
+                        <div class="effectiveAreaBody">{{ selected_house.effective_area }} м²</div> <!-- Эффективная площадь -->
+                        <div class="roomsBody">{{ selected_house.rooms.count }}</div> <!-- Количество комнат -->
+                        <div class="priceHead">{{ selected_house.price }} руб.</div> <!-- Цена -->
+                        {% endif %}
+                    </div>
                 </div>
-                <div class="effectiveAreaInfo">
-                  <div class="effectiveAreaHead">Эффективная площадь: </div>
-                  <div class="effectiveAreaBody">84.30 м²</div>
-                </div>
-                <div class="floorsInfo">
-                  <div class="floorsHead">Количество этажей: </div>
-                  <div class="floorsBody">1</div>
-                </div>
-                <div class="priceInfo">
-                  <div class="priceHead">$110 343</div>
-                  <div class="priceBody">
+            </section>
+        </div>
+
                     <button>
                       <span>ПОДРОБНЕЕ</span>
                     </button>

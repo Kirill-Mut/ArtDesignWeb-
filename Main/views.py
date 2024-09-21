@@ -26,7 +26,15 @@ def base(request):
 
 
 def projects(request):
-    return render(request, 'projects/projects.html')
+    houses = House.objects.all()  # Получаем все дома из базы данных
+    selected_house = None
+    
+    # Проверяем, был ли передан ID выбранного дома через GET-запрос
+    house_id = request.GET.get('house_id')
+    if house_id:
+        selected_house = get_object_or_404(House, id=house_id)  # Получаем выбранный дом по ID
+
+    return render(request, 'projects/projects.html', {'houses': houses, 'selected_house': selected_house})
 
 def contacts(request):
     return render(request, 'contacts/contacts.html')
