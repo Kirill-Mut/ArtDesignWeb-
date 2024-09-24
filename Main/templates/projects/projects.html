@@ -163,14 +163,16 @@
                         <div class="effectiveAreaBody">{{ selected_house.effective_area }} м²</div> <!-- Эффективная площадь -->
                         <div class="roomsBody">{{ selected_house.rooms.count }}</div> <!-- Количество комнат -->
                         <div class="priceHead">{{ selected_house.price }} руб.</div> <!-- Цена -->
+                        <button class ="detailsBtn">
+                          <span>ПОДРОБНЕЕ</span>
+                          <a href="{% url 'projectDetails' selected_house.pk %}">
+                        </button>
                         {% endif %}
                     </div>
 
         </div>
 
-                    <button>
-                      <span>ПОДРОБНЕЕ</span>
-                    </button>
+                    
                   </div>
                 </div>
               </div>
