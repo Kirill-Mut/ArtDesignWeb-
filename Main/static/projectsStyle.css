@@ -9,19 +9,9 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #F0EDE5;
-  overflow-x: hidden;
+  overflow: hidden;
 }
-body::-webkit-scrollbar {
-  width: 6px;
-  overflow-y: scroll;   
-}
-body::-webkit-scrollbar-track {
-  background: rgb(255, 255, 255);
-}
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(136, 136, 136);
-  border-radius: 20px;
-}
+
 .modularhouse-main-container {
   border:none;
   width: 100%;
@@ -308,5 +298,21 @@ svg {
 }
 /*---------------------BTN-END-----------------------*/
 
-
-
+.catalog{
+  width: 250px;
+  height: 100%;
+  border: 1px solid black;
+}
+.catalogElementImg{
+  width: 249px;
+}
+.catalogElement{
+  margin-bottom: 25px;
+}
+.NameModelMainCatalogSlidersElement{
+  text-align: center;
+  margin-top: 25px;
+}
+.ProjectSelect{
+  width: 550px;
+}

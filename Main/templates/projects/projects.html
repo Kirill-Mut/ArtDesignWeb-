@@ -135,15 +135,9 @@
           </div>
 
           <div class="modularhouse-main-container-home">
-            <section class="container mb-5">
-                <h2>Количество домов: {{ houses.count }}</h2> <!-- Отображение количества домов -->
-                <div class="content-wrapper">
-                    <!-- Слайдер -->
-                    <div class="house-slider" style="flex: 1; max-width: 25%;"> <!-- Уменьшаем размер слайдера -->
-                        <div class="marquee-wrapper" style="user-select: none;">
-                            <div class="marquee-content">
+            <section class="catalog">
                                 {% for house in houses %}
-                                <div class="card-testimonial" style="cursor: pointer;" onclick="location.href='?house_id={{ house.id }}';"> <!-- Клик для выбора дома -->
+                                <div class="catalogElement" style="cursor: pointer;" onclick="location.href='?house_id={{ house.id }}';"> <!-- Клик для выбора дома -->
                                     <article>
                                         <picture>
                                             <source media="(min-width: 768px)" srcset="{{ house.main_photo.url }}">
@@ -152,19 +146,13 @@
                                         <article class="short-description">
                                             <div class="FooterMainCatalogSlidersElement">
                                                 <h1 class="NameModelMainCatalogSlidersElement">{{ house.title }}</h1>
-                                                <p class="PriceModelMainCatalogSlidersElement">от {{ house.price }} руб.</p>
-                                                <p class="totalArea">Общая площадь: {{ house.total_area }} м²</p>
-                                                <p class="effectiveArea">Эффективная площадь: {{ house.effective_area }} м²</p>
-                                                <p class="roomsCount">Количество комнат: {{ house.rooms.count }}</p> <!-- Количество комнат -->
                                             </div>
                                         </article>
                                     </article>
                                 </div>
                                 {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-    
+
+            </section>    
                     <!-- Информация о выбранном доме -->
                     <div class="ProjectSelect" style="flex: 3; margin-left: 20px;"> <!-- Увеличиваем ширину информации о доме -->
                         {% if selected_house %}
@@ -177,8 +165,7 @@
                         <div class="priceHead">{{ selected_house.price }} руб.</div> <!-- Цена -->
                         {% endif %}
                     </div>
-                </div>
-            </section>
+
         </div>
 
                     <button>
