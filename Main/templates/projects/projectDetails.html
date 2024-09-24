@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
     <style data-tag="reset-style-sheet">
         html {
             line-height: 1.15;
@@ -191,6 +193,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/jsm/controls/OrbitControls.js"></script>
 </head>
 
 <body>
@@ -302,73 +305,56 @@
 
 <script type="module">
     import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js";
-      import { ColladaLoader } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/loaders/ColladaLoader.js";
+    import { ColladaLoader } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/loaders/ColladaLoader.js";
+    import { OrbitControls } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/controls/OrbitControls.js";
 
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-      const renderer = new THREE.WebGLRenderer();
-      const modelContainer = document.getElementById('modelContainer');
-      renderer.setSize(modelContainer.clientWidth, modelContainer.clientHeight);
-      modelContainer.appendChild(renderer.domElement);
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer();
+    const modelContainer = document.getElementById('modelContainer');
 
-      // Добавляем освещение
-      const ambientLight = new THREE.AmbientLight(0x404040);
-      scene.add(ambientLight);
+    renderer.setSize(modelContainer.clientWidth, modelContainer.clientHeight);
+    modelContainer.appendChild(renderer.domElement);
 
-      const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-      directionalLight.position.set(5, 5, 5).normalize();
-      scene.add(directionalLight);
+    // Добавляем освещение
+    const ambientLight = new THREE.AmbientLight(0x404040);
+    scene.add(ambientLight);
 
-      let model;
-      const loader = new ColladaLoader();
-      loader.load(
-          "{{ house.model_3d.url }}", // URL модели
-          function (collada) {
-              model = collada.scene;
-              scene.add(model);
-          },
-          undefined,
-          function (error) {
-              console.error(error);
-          }
-      );
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight.position.set(5, 5, 5).normalize();
+    scene.add(directionalLight);
 
-      camera.position.set(15, 15, 15);
-      camera.lookAt(0, 0, 0);
+    let model;
+    const loader = new ColladaLoader();
+    
+    loader.load(
+        "{{ house.model_3d.url }}", // URL модели
+        function (collada) {
+            model = collada.scene;
+            scene.add(model);
+        },
+        undefined,
+        function (error) {
+            console.error(error);
+        }
+    );
 
-      let isMouseDown = false;
-      let previousMousePosition = { x: 0, y: 0 };
+    camera.position.set(15, 15, 15);
+    
+    // Создаем OrbitControls для управления камерой
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true; // Включаем сглаживание
+    controls.dampingFactor = 0.25; // Фактор сглаживания
+    controls.screenSpacePanning = false; // Запрет панорамирования в пространстве экрана
+    controls.maxPolarAngle = Math.PI / 2; // Ограничение угла наклона (чтобы не заглядывать под модель)
 
-      // Обработчики событий мыши
-      window.addEventListener("mousedown", (event) => {
-          isMouseDown = true;
-          previousMousePosition = { x: event.clientX, y: event.clientY };
-      });
-
-      window.addEventListener("mouseup", () => {
-          isMouseDown = false;
-      });
-
-      window.addEventListener("mousemove", (event) => {
-          if (isMouseDown && model) {
-              const deltaMove = {
-                  x: event.clientX - previousMousePosition.x,
-                  y: event.clientY - previousMousePosition.y,
-              };
-
-              // Вращаем модель
-              model.rotation.y += deltaMove.x * 0.01; // Вращение по оси Y
-              model.rotation.x += deltaMove.y * 0.01; // Вращение по оси X
-
-               previousMousePosition = { x: event.clientX, y: event.clientY };
-           }
-       });
-
-       function animate() {
-           requestAnimationFrame(animate);
-           renderer.render(scene, camera);
-       }
-       animate();
-   </script>
+    function animate() {
+        requestAnimationFrame(animate);
+        controls.update(); // Обновление управления
+        renderer.render(scene, camera);
+    }
+    
+    animate();
+</script>
 
 </html>
