@@ -72,19 +72,13 @@ html, body {
   max-width: 25%; /* Ограничиваем ширину слайдера до 25% */
 }
 
-.ProjectSelect {
-  flex: 3; /* Занимает больше места по сравнению со слайдером */
-  margin-left: 20px; /* Отступ слева для отделения от слайдера */
-}
+
 
 .card-testimonial {
   margin-bottom: 20px; /* Отступ между карточками */
 }
 
-.ProjectSelectImg {
-  width: 100%; /* Ширина изображения проекта */
-  height: auto; /* Автоматическая высота для сохранения пропорций */
-}
+
 
 /*---------------------NAVBAR----------------------------*/
 .modularhouse-main-nav {
@@ -221,14 +215,15 @@ html, body {
 }
 /*---------------------NAVBAR-END----------------------------*/
 .modularhouse-main-container-home {
-  display: flex;
   z-index: 0;
   align-self: stretch;
-  align-items: flex-start;
   flex-direction: column;
   position: relative;
   left:186px;
   height: 100%;
+  display: flex;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  width: 100%; /* Убедитесь, что контейнер имеет достаточную ширину */
 }
 
 
@@ -251,7 +246,7 @@ html, body {
   height: 60px;
   position: absolute;
 }
-.contactBtn, .submitBtn {
+.detailsBtn {
   width: 180px;
   height: 60px;
   cursor: pointer;
@@ -259,18 +254,15 @@ html, body {
   border: 1px solid #F0EDE5;
   outline: none;
   transition: 1s ease-in-out;
+  align-self: center;
 }
 
 svg {
-  position: absolute;
-  left: 0;
-  top: 0;
   fill: none;
-  stroke: #18181A;
+  stroke: #e5ff00;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
   transition: 1s ease-in-out;
-  z-index: 2;
 }
 .contactBtn:hover {
   transition: 1s ease-in-out;
@@ -296,12 +288,33 @@ svg {
   font-size: 18px;
   font-weight: 100;
 }
+.detailsBtn:hover {
+  transition: 1s ease-in-out;
+  background: #18181A;
+}
+.detailsBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+.detailsBtn span {
+  color: #F0EDE5;
+  font-size: 18px;
+  font-weight: 100;
+}
 /*---------------------BTN-END-----------------------*/
 
 .catalog{
   width: 250px;
   height: 100%;
-  border: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  overflow-y: auto; /* Прокрутка по вертикали */
+  overflow-x: hidden;
+  max-height: 880px; /* Ограничение высоты для прокрутки */
+  margin-right: 20px; /* Отступ между каталогом и проектом */
+}
+.catalog::-webkit-scrollbar {
+  width: 0;
 }
 .catalogElementImg{
   width: 249px;
@@ -314,5 +327,60 @@ svg {
   margin-top: 25px;
 }
 .ProjectSelect{
-  width: 550px;
+  width: 490px;
+  margin-left: 20px; 
+  flex-direction: column;
+  margin-left: 20px; /* Отступ слева для отделения от слайдера */
+  height: 100%;  
+  display: flex;
+  border: 1px solid black;
+}
+.projectContainer {
+  display: flex;
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  width: 100%; /* Убедитесь, что контейнер имеет достаточную ширину */
+ 
+}
+.imgBox{
+  width: 490px;
+  height: 300px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-top: 35px;
+}
+.ProjectSelectName, .ProjectSelectDescription, .infoContainer, .ProjectSelectImg{
+  margin-left:55px;
+}
+.ProjectSelectImg {
+  width: 370px; /* Ширина изображения проекта */
+  height: 270px; /* Автоматическая высота для сохранения пропорций */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+.ProjectSelectName{
+  font-size: 48px;
+  font-weight: bold;
+}
+.ProjectSelectDescription{
+  margin-top: 35px;
+  width: 370px;
+  height: 90px;
+}
+.infoContainer {
+  display: flex;
+  justify-content: space-between; /* Выравнивание по горизонтали */
+  width: 370px;
+}
+
+.infoLabel {
+  margin-right: 10px; /* Отступ между меткой и значением */
+}
+.detailsBtn {
+  margin-top: 10px; /* Отступ для кнопки */
+}
+.infoValue{
+  font-weight: bold;
 }

@@ -135,6 +135,7 @@
           </div>
 
           <div class="modularhouse-main-container-home">
+            <div class="projectContainer">
             <section class="catalog">
                                 {% for house in houses %}
                                 <div class="catalogElement" style="cursor: pointer;" onclick="location.href='?house_id={{ house.id }}';"> <!-- Клик для выбора дома -->
@@ -154,22 +155,36 @@
 
             </section>    
                     <!-- Информация о выбранном доме -->
-                    <div class="ProjectSelect" style="flex: 3; margin-left: 20px;"> <!-- Увеличиваем ширину информации о доме -->
+                    <div class="ProjectSelect" style="margin-left: 20px;"> <!-- Увеличиваем ширину информации о доме -->
                         {% if selected_house %}
-                        <img class="ProjectSelectImg" src="{{ selected_house.main_photo.url }}" alt="{{ selected_house.title }}">
+                        <div class="imgBox">
+                          <img class="ProjectSelectImg" src="{{ selected_house.main_photo.url }}" alt="{{ selected_house.title }}">
+                        </div>
                         <div class="ProjectSelectName">{{ selected_house.title }}</div>
                         <div class="ProjectSelectDescription">{{ selected_house.description }}</div> <!-- Описание дома -->
-                        <div class="totalAreaBody">{{ selected_house.total_area }} м²</div> <!-- Общая площадь -->
-                        <div class="effectiveAreaBody">{{ selected_house.effective_area }} м²</div> <!-- Эффективная площадь -->
-                        <div class="roomsBody">{{ selected_house.rooms.count }}</div> <!-- Количество комнат -->
-                        <div class="priceHead">{{ selected_house.price }} руб.</div> <!-- Цена -->
-                        <button class ="detailsBtn">
+                        <div class="infoContainer">
+                          <div class="infoLabel">Общая площадь: </div>
+                          <div class="infoValue">{{ selected_house.total_area }} м²</div>
+                      </div>
+                      <div class="infoContainer">
+                          <div class="infoLabel">Эффективная площадь: </div>
+                          <div class="infoValue">{{ selected_house.effective_area }} м²</div>
+                      </div>
+                      <div class="infoContainer">
+                          <div class="infoLabel">Количество комнат: </div>
+                          <div class="infoValue">{{ selected_house.rooms.count }}</div>
+                      </div>
+                      <div class="infoContainer">
+                          <div class="infoLabel">Цена: </div>
+                          <div class="infoValue">{{ selected_house.price }} руб.</div>
+                      </div>
+                      <button class="detailsBtn">
                           <span>ПОДРОБНЕЕ</span>
-                          <a href="{% url 'projectDetails' selected_house.pk %}">
-                        </button>
+                          <a href="{% url 'projectDetails' selected_house.pk %}"></a>
+                      </button>
                         {% endif %}
                     </div>
-
+                  </div>
         </div>
 
                     
