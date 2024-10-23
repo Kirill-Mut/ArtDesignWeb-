@@ -305,56 +305,60 @@
 
 <script type="module">
     import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js";
-    import { ColladaLoader } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/loaders/ColladaLoader.js";
+    import { FBXLoader } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/loaders/FBXLoader.js"; 
     import { OrbitControls } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/controls/OrbitControls.js";
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
+    //renderer.setClearColor(0xffffff); // Set background color to white
     const modelContainer = document.getElementById('modelContainer');
 
     renderer.setSize(modelContainer.clientWidth, modelContainer.clientHeight);
     modelContainer.appendChild(renderer.domElement);
 
-    // Добавляем освещение
-    const ambientLight = new THREE.AmbientLight(0x404040);
-    scene.add(ambientLight);
+    // Add lighting
+    const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x404040, 1);
+    scene.add(hemisphereLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight.position.set(5, 5, 5).normalize();
-    scene.add(directionalLight);
+    const directionalLight1 = new THREE.DirectionalLight(0xffffff, 1);
+    directionalLight1.position.set(10, 10, 10).normalize();
+    scene.add(directionalLight1);
 
+    // Load the FBX model
     let model;
-    const loader = new ColladaLoader();
+    const loader = new FBXLoader();
     
     loader.load(
-        "{{ house.model_3d.url }}", // URL модели
-        function (collada) {
-            model = collada.scene;
+        "{{ house.model_3d.url }}", // URL of the FBX model
+        function (fbx) {
+            model = fbx;
+            model.position.set(0, 0, 0); // Set model coordinates
             scene.add(model);
         },
         undefined,
         function (error) {
-            console.error(error);
+            console.error('Error loading model:', error);
         }
     );
 
-    camera.position.set(15, 15, 15);
-    
-    // Создаем OrbitControls для управления камерой
+    camera.position.set(35, 35, 35); // Set camera coordinates
+
+    // OrbitControls for camera control
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableDamping = true; // Включаем сглаживание
-    controls.dampingFactor = 0.25; // Фактор сглаживания
-    controls.screenSpacePanning = false; // Запрет панорамирования в пространстве экрана
-    controls.maxPolarAngle = Math.PI / 2; // Ограничение угла наклона (чтобы не заглядывать под модель)
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.25;
+    controls.screenSpacePanning = false;
+    controls.maxPolarAngle = Math.PI / 2;
 
     function animate() {
         requestAnimationFrame(animate);
-        controls.update(); // Обновление управления
-        renderer.render(scene, camera);
+        controls.update(); // Update controls
+        renderer.render(scene, camera); // Render the scene
     }
     
     animate();
 </script>
+
 
 </html>

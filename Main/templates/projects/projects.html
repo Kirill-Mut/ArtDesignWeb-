@@ -178,10 +178,13 @@
                           <div class="infoLabel">Цена: </div>
                           <div class="infoValue">{{ selected_house.price }} руб.</div>
                       </div>
-                      <button class="detailsBtn">
-                          <span>ПОДРОБНЕЕ</span>
-                          <a href="{% url 'projectDetails' selected_house.pk %}"></a>
-                      </button>
+                      <button class="detailsBtn" onclick="window.location.href='{% url 'projectDetails' selected_house.pk %}'">
+                        <span>ПОДРОБНЕЕ</span>
+                    </button>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="{{ selected_house.main_photo.url }}">
+                      <img class="catalogElementImg" src="{{ selected_house.main_photo.url }}" alt="{{ house.title }}">
+                  </picture>
                         {% endif %}
                     </div>
                   </div>
