@@ -39,6 +39,9 @@ def projects(request):
 def contacts(request):
     return render(request, 'contacts/contacts.html')
 
+def pay(request):
+    return render(request, 'pay/pay.html')
+
 def about_us(request):
     return render(request, 'about_us/about_us.html')
 
