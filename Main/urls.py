@@ -20,7 +20,7 @@ from .views import contacts_create, contacts_delete, contacts_list, contacts_upd
 urlpatterns = [
     path("", views.base, name="base"),
     path('authorization/', registration_login_view, name='register_login'),
-    path('pay/', pay, name='pay'),
+    path('pay/', pay, name='pay_tinkoff'),
     path('apply/', application_view, name='application'),
     path('house/', house_list, name='house_list'),
     path('house/<int:house_id>/', house_detail, name='house_detail'),
