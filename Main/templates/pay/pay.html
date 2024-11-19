@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+    <script src="https://yastatic.net/s3/ya-cdn-sdk/0.1.0/sdk.min.js"></script>
+    <script src="https://pay.yandex.ru/sdk/v1/pay.js" onload="onYaPayLoad()" async></script>
+
+    <style>
+        .ya-pay-widget {
+            width: 500px !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Яндекс Pay</h1>
+    <div id="button_container"></div>
+
+    <script>
+        function onYaPayLoad() {
+            const YaPay = window.YaPay;
+
+            // Данные платежа
+            const paymentData = {
+                env: YaPay.PaymentEnv.Sandbox, // Для отладки
+                version: 4,
+                currencyCode: YaPay.CurrencyCode.Rub,
+                merchantId: '<YOUR_MERCHANT_ID>', // Замените на ваш идентификатор
+                totalAmount: '15980.00',
+                availablePaymentMethods: ['CARD', 'SPLIT'],
+            };
+
+            async function onPayButtonClick() {
+                // Создание заказа...
+                // Возврат URL на оплату вида 'https://pay.ya.ru/l/XXXXXX'
+            }
+
+            function onFormOpenError(reason) {
+                console.error(Payment error — ${reason});
+            }
+
+            YaPay.createSession(paymentData, {
+                onPayButtonClick: onPayButtonClick,
+                onFormOpenError: onFormOpenError,
+            })
+            .then(function (paymentSession) {
+                paymentSession.mountButton(document.querySelector('#button_container'), {
+                    type: YaPay.ButtonType.Pay,
+                    theme: YaPay.ButtonTheme.Black,
+                    width: YaPay.ButtonWidth.Auto,
+                });
+            })
+            .catch(function (err) {
+                console.error('Не удалось создать платежную сессию.', err);
+            });
+        }
+    </script>
+</body>
+</html>
