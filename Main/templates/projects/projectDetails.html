@@ -303,14 +303,14 @@
                                     </div>
 
                                     <div class="livingArea">тут будет жилая (эффективная в БД) площадь {{ house.total_area }} м²</div>
-                                    <div class="price">Тут будет ценник проекта {{ house.price }}</div>
-                                    <button class="payBtn" onclick="">
+                                    <div class="price">тут будет цена {{ house.price }}</div>
+                                    <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
                                         <span>КУПИТЬ</span>
-                                      </button>
+                                    </button>
+                                    
                                 </div>
                             </div>
                         </div>
-
 
 
 

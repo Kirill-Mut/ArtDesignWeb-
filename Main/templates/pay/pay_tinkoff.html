@@ -48,22 +48,34 @@
             border: 1px solid #FAB619;
         }
     </style>
-    <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
     <form class="payform-tbank" name="payform-tbank" id="payform-tbank">
         <input class="payform-tbank-row" type="hidden" name="terminalkey" value="TBankTest">
         <input class="payform-tbank-row" type="hidden" name="frame" value="false">
         <input class="payform-tbank-row" type="hidden" name="language" value="ru">
-        <input class="payform-tbank-row" type="hidden" name="receipt" value="">
+        
+        <!-- Скрытое поле для хранения цены -->
+        <input type="hidden" name="price" id="price" value="{{ price }}">
+        
         <input class="payform-tbank-row" type="text" placeholder="Сумма заказа" name="amount" required>
+        
         <input class="payform-tbank-row" type="hidden" placeholder="Номер заказа" name="order">
-        <input class="payform-tbank-row" type="text" placeholder="Описание заказа" name="description">
+        <input class="payform-tbank-row" type="text" placeholder="Описание заказа" name="description" value="{{ selected_house_title }}">
         <input class="payform-tbank-row" type="text" placeholder="ФИО плательщика" name="name">
         <input class="payform-tbank-row" type="email" placeholder="E-mail" name="email">
         <input class="payform-tbank-row" type="tel" placeholder="Контактный телефон" name="phone">
+        
         <input class="payform-tbank-row payform-tbank-btn" type="submit" value="Оплатить">
     </form>
+    
     <script type="text/javascript">
         const TPF = document.getElementById("payform-tbank");
+        
+        // Устанавливаем значение поля amount на основе переданной цены
+        const priceInput = document.getElementById("price");
+        if (priceInput.value) {
+            const amountField = TPF.querySelector('input[name="amount"]');
+            amountField.value = priceInput.value; // Устанавливаем сумму заказа
+        }
     
         TPF.addEventListener("submit", function (e) {
             e.preventDefault();
@@ -92,7 +104,7 @@
                 });
             }
             pay(TPF);
-        })
+        });
     </script>
 </body>
 </html>
