@@ -1,0 +1,16 @@
+#carouselExampleCaptions{
+    z-index:-1;
+    margin-left: -200px;
+    text-align: center;
+    display: inline-block;
+  }
+.nameProject{
+  display: inline-block;
+  padding: 20px;
+  margin-left: -1350px;
+  margin-top: -250px;
+  position: relative;
+  font-weight: bold;
+  font-size: 48px;
+
+}
