@@ -14,3 +14,25 @@
   font-size: 48px;
 
 }
+.payBtn:hover {
+  transition: 1s ease-in-out;
+  background: #18181A;
+}
+.payBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+.payBtn span {
+  color: #F0EDE5;
+  font-size: 18px;
+  font-weight: 100;
+}
+.payBtn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background-color:#D0893F;
+  border: 1px solid #F0EDE5;
+  outline: none;
+  transition: 1s ease-in-out;
+  align-self: center;
+}
