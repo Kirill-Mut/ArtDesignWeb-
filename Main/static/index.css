@@ -81,6 +81,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #656466;
   align-items: center;
   vertical-align:top;
+  margin-top:250px;
 }
 .slidersHead{
   height: 250px;
@@ -388,10 +389,11 @@ picture {
   margin-top:-25px;
 }
 /*---------------------CAROUSEL-END-----------------------*/
-.advantages, .questions, .invitation, .contacts{ 
+.advantages, .questions, .invitation, .contacts, .container mb-5{ 
   height: 450px; 
   width: 100%; 
   display: flex;
+  margin-left:180px;
   margin-top:35px;
 } 
 .advantagesBody{ 
