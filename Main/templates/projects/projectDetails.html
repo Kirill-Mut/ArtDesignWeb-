@@ -90,7 +90,12 @@
         }
 
         input {
-            padding: 2px 4px;
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
         }
 
         img {
@@ -100,6 +105,149 @@
         html {
             scroll-behavior: smooth
         }
+
+
+
+
+
+        .payform-tbank {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin: 2px auto;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            max-width: 250px;
+        }
+        .payform-tbank-row {
+            margin: 2px;
+            border-radius: 4px;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            border: 1px solid #DFE3F3;
+            padding: 15px;
+            outline: none;
+            background-color: #DFE3F3;
+            font-size: 15px;
+        }
+        .payform-tbank-row:focus {
+            background-color: #FFFFFF;
+            border: 1px solid #616871;
+            border-radius: 4px;
+        }
+        .payform-tbank-btn {
+            background-color: #FBC520;
+            border: 1px solid #FBC520;
+            color: #3C2C0B;
+        }
+        .payform-tbank-btn:hover {
+            background-color: #FAB619;
+            border: 1px solid #FAB619;
+        }
+
+
+
+
+     
+        
+
+
+
+
+        /* Extra styles for the cancel button */
+.cancelbtn {
+    width: 50%;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+
+
+.container {
+    padding: 16px;
+    
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 50%;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 50%;
+    }
+}
+
+
+
     </style>
     <style data-tag="default-style-sheet">
         html {
@@ -304,9 +452,15 @@
 
                                     <div class="livingArea">тут будет жилая (эффективная в БД) площадь {{ house.total_area }} м²</div>
                                     <div class="price">тут будет цена {{ house.price }}</div>
-                                    <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
+       <!--                             <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
                                         <span>КУПИТЬ</span>
                                     </button>
+-->
+<button class="payBtn" onclick="openModal('{{ house.price }}', '{{ house.title|urlencode }}')">
+    <span>Купить</span>
+</button>
+
+                                    
                                     
                                 </div>
                             </div>
@@ -329,9 +483,96 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                    </div>
+                    <form class="payform-tbank" name="payform-tbank" id="payform-tbank">
+                        <input class="payform-tbank-row" type="hidden" name="terminalkey" value="TBankTest">
+                        <input class="payform-tbank-row" type="hidden" name="frame" value="false">
+                        <input class="payform-tbank-row" type="hidden" name="language" value="ru">  
+                        <input class="payform-tbank-row" type="text" placeholder="Сумма заказа" name="amount" value="" id="orderAmount" readonly>                   
+                        <input class="payform-tbank-row" type="text" placeholder="Описание заказа" name="description" value="" id="orderDescription" readonly>
+                        <input class="payform-tbank-row" type="text" placeholder="ФИО плательщика" name="name">
+                        <input class="payform-tbank-row" type="email" placeholder="E-mail" name="email">
+                        <input class="payform-tbank-row" type="tel" placeholder="Контактный телефон" name="phone">
+                        <input class="payform-tbank-row payform-tbank-btn" type="submit" value="Оплатить">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Закрыть</button>
+                    </form>
+                </form>
+            </div>
+
+
+
+
 </body>
 
 <script src="../../static/projestsScript.js"></script>
+<script>
+    // Функция для открытия модального окна и установки значений
+    function openModal(price, title) {
+        document.getElementById('orderAmount').value = price;
+        document.getElementById('orderDescription').value = decodeURIComponent(title);
+        document.getElementById('id01').style.display = 'block';
+    }
+
+    // Получаем модальное окно
+    var modal = document.getElementById('id01');
+    
+    // Когда пользователь кликает где угодно вне модального окна, закрываем его
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script type="text/javascript">
+    const TPF = document.getElementById("payform-tbank");
+    
+    // Устанавливаем значение поля amount на основе переданной цены
+    const priceInput = document.getElementById("price");
+    if (priceInput.value) {
+        const amountField = TPF.querySelector('input[name="amount"]');
+        amountField.value = priceInput.value; // Устанавливаем сумму заказа
+    }
+
+    TPF.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const {description, amount, email, phone, receipt} = TPF;
+
+        if (receipt) {
+            if (!email.value && !phone.value)
+                return alert("Поле E-mail или Phone не должно быть пустым");
+
+            TPF.receipt.value = JSON.stringify({
+                "EmailCompany": "mail@mail.com",
+                "Taxation": "patent",
+                "FfdVersion": "1.2",
+                "Items": [
+                    {
+                        "Name": description.value || "Оплата",
+                        "Price": amount.value + '00',
+                        "Quantity": 1.00,
+                        "Amount": amount.value + '00',
+                        "PaymentMethod": "full_prepayment",
+                        "PaymentObject": "service",
+                        "Tax": "none",
+                        "MeasurementUnit": "pc"
+                    }
+                ]
+            });
+        }
+        pay(TPF);
+    });
+</script>
 
 <script type="module">
     import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js";
