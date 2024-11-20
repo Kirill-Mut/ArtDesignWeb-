@@ -394,7 +394,7 @@ span.psw {
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <img src="{{ photo.filename.url }}" class="d-block w-100 projectPhoto" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
+                                <div class="carousel-caption">
                                   <span class="nameProject">{{ house.title }}</span>
                                 </div>
                               </div>
@@ -418,19 +418,29 @@ span.psw {
                             <button class="nextPhoto"></button>
                         </div>
                         <div class="dModel">
-                            <span class="dModelHead">Тут будет описание каждого дома {{ house.description }}</span>
-                            <div id="modelContainer" style="width: 100%; height: 500px;">Заглушка модели</div>
-                        </div>
-                        <div class="slider2">
-                            {% for photo in house.internal_photos.all %}
-                            <img class="projectPhoto2" src="{{ photo.filename.url }}">
-                            {% empty %}
-                            <p>Нет внутренних фотографий.</p>
-                            {% endfor %}
-                            <div class="sliderButton">
-                                <button class="backPhoto"></button>
-                                <button class="nextPhoto"></button>
+                            <div class="description-container">
+                              <div class="description-scroll">
+                                <span class="dModelHead">Тут будет описание каждого дома {{ house.description }}</span>
+                              </div>
+                              <div class="scrollbar">
+                                <div class="thumb"></div>
+                              </div>
                             </div>
+                            <div id="modelContainer" style="width: calc(50% - 10px); height: 500px; float:right;">Заглушка модели 3D</div>
+                          </div>
+                          <div class="slider2">
+                            <div class="slider-container">  <!-- Добавили контейнер -->
+                              {% for photo in house.internal_photos.all %}
+                                <img class="projectPhoto2" src="{{ photo.filename.url }}">
+                              {% empty %}
+                                <p>Нет внутренних фотографий.</p>
+                              {% endfor %}
+                            </div>
+                            <div class="sliderButton">
+                              <button class="backPhoto"></button>
+                              <button class="nextPhoto"></button>
+                            </div>
+                          </div>
                             <div class="priceProject">
                                 <div class="priceProjectHead">
                                     <img class="drawing">
@@ -464,7 +474,6 @@ span.psw {
                                     
                                 </div>
                             </div>
-                        </div>
 
 
 
@@ -647,6 +656,89 @@ span.psw {
     }
     
     animate();
+
+
+    const descriptionScroll = document.querySelector('.description-scroll');
+    const scrollbar = document.querySelector('.scrollbar');
+    const thumb = document.querySelector('.thumb');
+    
+    descriptionScroll.addEventListener('scroll', () => {
+      const scrollTop = descriptionScroll.scrollTop;
+      const maxScrollTop = descriptionScroll.scrollHeight - descriptionScroll.clientHeight;
+      const percent = scrollTop / maxScrollTop;
+      const thumbHeight = scrollbar.clientHeight * percent;
+      thumb.style.top = `${(scrollbar.clientHeight - thumbHeight) * percent}px`;
+      thumb.style.height = `${thumbHeight}px`;
+    });
+    
+    
+    //Обработка клика на полосе прокрутки (опционально)
+    scrollbar.addEventListener('click', (e) => {
+        const scrollHeight = descriptionScroll.scrollHeight - descriptionScroll.clientHeight;
+        const clickY = e.clientY - scrollbar.offsetTop;
+        const percent = clickY / scrollbar.clientHeight;
+        const scrollTop = scrollHeight * percent;
+        descriptionScroll.scrollTo({ top: scrollTop, behavior: 'smooth'});
+    });
+
+
+    const sliderContainer = document.querySelector('.slider-container');
+    const projectPhotos = document.querySelectorAll('.projectPhoto2');
+    const backButton = document.querySelector('.backPhoto');
+    const nextButton = document.querySelector('.nextPhoto');
+    
+    let currentIndex = 0;
+    let isDragging = false;
+    let startX;
+    
+    //Функция создания клонов изображений для бесконечного слайда
+    function createClones() {
+        const firstClone = projectPhotos[0].cloneNode(true);
+        const lastClone = projectPhotos[projectPhotos.length - 1].cloneNode(true);
+        sliderContainer.appendChild(firstClone);
+        sliderContainer.insertBefore(lastClone, projectPhotos[0]);
+    }
+    
+    
+    // Вызов функции создания клонов
+    createClones();
+    
+    //Перемещение слайдера при перетаскивании
+    const handleDragStart = (e) => {
+        isDragging = true;
+        startX = e.clientX - sliderContainer.offsetLeft;
+    }
+    
+    const handleDragMove = (e) => {
+        if(!isDragging) return;
+        const x = e.clientX - sliderContainer.offsetLeft;
+        const walk = (x - startX) * 2; //Умножение на 2 увеличивает скорость слайда
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex + walk / sliderContainer.offsetWidth} ))`;
+    }
+    
+    const handleDragEnd = () => {
+        isDragging = false;
+        const x = currentIndex + Math.round(sliderContainer.offsetLeft / (sliderContainer.offsetWidth / 3));
+        currentIndex = x >= 0 ? x % projectPhotos.length: projectPhotos.length + x % projectPhotos.length;
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex}))`;
+    }
+    
+    //Обработка кликов на кнопках
+    backButton.addEventListener('click', () => {
+        currentIndex = (currentIndex -1 + projectPhotos.length) % projectPhotos.length;
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex}))`;
+    })
+    
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % projectPhotos.length;
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex}))`;
+    })
+    
+    // Слушатели событий для перетаскивания
+    sliderContainer.addEventListener('mousedown', handleDragStart);
+    sliderContainer.addEventListener('mousemove', handleDragMove);
+    sliderContainer.addEventListener('mouseup', handleDragEnd);
+    sliderContainer.addEventListener('mouseleave', handleDragEnd);
 </script>
 
 </html>

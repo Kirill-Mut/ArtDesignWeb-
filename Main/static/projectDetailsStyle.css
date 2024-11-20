@@ -1,19 +1,3 @@
-#carouselExampleCaptions{
-    z-index:-1;
-    margin-left: -200px;
-    text-align: center;
-    display: inline-block;
-  }
-.nameProject{
-  display: inline-block;
-  padding: 20px;
-  margin-left: -1350px;
-  margin-top: -250px;
-  position: relative;
-  font-weight: bold;
-  font-size: 48px;
-
-}
 .payBtn:hover {
   transition: 1s ease-in-out;
   background: #18181A;
@@ -35,4 +19,123 @@
   outline: none;
   transition: 1s ease-in-out;
   align-self: center;
+}
+.projectPhoto{
+  width: 100%;
+  height: 1080px;
+}
+#carouselExampleCaptions{
+    z-index:-1;
+    margin-left: -200px;
+    text-align: center;
+    display: inline-block;
+  }
+.carousel-caption{
+  display: inline-block;
+  position: relative;
+}
+.nameProject{
+  display: inline-block;
+  padding: 20px;
+  margin-left: -1350px;
+  top: -200px;
+  position: relative;
+  font-weight: bold;
+  font-size: 48px;
+}
+.carousel-indicators{
+  display: inline-block;
+  top: 900px;
+}
+.dModel {
+  display: flex; /* Используем flexbox для удобного расположения элементов */
+  width: 100%;
+  height: 500px;
+}
+
+.description-container {
+  width: calc(50% - 10px); /* Ширина для описания */
+  height: 100%;
+  overflow: hidden; /* Скрываем переполнение */
+  position: relative; /* Для абсолютного позиционирования ползунка */
+}
+
+.description-scroll {
+  height: 100%;
+  overflow-y: auto; /* Вертикальная прокрутка */
+  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
+  padding: 10px; /* Добавляем внутренний отступ */
+}
+
+
+.scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: #f0f0f0; /* Цвет фона полосы прокрутки */
+  border-radius: 5px; /* Скругление углов */
+  cursor: pointer;
+}
+
+.thumb {
+  position: absolute;
+  width: 5px;
+  height: 20px; /* Начальная высота ползунка */
+  background-color: black;
+  border-radius: 5px;
+}
+
+/* Стили для предотвращения горизонтальной прокрутки на мобильных */
+@media (max-width: 768px) {
+    .dModel {
+        flex-direction: column; /* Размещение элементов вертикально на мобильных устройствах */
+    }
+    .description-container {
+        width: 100%;
+    }
+    #modelContainer {
+        width: 100%;
+        float: none;
+    }
+}
+
+#modelContainer {
+  width: calc(50% - 10px);
+  height: 100%;
+}
+
+.slider2 {
+  width: 100%; /* Или другая ширина по вашему желанию */
+  margin: 0 auto; /* Центрирование по горизонтали */
+  position: relative; /* Для абсолютного позиционирования кнопок */
+  overflow: hidden; /* Скрываем переполнение, чтобы не видеть клоны */
+  margin-top: 150px;
+  height: 1000px;
+  border: 1px solid black;
+}
+
+.slider-container {
+  display: flex; /* Используем flexbox для слайдера */
+  transition: transform 0.5s ease-in-out; /* Плавная анимация */
+  /* Задаем ширину в несколько раз больше ширины экрана */
+  width: 100%; /* Увеличиваем ширину с учетом клонов изображений */
+  
+}
+
+.projectPhoto2 {
+  flex: 0 0 33.33%; /* Каждое изображение занимает треть ширины */
+  height: auto; /* Сохранение пропорций */
+  object-fit: cover; /* Обрезка изображений по краям */
+}
+
+.sliderButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.backPhoto, .nextPhoto {
+  /* Стили для кнопок */
 }
