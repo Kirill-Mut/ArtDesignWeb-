@@ -15,7 +15,7 @@
 }
 .projectPhoto {
   width: 100%;
-  height: 100%;
+  height: 1080px;
   object-fit: cover;
 }
 .carousel-control-prev,
@@ -24,15 +24,6 @@
   z-index: 10;
 }
 
-.nameProject {
-  display: inline-block;
-  padding: 20px;
-  margin-left: 0;
-  margin-top: 0;
-  position: relative;
-  font-weight: bold;
-  font-size: 48px;
-}
 .payBtn:hover {
   transition: 1s ease-in-out;
   background: #18181A;
@@ -55,25 +46,16 @@
   transition: 1s ease-in-out;
   align-self: center;
 }
-.projectPhoto{
-  width: 100%;
-  height: 1080px;
-}
-#carouselExampleCaptions{
-    z-index:-1;
-    margin-left: -200px;
-    text-align: center;
-    display: inline-block;
-  }
+
 .carousel-caption{
   display: inline-block;
   position: relative;
 }
-.nameProject{
+.nameProject {
   display: inline-block;
   padding: 20px;
-  margin-left: -1350px;
-  top: -200px;
+  margin-left: 0;
+  margin-top: 0;
   position: relative;
   font-weight: bold;
   font-size: 48px;
