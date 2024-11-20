@@ -1,3 +1,29 @@
+#carouselExampleCaptions {
+  z-index: auto;
+  margin-left: 0;
+  text-align: center;
+  display: inline-block;
+  width: 90vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  max-height: 100%;
+}
+.projectPhoto {
+  width: 100%;
+  height: 1080px;
+  object-fit: cover;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  z-index: 10;
+}
+
 .payBtn:hover {
   transition: 1s ease-in-out;
   background: #18181A;
@@ -14,31 +40,22 @@
   width: 180px;
   height: 60px;
   cursor: pointer;
-  background-color:#D0893F;
+  background-color: #D0893F;
   border: 1px solid #F0EDE5;
   outline: none;
   transition: 1s ease-in-out;
   align-self: center;
 }
-.projectPhoto{
-  width: 100%;
-  height: 1080px;
-}
-#carouselExampleCaptions{
-    z-index:-1;
-    margin-left: -200px;
-    text-align: center;
-    display: inline-block;
-  }
+
 .carousel-caption{
   display: inline-block;
   position: relative;
 }
-.nameProject{
+.nameProject {
   display: inline-block;
   padding: 20px;
-  margin-left: -1350px;
-  top: -200px;
+  margin-left: 0;
+  margin-top: 0;
   position: relative;
   font-weight: bold;
   font-size: 48px;
