@@ -47,3 +47,43 @@
     background: #0095B6;
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 920px) {
+
+
+  .wave {
+    height: 15em;
+    /* Уменьшаем высоту волн для маленьких экранов */
+    animation: wave 8s -2s linear infinite;
+    /* Увеличиваем скорость анимации */
+}
+
+.wave:nth-of-type(2) {
+    bottom: -2em;
+    /* Уменьшаем расстояние между волнами */
+    animation: wave 15s linear reverse infinite;
+    /* Увеличиваем скорость анимации */
+}
+
+.wave:nth-of-type(3) {
+    bottom: -4em;
+    /* Уменьшаем расстояние между волнами */
+    animation: wave 16s -1s reverse infinite;
+    /* Увеличиваем скорость анимации */
+}
+
+}

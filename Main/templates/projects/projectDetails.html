@@ -313,13 +313,13 @@
                                     </div>
 
                                     <div class="livingArea">тут будет жилая (эффективная в БД) площадь {{ house.total_area }} м²</div>
-                                    <div class="price">Тут будет ценник проекта {{ house.price }}</div>
-                                    <button class="payBtn" onclick="">
+                                    <div class="price">тут будет цена {{ house.price }}</div>
+                                    <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
                                         <span>КУПИТЬ</span>
-                                      </button>
+                                    </button>
+                                    
                                 </div>
                             </div>
-
 
 
 
@@ -344,19 +344,19 @@
 
 <script type="module">
     import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js";
-    import { FBXLoader } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/loaders/FBXLoader.js"; 
+    import { GLTFLoader } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/loaders/GLTFLoader.js"; 
     import { OrbitControls } from "https://cdn.rawgit.com/mrdoob/three.js/r128/examples/jsm/controls/OrbitControls.js";
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    //renderer.setClearColor(0xffffff); // Set background color to white
+    renderer.setClearColor(0xffffff); // Установить цвет фона в белый
     const modelContainer = document.getElementById('modelContainer');
 
     renderer.setSize(modelContainer.clientWidth, modelContainer.clientHeight);
     modelContainer.appendChild(renderer.domElement);
 
-    // Add lighting
+    // Добавление освещения
     const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x404040, 1);
     scene.add(hemisphereLight);
 
@@ -364,36 +364,54 @@
     directionalLight1.position.set(10, 10, 10).normalize();
     scene.add(directionalLight1);
 
-    // Load the FBX model
+    // Загрузка модели
     let model;
-    const loader = new FBXLoader();
+    const loader = new GLTFLoader();
     
     loader.load(
-        "{{ house.model_3d.url }}", // URL of the FBX model
-        function (fbx) {
-            model = fbx;
-            model.position.set(0, 0, 0); // Set model coordinates
+        "{{ house.model_3d.url }}", // URL модели
+        function (gltf) {
+            model = gltf.scene;
+            model.position.set(0, 0, 0); // Координаты модели
             scene.add(model);
         },
         undefined,
         function (error) {
-            console.error('Error loading model:', error);
+            console.error('Ошибка загрузки модели:', error);
         }
     );
 
-    camera.position.set(35, 35, 35); // Set camera coordinates
+    camera.position.set(35, 35, 35); // Координаты камеры
 
-    // OrbitControls for camera control
+    // OrbitControls для управления камерой
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
     controls.dampingFactor = 0.25;
     controls.screenSpacePanning = false;
     controls.maxPolarAngle = Math.PI / 2;
 
+    let isRotating = true; // Флаг для управления вращением
+
+    // Добавляем обработчики событий указателя для управления вращением
+    modelContainer.addEventListener('pointerdown', () => {
+        isRotating = false; // Остановить вращение при нажатии кнопки мыши на сцене
+        controls.enabled = true; // Отключить управление камерой
+    });
+
+    modelContainer.addEventListener('pointerup', () => {
+        isRotating = true; // Возобновить вращение при отпускании кнопки мыши на сцене
+        controls.enabled = true; // Включить управление камерой
+    });
+
     function animate() {
         requestAnimationFrame(animate);
-        controls.update(); // Update controls
-        renderer.render(scene, camera); // Render the scene
+        
+        if (model && isRotating) {
+            model.rotation.y += 0.01; // Медленно вращать модель
+        }
+
+        controls.update(); // Обновление управления
+        renderer.render(scene, camera); // Рендеринг сцены
     }
     
     animate();
@@ -481,6 +499,5 @@
     sliderContainer.addEventListener('mouseup', handleDragEnd);
     sliderContainer.addEventListener('mouseleave', handleDragEnd);
 </script>
-
 
 </html>

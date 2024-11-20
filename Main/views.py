@@ -40,7 +40,9 @@ def contacts(request):
     return render(request, 'contacts/contacts.html')
 
 def pay(request):
-    return render(request, 'pay/pay_tinkoff.html')
+    price = request.GET.get('price', 0)
+    title = request.GET.get('title', '')  # Получаем название дома
+    return render(request, 'pay/pay_tinkoff.html', {'price': price, 'selected_house_title': title})
 
 def about_us(request):
     return render(request, 'about_us/about_us.html')
