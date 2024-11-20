@@ -429,6 +429,89 @@
     }
     
     animate();
+
+
+    const descriptionScroll = document.querySelector('.description-scroll');
+    const scrollbar = document.querySelector('.scrollbar');
+    const thumb = document.querySelector('.thumb');
+    
+    descriptionScroll.addEventListener('scroll', () => {
+      const scrollTop = descriptionScroll.scrollTop;
+      const maxScrollTop = descriptionScroll.scrollHeight - descriptionScroll.clientHeight;
+      const percent = scrollTop / maxScrollTop;
+      const thumbHeight = scrollbar.clientHeight * percent;
+      thumb.style.top = `${(scrollbar.clientHeight - thumbHeight) * percent}px`;
+      thumb.style.height = `${thumbHeight}px`;
+    });
+    
+    
+    //Обработка клика на полосе прокрутки (опционально)
+    scrollbar.addEventListener('click', (e) => {
+        const scrollHeight = descriptionScroll.scrollHeight - descriptionScroll.clientHeight;
+        const clickY = e.clientY - scrollbar.offsetTop;
+        const percent = clickY / scrollbar.clientHeight;
+        const scrollTop = scrollHeight * percent;
+        descriptionScroll.scrollTo({ top: scrollTop, behavior: 'smooth'});
+    });
+
+
+    const sliderContainer = document.querySelector('.slider-container');
+    const projectPhotos = document.querySelectorAll('.projectPhoto2');
+    const backButton = document.querySelector('.backPhoto');
+    const nextButton = document.querySelector('.nextPhoto');
+    
+    let currentIndex = 0;
+    let isDragging = false;
+    let startX;
+    
+    //Функция создания клонов изображений для бесконечного слайда
+    function createClones() {
+        const firstClone = projectPhotos[0].cloneNode(true);
+        const lastClone = projectPhotos[projectPhotos.length - 1].cloneNode(true);
+        sliderContainer.appendChild(firstClone);
+        sliderContainer.insertBefore(lastClone, projectPhotos[0]);
+    }
+    
+    
+    // Вызов функции создания клонов
+    createClones();
+    
+    //Перемещение слайдера при перетаскивании
+    const handleDragStart = (e) => {
+        isDragging = true;
+        startX = e.clientX - sliderContainer.offsetLeft;
+    }
+    
+    const handleDragMove = (e) => {
+        if(!isDragging) return;
+        const x = e.clientX - sliderContainer.offsetLeft;
+        const walk = (x - startX) * 2; //Умножение на 2 увеличивает скорость слайда
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex + walk / sliderContainer.offsetWidth} ))`;
+    }
+    
+    const handleDragEnd = () => {
+        isDragging = false;
+        const x = currentIndex + Math.round(sliderContainer.offsetLeft / (sliderContainer.offsetWidth / 3));
+        currentIndex = x >= 0 ? x % projectPhotos.length: projectPhotos.length + x % projectPhotos.length;
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex}))`;
+    }
+    
+    //Обработка кликов на кнопках
+    backButton.addEventListener('click', () => {
+        currentIndex = (currentIndex -1 + projectPhotos.length) % projectPhotos.length;
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex}))`;
+    })
+    
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % projectPhotos.length;
+        sliderContainer.style.transform = `translateX(calc(-33.33% * ${currentIndex}))`;
+    })
+    
+    // Слушатели событий для перетаскивания
+    sliderContainer.addEventListener('mousedown', handleDragStart);
+    sliderContainer.addEventListener('mousemove', handleDragMove);
+    sliderContainer.addEventListener('mouseup', handleDragEnd);
+    sliderContainer.addEventListener('mouseleave', handleDragEnd);
 </script>
 
 </html>
