@@ -33,6 +33,9 @@ def projects(request):
     house_id = request.GET.get('house_id')
     if house_id:
         selected_house = get_object_or_404(House, id=house_id)  # Получаем выбранный дом по ID
+    else:
+        # Если house_id не передан, выбираем первый дом по умолчанию
+        selected_house = houses.first()
 
     return render(request, 'projects/projects.html', {'houses': houses, 'selected_house': selected_house})
 

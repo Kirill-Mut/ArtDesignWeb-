@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+media/**/*.jpg
+media/**/*.png
+media/**/*.glb
+Main/migrations/__pycache__/
+
