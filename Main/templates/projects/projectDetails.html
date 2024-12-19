@@ -1,273 +1,12 @@
 <!DOCTYPE html>
 <html lang="english">
-
 <head>
     <title>exported project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'projectDetailsStyle.css' %}" />
-    <style data-tag="reset-style-sheet">
-        html {
-            line-height: 1.15;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        * {
-            box-sizing: border-box;
-            border-width: 0;
-            border-style: solid;
-        }
-
-        p,
-        li,
-        ul,
-        pre,
-        div,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        figure,
-        blockquote,
-        figcaption {
-            margin: 0;
-            padding: 0;
-        }
-
-        button {
-            background-color: transparent;
-        }
-
-        button,
-        input,
-        optgroup,
-        select,
-        textarea {
-            font-family: inherit;
-            font-size: 100%;
-            line-height: 1.15;
-            margin: 0;
-        }
-
-        button,
-        select {
-            text-transform: none;
-        }
-
-        button,
-        [type="button"],
-        [type="reset"],
-        [type="submit"] {
-            -webkit-appearance: button;
-        }
-
-        button::-moz-focus-inner,
-        [type="button"]::-moz-focus-inner,
-        [type="reset"]::-moz-focus-inner,
-        [type="submit"]::-moz-focus-inner {
-            border-style: none;
-            padding: 0;
-        }
-
-        button:-moz-focus,
-        [type="button"]:-moz-focus,
-        [type="reset"]:-moz-focus,
-        [type="submit"]:-moz-focus {
-            outline: 1px dotted ButtonText;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: inherit;
-        }
-
-        input {
-            width: 50%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-
-        img {
-            display: block;
-        }
-
-        html {
-            scroll-behavior: smooth
-        }
-
-
-
-
-
-        .payform-tbank {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            margin: 2px auto;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            max-width: 250px;
-        }
-        .payform-tbank-row {
-            margin: 2px;
-            border-radius: 4px;
-            -webkit-box-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-            -webkit-transition: 0.3s;
-            -o-transition: 0.3s;
-            transition: 0.3s;
-            border: 1px solid #DFE3F3;
-            padding: 15px;
-            outline: none;
-            background-color: #DFE3F3;
-            font-size: 15px;
-        }
-        .payform-tbank-row:focus {
-            background-color: #FFFFFF;
-            border: 1px solid #616871;
-            border-radius: 4px;
-        }
-        .payform-tbank-btn {
-            background-color: #FBC520;
-            border: 1px solid #FBC520;
-            color: #3C2C0B;
-        }
-        .payform-tbank-btn:hover {
-            background-color: #FAB619;
-            border: 1px solid #FAB619;
-        }
-
-
-
-
-     
-        
-
-
-
-
-        /* Extra styles for the cancel button */
-.cancelbtn {
-    width: 50%;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-
-
-
-.container {
-    padding: 16px;
-    
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 50; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 50%;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
-    to {-webkit-transform: scale(1)}
-}
-    
-@keyframes animatezoom {
-    from {transform: scale(0)} 
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw {
-       display: block;
-       float: none;
-    }
-    .cancelbtn {
-       width: 50%;
-    }
-}
-
-
-
-    </style>
-    <style data-tag="default-style-sheet">
-        html {
-            font-family: Inter;
-            font-size: 16px;
-        }
-
-        body {
-            font-weight: 400;
-            font-style: normal;
-            text-decoration: none;
-            text-transform: none;
-            letter-spacing: normal;
-            line-height: 1.15;
-            color: var(--dl-color-theme-neutral-dark);
-            background-color: var(--dl-color-theme-neutral-light);
-
-            fill: var(--dl-color-theme-neutral-dark);
-        }
-    </style>
     <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" data-tag="font" />
@@ -348,14 +87,13 @@ span.psw {
 </head>
 
 <body>
-    <link href="../../static/projectsStyle.css" rel="stylesheet" />
+    <link href="../../static/projectDetailsStyle.css" rel="stylesheet" />
     <div class="modularhouse-main-container">
         <div class="modularhouse-main-modularhouse-main">
             <div class="modularhouse-main-nav">
                 <a href="https://modular-house.by/" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link">
-                    <img alt="SVG2471" src="../../static/images/svg2471.svg" class="modularhouse-main-logo" />
+                    <img alt="SVG2471" src="../../../static/images/svg2471.svg" class="modularhouse-main-logo" />
                 </a>
-
                 <span class="NavBar">
                     <a href="{% url 'base' %}" class="navbarA"><span class="NavBarItem">МЕНЮ</span></a>
                     <a href="{% url 'about_us' %}" class="navbarA"><span class="NavBarItem">О НАС</span></a>
@@ -365,24 +103,23 @@ span.psw {
                 <div class="linksSocial">
                     <div class="facebookLink">
                         <a href="https://www.facebook.com/BYhome.zrobim/" target="_blank" rel="noreferrer noopener" class="facebookLinkBtn">
-                            <img alt="facebook" src="../../static/images/svg2473.svg" class="svgFacebook" />
+                            <img alt="facebook" src="../../../static/images/svg2472.svg" class="svgFacebook" />
                         </a>
                     </div>
                     <div class="youtubeLink">
                         <a href="https://www.youtube.com/channel/UCxc3agJ3TIg4H0dilD-yBlQ" target="_blank" rel="noreferrer noopener" class="youtubeLinkBtn">
-                            <img alt="youtube" src="../../static/images/svg2473-ylg8.svg" class="svgYoutube" />
+                            <img alt="youtube" src="../../../static/images/svg2473-ylg8.svg" class="svgYoutube" />
                         </a>
                     </div>
                     <div class="instagramLink">
                         <a href="https://www.instagram.com/by___home/" target="_blank" rel="noreferrer noopener" class="instagramLinkBtn">
-                            <img alt="instagram" src="../../static/images/svg2473-z2vc.svg" class="svgInstagram" />
+                            <img alt="instagram" src="../../../static/images/svg2473-z2vc.svg" class="svgInstagram" />
                         </a>
                     </div>
                 </div>
             </div>
             <div class="modularhouse-main-container-home">
                 <div class="ProjectSelect">
-
                     <div class="slider">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
@@ -412,130 +149,104 @@ span.psw {
                             </button>
                         </div>
                     </div>
-                    
-                        <div class="dModel">
-                            <span class="dModelHead">Тут будет описание каждого дома {{ house.description }}</span>
-                            <div id="modelContainer" style="width: 100%; height: 500px;">Заглушка модели</div>
-                        </div>
-
-                        <div class="slider2">
-                            <div id="carouselInternalPhotos" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-indicators">
-                                    {% for photo in house.internal_photos.all %}
-                                        <button type="button" data-bs-target="#carouselInternalPhotos" data-bs-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}" aria-current="{% if forloop.first %}true{% endif %}" aria-label="Slide {{ forloop.counter }}"></button>
-                                    {% endfor %}
-                                </div>
-                                <div class="carousel-inner">
-                                    {% for photo in house.internal_photos.all %}
-                                        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                                            <img src="{{ photo.filename.url }}" class="d-block w-100 projectPhoto" alt="...">
-                                            <div class="carousel-caption d-none d-md-block">
-                                                <h5 class="nameProject">{{ house.title }}</h5>
-                                            </div>
+                    <div class="dModel">
+                        <span class="dModelHead">Тут будет описание каждого дома {{ house.description }}</span>
+                        <div id="modelContainer">Заглушка модели</div>
+                    </div>
+                    <div class="slider2">
+                        <div id="carouselInternalPhotos" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                {% for photo in house.internal_photos.all %}
+                                    <button type="button" data-bs-target="#carouselInternalPhotos" data-bs-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}" aria-current="{% if forloop.first %}true{% endif %}" aria-label="Slide {{ forloop.counter }}"></button>
+                                {% endfor %}
+                            </div>
+                            <div class="carousel-inner">
+                                {% for photo in house.internal_photos.all %}
+                                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                        <img src="{{ photo.filename.url }}" class="d-block w-100 projectPhoto" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5 class="nameProject">{{ house.title }}</h5>
                                         </div>
-                                    {% empty %}
-                                        <p>Нет внутренних фотографий.</p>
-                                    {% endfor %}
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselInternalPhotos" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Предыдущий</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselInternalPhotos" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Следующий</span>
-                                </button>
-                            </div>
-                        </div>
-
-                            <div class="priceProject">
-                                <div class="priceProjectHead">
-                                    <img class="drawing">
-                                </div>
-                                <div class="priceProjectBody">
-                                    
-                                    <div class="projectPhoto2">Чертеж<img class="projectPhoto2" src="{{ house.blueprint.url }}"></div>
-
-                                    <div class="rooms">Тут будет список комнат
-                                        {% for room in house.rooms.all %}
-                                        <tr>
-                                            <td>{{ room.name }}</td>
-                                            <td>{{ room.total_area }} м²</td>
-                                        </tr>
-                                        {% empty %}
-                                        <tr>
-                                            <td colspan="2">Нет комнат.</td>
-                                        </tr>
-                                        {% endfor %}
                                     </div>
-
-                                    <div class="livingArea">тут будет жилая (эффективная в БД) площадь {{ house.total_area }} м²</div>
-                                    <div class="price">тут будет цена {{ house.price }}</div>
-       <!--                             <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
-                                        <span>КУПИТЬ</span>
-                                    </button>
--->
-<button class="payBtn" onclick="openModal('{{ house.price }}', '{{ house.title|urlencode }}')">
-    <span>Купить</span>
-</button>
-
-                                    
-                                    
-                                </div>
+                                {% empty %}
+                                    <p>Нет внутренних фотографий.</p>
+                                {% endfor %}
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselInternalPhotos" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselInternalPhotos" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
                         </div>
-
-
-
-
-                        <div class="contactBtnContainer">
-                            <div class="center">
-                                <button class="contactBtn">
-                                    <svg id="btnSvg" width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                                    </svg>
-                                    <span class="contactBtnText">СВЯЗАТЬСЯ</span>
-                                </button>
+                    </div>
+                    <div class="priceProject">
+                        <div class="priceProjectHead">
+                            <img alt="HorizontalDivider2460" src="../../../static/images/horizontaldivider2460-aq07-200h.png" class="divider-image"/> 
+                            <span>ИТОГОВАЯ СТОИМОСТЬ</span> 
+                        </div>
+                        <div class="priceProjectBody"> 
+                            <div class="projectPhoto2"><img class="projectilePhoto2" src="{{ house.blueprint.url }}"></div>
+                            <div class="rooms">Тут будет список комнат
+                                {% for room in house.rooms.all %}
+                                <tr>
+                                    <td>{{ room.name }}</td>
+                                    <td>{{ room.total_area }} м²</td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="2">Нет комнат.</td>
+                                </tr>
+                                {% endfor %}
                             </div>
+                            <div class="livingArea">тут будет жилая (эффективная в БД) площадь {{ house.total_area }} м²</div>
+                            <div class="price">тут будет цена {{ house.price }}</div>
+                            <!-- <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
+                                <span>КУПИТЬ</span>
+                            </button>-->
+                            <button class="payBtn" onclick="openModal('{{ house.price }}', '{{ house.title|urlencode }}')">
+                                <span>Купить</span>
+                            </button>             
                         </div>
-                        
-                        <div class="modularhouse-main-footer"><span class="footerText"> © 2024 | ИП "Art-studio "Petr 1"</span></div>
                     </div>
                 </div>
-            </div>
-
-
-
-
-
-
-
-            <div id="id01" class="modal">
-                <form class="modal-content animate">
-                    <div class="imgcontainer">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <div class="contactBtnContainer">
+                    <div class="center">
+                        <button class="contactBtn">
+                            <svg id="btnSvg" width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                                <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                            </svg>
+                            <span class="contactBtnText">СВЯЗАТЬСЯ</span>
+                        </button>
                     </div>
-                    <form class="payform-tbank" name="payform-tbank" id="payform-tbank">
-                        <input class="payform-tbank-row" type="hidden" name="terminalkey" value="TBankTest">
-                        <input class="payform-tbank-row" type="hidden" name="frame" value="false">
-                        <input class="payform-tbank-row" type="hidden" name="language" value="ru">  
-                        <input class="payform-tbank-row" type="text" placeholder="Сумма заказа" name="amount" value="" id="orderAmount" readonly>                   
-                        <input class="payform-tbank-row" type="text" placeholder="Описание заказа" name="description" value="" id="orderDescription" readonly>
-                        <input class="payform-tbank-row" type="text" placeholder="ФИО плательщика" name="name">
-                        <input class="payform-tbank-row" type="email" placeholder="E-mail" name="email">
-                        <input class="payform-tbank-row" type="tel" placeholder="Контактный телефон" name="phone">
-                        <input class="payform-tbank-row payform-tbank-btn" type="submit" value="Оплатить">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Закрыть</button>
-                    </form>
-                </form>
+                </div>      
+                <div class="modularhouse-main-footer"><span class="footerText"> © 2024 | ИП "Art-studio "Petr 1"</span></div>
             </div>
-
-
-
-
+        </div>
+    </div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+            </div>
+            <form class="payform-tbank" name="payform-tbank" id="payform-tbank">
+                <input class="payform-tbank-row" type="hidden" name="terminalkey" value="TBankTest">
+                <input class="payform-tbank-row" type="hidden" name="frame" value="false">
+                <input class="payform-tbank-row" type="hidden" name="language" value="ru">  
+                <input class="payform-tbank-row" type="text" placeholder="Сумма заказа" name="amount" value="" id="orderAmount" readonly>                   
+                <input class="payform-tbank-row" type="text" placeholder="Описание заказа" name="description" value="" id="orderDescription" readonly>
+                <input class="payform-tbank-row" type="text" placeholder="ФИО плательщика" name="name">
+                <input class="payform-tbank-row" type="email" placeholder="E-mail" name="email">
+                <input class="payform-tbank-row" type="tel" placeholder="Контактный телефон" name="phone">
+                <input class="payform-tbank-row payform-tbank-btn" type="submit" value="Оплатить">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Закрыть</button>
+            </form>
+        </form>
+    </div>
 </body>
-
 <script src="../../static/projestsScript.js"></script>
 <script>
     // Функция для открытия модального окна и установки значений

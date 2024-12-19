@@ -107,8 +107,7 @@
           <div class="modularhouse-main-nav">
             <a href="https://modular-house.by/" target="_blank" rel="noreferrer noopener" class="modularhouse-main-link">
                 <img alt="SVG2471" src="../../static/images/svg2471.svg" class="modularhouse-main-logo"/>
-            </a>
-            
+            </a>    
             <span class="NavBar">
               <a href="{% url 'base' %}" class="navbarA"><span class="NavBarItem">МЕНЮ</span></a>
               <a href="{% url 'about_us' %}" class="navbarA"><span class="NavBarItem">О НАС</span></a>
@@ -131,9 +130,7 @@
                   <img alt="instagram" src="../../static/images/svg2473-z2vc.svg" class="svgInstagram"/>
                 </a>
               </div>
-            </div>  
-          </div>
-
+            </div>  </div>
           <div class="modularhouse-main-container-home">
             <div class="projectContainer">
             <section class="catalog">
@@ -152,7 +149,6 @@
                                     </article>
                                 </div>
                                 {% endfor %}
-
             </section>    
                     <!-- Информация о выбранном доме -->
                     <div class="ProjectSelect" style="margin-left: 20px;"> <!-- Увеличиваем ширину информации о доме -->
@@ -181,25 +177,18 @@
                       <button class="detailsBtn" onclick="window.location.href='{% url 'projectDetails' selected_house.pk %}'">
                         <span>ПОДРОБНЕЕ</span>
                       </button>
-
+                      
                     </div>
-                      <picture>
+                    
+                      <div class = "pictureDom">
                         <source media="(min-width: 768px)" srcset="{{ selected_house.main_photo.url }}">
                         <img class="catalogBackElementImg" src="{{ selected_house.main_photo.url }}" alt="{{ house.title }}">
-                      </picture>
                         {% endif %}
-                  </div>
-        </div>
-
-                    
-                  </div>
+                      </div>
+                  </div></div></div>
                 </div>
               </div>
             </div>
-
-
-
-
           <div class="contactBtnContainer">
             <div class="center">
               <button class="contactBtn">
@@ -209,12 +198,9 @@
                 </svg>
                 <span class="contactBtnText">СВЯЗАТЬСЯ</span>
               </button>
-            </div>
-          </div>
+            </div></div>
               <div class="modularhouse-main-footer"><span class="footerText"> © 2024 | ИП "Art-studio "Petr 1"</span></div>
-            </div>
-          </div>
-          </div>        
+            </div></div></div>        
   </body>
-    <script src="../../static/projestsScript.js"></script>
+  <script src="../../static/projestsScript.js"></script>
 </html>

@@ -10,6 +10,7 @@ html, body {
   padding: 0;
   background-color: #F0EDE5;
   overflow-x: hidden;
+
 }
 body::-webkit-scrollbar {
   width: 6px;
@@ -22,51 +23,19 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(136, 136, 136);
   border-radius: 20px;
 }
-.modularhouse-main-container {
-  border:none;
-  width: 100%;
-  height: 4100px;
-  display: flex;
-  z-index: 100;
-  align-items: center;
-  border-color: var(--dl-color-theme-neutral-dark);
-  border-width: 1px;
-  flex-direction: column;
-}
-.modularhouse-main-modularhouse-main {
-  border:none;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  flex-shrink: 0;
-  flex-direction: column;
-}
-.modularhouse-main-video-mobile578d489a792cf5177ad6e679fa166677mp4 {
-  width: 1209.5899658203125px;
-  height: 1200px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  flex-grow: 1;
-  align-self: stretch;
-  align-items: flex-start;
-  background-size: cover;
-  background-image: url("../static/images/tq_yfopzlek2j-ti1m-1500w.png");
-}
 .modularhouse-main-footer{
   width: 100%;
   background: #18181A;
   color:#F0EDE5;
   height: 35px;
-  margin-top:350px;
-  z-index: -1;
+  z-index: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footerText{
-  margin-left:700px;
   vertical-align:middle;
+  text-align:center;
 }
 /*---------------------HOME-END----------------------------*/
 /*---------------------SLIDERS----------------------------*/
@@ -81,7 +50,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #656466;
   align-items: center;
   vertical-align:top;
-  margin-top:250px;
 }
 .slidersHead{
   height: 250px;
@@ -258,16 +226,6 @@ width: 160px;
   display: flex;
 }
 /*---------------------NAVBAR-END----------------------------*/
-.modularhouse-main-container-home {
-  display: flex;
-  z-index: 0;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: column;
-  position: relative;
-  left:186px;
-  height: 100%;
-}
 /*---------------------CAROUSEL-START-----------------------*/
 img,
 picture {
@@ -389,13 +347,20 @@ picture {
   margin-top:-25px;
 }
 /*---------------------CAROUSEL-END-----------------------*/
-.advantages, .questions, .invitation, .contacts, .container mb-5{ 
+.advantages, .questions, .invitation, .container mb-5{ 
   height: 450px; 
   width: 100%; 
   display: flex;
   margin-left:180px;
   margin-top:35px;
 } 
+.contacts{
+  height: 670px; 
+  width: 100%; 
+  display: flex;
+  margin-left:180px;
+  margin-top:35px;
+}
 .advantagesBody{ 
   height: 450px; 
   width: 1000px; 
@@ -444,18 +409,7 @@ picture {
 }
 /*---------------------BTN-START-----------------------*/
 @import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
-.contactBtnContainer {
-  transform: translate(-50%, -50%);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: absolute;
-  z-index: 2;
-  left:1470px;
-  top:-750px;
-  height: 35px;
-  width: 160px;  
-}
+
 .center {
   width: 180px;
   height: 60px;
@@ -783,5 +737,3 @@ form .form-row .textarea{
   }
 }
 /*---------------------contacts-END-----------------------*/
-
-

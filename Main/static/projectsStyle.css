@@ -15,7 +15,7 @@ html, body {
 .modularhouse-main-container {
   border:none;
   width: 100%;
-  height: 4100px;
+  height: 929px;
   display: flex;
   z-index: 3;
   align-items: center;
@@ -26,7 +26,7 @@ html, body {
 .modularhouse-main-modularhouse-main {
   border:none;
   width: 100%;
-  height: 100%;
+  height: 1080px;
   display: flex;
   position: relative;
   align-items: flex-start;
@@ -50,26 +50,23 @@ html, body {
   background: #18181A;
   color:#F0EDE5;
   height: 35px;
-  margin-top:350px;
-  z-index: -1;
+  z-index: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 .footerText{
-  margin-left:700px;
   vertical-align:middle;
+  text-align:center;
 }
 /*---------------------HOME-END----------------------------*/
-
-.modularhouse-main-container-home {
-  padding: 20px;
-}
-
 .content-wrapper {
-  display: flex; /* Используем flexbox для размещения слайдера и информации о доме */
+  display: flex;
 }
 
 .house-slider {
-  max-width: 25%; /* Ограничиваем ширину слайдера до 25% */
+  max-width: 25%;
 }
 
 
@@ -220,15 +217,14 @@ html, body {
   flex-direction: column;
   position: relative;
   left:186px;
-  height: 100%;
+  height: 950px;
   display: flex;
-  align-items: flex-start; /* Выравнивание по верхнему краю */
-  width: 100%; /* Убедитесь, что контейнер имеет достаточную ширину */
+  align-items: flex-start;
+  width: 100%;
 }
 
 
 /*---------------------BTN-START-----------------------*/
-@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
 .contactBtnContainer {
   transform: translate(-50%, -50%);
   justify-content: center;
@@ -255,6 +251,7 @@ html, body {
   outline: none;
   transition: 1s ease-in-out;
   align-self: center;
+  margin-top: 45px;
 }
 
 svg {
@@ -307,17 +304,19 @@ svg {
   height: 100%;
   border-right: 1px solid black;
   display: flex;
-  flex-direction: column; /* Вертикальное расположение элементов */
-  overflow-y: auto; /* Прокрутка по вертикали */
+  flex-direction: column;
+  overflow-y: auto;
   overflow-x: hidden;
-  max-height: 880px; /* Ограничение высоты для прокрутки */
-  margin-right: 20px; /* Отступ между каталогом и проектом */
+  margin-right: 20px;
+  padding:20px;
 }
 .catalog::-webkit-scrollbar {
   width: 0;
 }
 .catalogElementImg{
-  width: 249px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .catalogElement{
   margin-bottom: 25px;
@@ -330,15 +329,15 @@ svg {
   width: 490px;
   margin-left: 20px; 
   flex-direction: column;
-  margin-left: 20px; /* Отступ слева для отделения от слайдера */
+  margin-left: 20px;
   height: 100%;  
   display: flex;
-  border: 1px solid black;
 }
 .projectContainer {
   display: flex;
-  align-items: flex-start; /* Выравнивание по верхнему краю */
-  width: 100%; /* Убедитесь, что контейнер имеет достаточную ширину */
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
  
 }
 .imgBox{
@@ -351,10 +350,11 @@ svg {
 }
 .ProjectSelectName, .ProjectSelectDescription, .infoContainer, .ProjectSelectImg{
   margin-left:55px;
+  margin-top: 15px;
 }
 .ProjectSelectImg {
-  width: 370px; /* Ширина изображения проекта */
-  height: 270px; /* Автоматическая высота для сохранения пропорций */
+  width: 370px;
+  height: 270px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -371,22 +371,26 @@ svg {
 }
 .infoContainer {
   display: flex;
-  justify-content: space-between; /* Выравнивание по горизонтали */
+  justify-content: space-between;
   width: 370px;
 }
 
 .infoLabel {
-  margin-right: 10px; /* Отступ между меткой и значением */
-}
-.detailsBtn {
-  margin-top: 10px; /* Отступ для кнопки */
+  margin-right: 10px;
 }
 .infoValue{
   font-weight: bold;
 }
 .catalogBackElementImg{
-  width: 70%;
+  width: 100%;
   height: 100%;
-  z-index: 101;
+  z-index: 0;
+  object-fit: cover;
 
+
+}
+.pictureDom{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

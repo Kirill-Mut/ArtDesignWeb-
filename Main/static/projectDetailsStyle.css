@@ -1,29 +1,312 @@
-#carouselExampleCaptions {
-  z-index: auto;
-  margin-left: 0;
-  text-align: center;
-  display: inline-block;
-  width: 90vw;
-  height: 100vh;
-  overflow: hidden;
+/*---------------------HOME----------------------------*/
+*{
+  border: none;
+  font-family: "Open Sans", sans-serif;
 }
-.carousel-inner {
-  height: 100%;
-}
-.carousel-item {
-  max-height: 100%;
-}
-.projectPhoto {
+html, body {
   width: 100%;
-  height: 1080px;
-  object-fit: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F0EDE5;
+  overflow-x: hidden;
+
 }
-.carousel-control-prev,
-.carousel-control-next {
+body::-webkit-scrollbar {
+  width: 6px;
+  overflow-y: scroll;   
+}
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(136, 136, 136);
+  border-radius: 20px;
+}
+.modularhouse-main-footer{
+  width: 100%;
+  background: #18181A;
+  color:#F0EDE5;
+  height: 35px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerText{
+  vertical-align:middle;
+  text-align:center;
+}
+/*---------------------HOME-END----------------------------*/
+.modularhouse-main-nav {
+  gap: 953.97998046875px;
+  top: 1px;
+  flex: 1;
+  left: -4px;
+  width: 192px;
+  height: 1200px;
+  display: flex;
+  padding: 50px 1px 80.0199966430664px 0;
+  z-index: 1;
+  position: fixed;
+  align-items: center;
+  flex-shrink: 0;
+  border-color: rgba(79, 79, 79, 1);
+  border-style: solid;
+  border-width: 0 1px 0 0;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F0EDE5;
+}
+.modularhouse-main-link {
+  display: contents;
+}
+.modularhouse-main-logo {
+  display: flex;
+  width: 60px;
+  height: 90px;  
+  padding: 0 0 4px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.linksSocial {
+  width: 192px;
+  height: 50px;
+  z-index: 2;
+  position: fixed;
+  text-align: center;
+  line-height: 22.399999618530273px;
+  display: flex;
+  flex-direction: column;
+  top:900px;
+  white-space:nowrap;
+  display: inline-block;
+}
+.facebookLink, .youtubeLink, .instagramLink {
+  height: 50px;
+  width: 50px;
+  white-space:nowrap;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center; 
+}
+.facebookLinkBtn, .youtubeLinkBtn, .instagramLinkBtn{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center; 
+}
+.svgFacebook {
+  width: 18px;
+  height: 23px;
+}
+.svgYoutube {
+  width: 27px;
+  height: 22px;
+}
+.svgInstagram {
+  width: 24px;
+  height: 24px;
+}
+.NavBar {
+  width: 192px;
+  height: 500px;
+  z-index: 2;
+  position: fixed;
+  text-align: left;
+  line-height: 22.399999618530273px;
+  display: flex;
+  flex-direction: column;
+  top:350px;
+}
+.navbarA{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+.navbarA span{
+  position: relative;
+  z-index: 2;
+}
+.navbarA:after{
   position: absolute;
-  z-index: 10;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #2b2b2b;
+  transition: all .35s;
+}
+.navbarA:hover{
+  color: #fff;
+}
+.navbarA:hover:after{
+  width: 96%;
+}
+.NavBarItem{
+  width: 192px;
+  height: 50px;
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+}
+/*---------------------NAVBAR-END----------------------------*/
+/*---------------------BTN-START-----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+.contactBtnContainer {
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  left:1470px;
+  top:-750px;
+  height: 35px;
+  width: 160px;  
+}
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+.contactBtn, .submitBtn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background-color:#D0893F;
+  border: 1px solid #F0EDE5;
+  outline: none;
+  transition: 1s ease-in-out;
 }
 
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #18181A;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+  z-index: 2;
+}
+.contactBtn:hover {
+  transition: 1s ease-in-out;
+  background: #18181A;
+}
+.contactBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+.contactBtn span {
+  color: #F0EDE5;
+  font-size: 18px;
+  font-weight: 100;
+}
+.submitBtn:hover {
+  transition: 1s ease-in-out;
+  background: #18181A;
+}
+.submitBtn:hover svg {
+  stroke-dashoffset: -480;
+}
+.submitBtn span {
+  color: #F0EDE5;
+  font-size: 18px;
+  font-weight: 100;
+}
+/*---------------------BTN-END-----------------------*/
+.slider{
+  width: 100%;
+  height: 1080px;
+}
+.carouselExampleCaptions{
+  width: 100%;
+  height: 1080px;
+}
+.carousel-item{
+  width: 100%;
+  height: 1080px;
+}
+.projectPhoto{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.modularhouse-main-container-home, .projectPhoto2
+{
+  margin-left: 180px;
+}
+
+
+.dModel{
+  width: 100%;
+  height: 650px;
+}
+.dModelHead{
+  float:left;
+  width:40%;
+  height: 90%;
+  border-radius: 1px solid black;
+  padding:20px;
+}
+.modelContainer{
+  float:right;
+  width:40%;
+  height: 90%;
+  border-radius: 1px solid black;
+  padding:20px;
+}
+.priceProjectHead{
+  width: 700px;
+  font-size: 32px;
+}
+.priceProject {
+  margin-top: 150px;
+}
+.priceProjectBody{
+  margin-top: 100px;
+}
+.projectPhoto2{
+
+  width: 680px;
+  height: 950px;
+}
+.projectilePhoto2{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.rooms{
+  float:right;
+  width: 400px;
+  height: 100%;
+}
+.payBtn{
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background-color:#D0893F;
+  border: 1px solid #F0EDE5;
+  outline: none;
+  transition: 1s ease-in-out;
+  align-self: center;
+  margin-top: 45px;
+}
 .payBtn:hover {
   transition: 1s ease-in-out;
   background: #18181A;
@@ -35,124 +318,4 @@
   color: #F0EDE5;
   font-size: 18px;
   font-weight: 100;
-}
-.payBtn {
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background-color: #D0893F;
-  border: 1px solid #F0EDE5;
-  outline: none;
-  transition: 1s ease-in-out;
-  align-self: center;
-}
-
-.carousel-caption{
-  display: inline-block;
-  position: relative;
-}
-.nameProject {
-  display: inline-block;
-  padding: 20px;
-  margin-left: 0;
-  margin-top: 0;
-  position: relative;
-  font-weight: bold;
-  font-size: 48px;
-}
-.carousel-indicators{
-  display: inline-block;
-  top: 900px;
-}
-.dModel {
-  display: flex; /* Используем flexbox для удобного расположения элементов */
-  width: 100%;
-  height: 500px;
-}
-
-.description-container {
-  width: calc(50% - 10px); /* Ширина для описания */
-  height: 100%;
-  overflow: hidden; /* Скрываем переполнение */
-  position: relative; /* Для абсолютного позиционирования ползунка */
-}
-
-.description-scroll {
-  height: 100%;
-  overflow-y: auto; /* Вертикальная прокрутка */
-  overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
-  padding: 10px; /* Добавляем внутренний отступ */
-}
-
-
-.scrollbar {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 10px;
-  height: 100%;
-  background-color: #f0f0f0; /* Цвет фона полосы прокрутки */
-  border-radius: 5px; /* Скругление углов */
-  cursor: pointer;
-}
-
-.thumb {
-  position: absolute;
-  width: 5px;
-  height: 20px; /* Начальная высота ползунка */
-  background-color: black;
-  border-radius: 5px;
-}
-
-/* Стили для предотвращения горизонтальной прокрутки на мобильных */
-@media (max-width: 768px) {
-    .dModel {
-        flex-direction: column; /* Размещение элементов вертикально на мобильных устройствах */
-    }
-    .description-container {
-        width: 100%;
-    }
-    #modelContainer {
-        width: 100%;
-        float: none;
-    }
-}
-
-#modelContainer {
-  width: calc(50% - 10px);
-  height: 100%;
-}
-
-.slider2 {
-  width: 100%; /* Или другая ширина по вашему желанию */
-  margin: 0 auto; /* Центрирование по горизонтали */
-  position: relative; /* Для абсолютного позиционирования кнопок */
-  overflow: hidden; /* Скрываем переполнение, чтобы не видеть клоны */
-  margin-top: 150px;
-  height: 1000px;
-  border: 1px solid black;
-}
-
-.slider-container {
-  display: flex; /* Используем flexbox для слайдера */
-  transition: transform 0.5s ease-in-out; /* Плавная анимация */
-  /* Задаем ширину в несколько раз больше ширины экрана */
-  width: 100%; /* Увеличиваем ширину с учетом клонов изображений */
-  
-}
-
-.projectPhoto2 {
-  flex: 0 0 33.33%; /* Каждое изображение занимает треть ширины */
-  height: auto; /* Сохранение пропорций */
-  object-fit: cover; /* Обрезка изображений по краям */
-}
-
-.sliderButton {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.backPhoto, .nextPhoto {
-  /* Стили для кнопок */
 }

@@ -1,4 +1,15 @@
-:root {
+*{
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F0EDE5;
+  overflow: hidden;
 }
 .button {
   color: var(--dl-color-theme-neutral-dark);
@@ -1029,4 +1040,19 @@
   .thq-grid-auto-300 {
     grid-template-columns: 1fr;
   }
+}
+.modularhouse-main-footer{
+  width: 100%;
+  background: #18181A;
+  color:#F0EDE5;
+  height: 35px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.footerText{
+  vertical-align:middle;
+  text-align:center;
 }
