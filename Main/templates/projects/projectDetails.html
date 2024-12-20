@@ -189,18 +189,19 @@
                         </div>
                         <div class="priceProjectBody"> 
                             <div class="projectPhoto2"><img class="projectilePhoto2" src="{{ house.blueprint.url }}"></div>
-                            <div class="rooms">Тут будет список комнат
-                                {% for room in house.rooms.all %}
-                                <tr>
-                                    <td>{{ room.name }}</td>
-                                    <td>{{ room.total_area }} м²</td>
-                                </tr>
-                                {% empty %}
-                                <tr>
-                                    <td colspan="2">Нет комнат.</td>
-                                </tr>
-                                {% endfor %}
-                            </div>
+                            <div class = "roomDetails">
+                                <div class="rooms">Тут будет список комнат
+                                    {% for room in house.rooms.all %}
+                                    <tr>
+                                        <td>{{ room.name }}</td>
+                                        <td>{{ room.total_area }} м²</td>
+                                    </tr>
+                                    {% empty %}
+                                    <tr>
+                                        <td colspan="2">Нет комнат.</td>
+                                    </tr>
+                                    {% endfor %}
+                                </div>
                             <div class="livingArea">тут будет жилая (эффективная в БД) площадь {{ house.total_area }} м²</div>
                             <div class="price">тут будет цена {{ house.price }}</div>
                             <!-- <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
@@ -208,7 +209,8 @@
                             </button>-->
                             <button class="payBtn" onclick="openModal('{{ house.price }}', '{{ house.title|urlencode }}')">
                                 <span>Купить</span>
-                            </button>             
+                            </button> 
+                            </div>
                         </div>
                     </div>
                 </div>
