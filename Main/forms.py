@@ -64,18 +64,41 @@ class HouseForm(forms.ModelForm):
     class Meta:
         model = House
         fields = ['title', 'model_3d', 'description', 'total_area', 'effective_area', 'price', 'blueprint', 'main_photo']
+        labels = {
+            'title': 'Название дома',
+            'model_3d': '3D модель',
+            'description': 'Описание',
+            'total_area': 'Общая площадь',
+            'effective_area': 'Жилая площадь',
+            'price': 'Цена',
+            'blueprint': 'Схема дома',
+            'main_photo': 'Основная фотография',
+        }
 
 class InternalPhotoForm(forms.ModelForm):
     class Meta:
         model = InternalPhoto
         fields = ['filename', 'house']
+        labels = {
+            'filename': 'Файл',
+            'house': 'Дом',
+        }
 
 class ExternalPhotoForm(forms.ModelForm):
     class Meta:
         model = ExternalPhoto
         fields = ['filename', 'house']
+        labels = {
+            'filename': 'Файл',
+            'house': 'Дом',
+        }
 
 class RoomForm(forms.ModelForm):
     class Meta:
         model = Room
         fields = ['name', 'total_area', 'house']
+        labels = {
+            'name': 'Имя',
+            'total_area': 'Общая площадь',
+            'house': 'Дом',
+        }
