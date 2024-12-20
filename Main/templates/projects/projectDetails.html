@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="dModel">
-                        <span class="dModelHead">Тут будет описание каждого дома {{ house.description }}</span>
+                        <span class="dModelHead">{{ house.description }}</span>
                         <div id="modelContainer">Заглушка модели</div>
                     </div>
                     <div class="slider2">
@@ -190,11 +190,15 @@
                         <div class="priceProjectBody"> 
                             <div class="projectPhoto2"><img class="projectilePhoto2" src="{{ house.blueprint.url }}"></div>
                             <div class = "roomDetails">
-                                <div class="rooms">Тут будет список комнат
+                                <div class="rooms">
+                                    <p class = "PlaneText">Планировка</p>
                                     {% for room in house.rooms.all %}
-                                    <tr>
-                                        <td>{{ room.name }}</td>
-                                        <td>{{ room.total_area }} м²</td>
+                                    <tr class = "plane">
+                                        <td class="namePlane">{{ room.name }}</td>
+                                        <td class="areaPlane">{{ room.total_area }} м²</td>
+                                        <br>
+                                        <img alt="HorizontalDivider2460" src="../../../static/images/horizontaldivider2460-aq07-200h.png" class="divider-image"/>
+                                        <br>
                                     </tr>
                                     {% empty %}
                                     <tr>
@@ -202,8 +206,9 @@
                                     </tr>
                                     {% endfor %}
                                 </div>
-                            <div class="livingArea">тут будет жилая (эффективная в БД) площадь {{ house.total_area }} м²</div>
-                            <div class="price">тут будет цена {{ house.price }}</div>
+                            <div class="livingArea">Общая площадь {{ house.total_area }} м²</div>
+                            <div class="livingArea">Жилая площадь {{ house.total_area }} м²</div>
+                            <div class="price">Цена {{ house.price }} Руб.</div>
                             <!-- <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
                                 <span>КУПИТЬ</span>
                             </button>-->
