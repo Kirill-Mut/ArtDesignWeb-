@@ -154,26 +154,30 @@
                         {% for house in houses %}
                         <div class="card-testimonial">
                             <article>
-                                <picture>
+                              <picture>
+                                {% if house.external_photos.count > 0 %}
+                                    <source media="(min-width: 768px)" srcset="{{ house.external_photos.first.filename.url }}">
+                                    <img class="img-prevModel" src="{{ house.external_photos.first.filename.url }}" alt="{{ house.title }}">
+                                {% else %}
                                     <source media="(min-width: 768px)" srcset="{{ house.main_photo.url }}">
                                     <img class="img-prevModel" src="{{ house.main_photo.url }}" alt="{{ house.title }}">
-                                </picture>
-                                <article class="short-description">
-                                    <div class="FooterMainCatalogSlidersElement">
-                                        <h1 class="NameModelMainCatalogSlidersElement">{{ house.title }}</h1>
-                                        <p class="PriceModelMainCatalogSlidersElement">от {{ house.price }}</p>
-                                        <p class="totalArea">Общая площадь: {{ house.total_area }} м²</p>
-                                        <p class="effectiveArea">Эффективная площадь: {{ house.effective_area }} м²</p>
-                                    </div>
-                                </article>
+                                {% endif %}
+                            </picture>
+                            <article class="short-description">
+                                <div class="FooterMainCatalogSlidersElement">
+                                    <h1 class="NameModelMainCatalogSlidersElement">{{ house.title }}</h1>
+                                    <p class="PriceModelMainCatalogSlidersElement">от {{ house.price }}</p>
+                                    <p class="totalArea">Общая площадь: {{ house.total_area }} м²</p>
+                                    <p class="effectiveArea">Эффективная площадь: {{ house.effective_area }} м²</p>
+                                </div>
                             </article>
-                        </div>
-                        {% endfor %}
+                        </article>
                     </div>
+                    {% endfor %}
                 </div>
-
-                <script src="{% static '/script.js' %}"></script>
-            </section>
+            </div>
+        </section>
+    </div>
             <div class="advantages">
               <div class="advantagesHead">
                 <div class="advantagesLine">
@@ -233,7 +237,7 @@
               </div>
               <div class="questionsBody">
                 <div class="faq-item">
-                  <button class="faq-button" onclick="toggleAnswer(this)">
+                  <button class="faq-button">
                     <div class="">
                       <span class="questionsList">Насколько тепло зимой в модульных домах?</span>
                     </div>
@@ -248,7 +252,7 @@
                   <div class="separator"></div>
                 </div>
                 <div class="faq-item">
-                  <button class="faq-button" onclick="toggleAnswer(this)">
+                  <button class="faq-button">
                     <div class="">
                       <span class="questionsList">Можно ли собрать такой дом самостоятельно?</span>
                     </div>
@@ -263,7 +267,7 @@
                   <div class="separator"></div>
                 </div>
                 <div class="faq-item">
-                  <button class="faq-button" onclick="toggleAnswer(this)">
+                  <button class="faq-button">
                     <div class="">
                       <span class="questionsList">Можно ли изменить проект модульного дома?</span>
                     </div>
@@ -278,7 +282,7 @@
                   <div class="separator"></div>
                 </div>
                 <div class="faq-item">
-                  <button class="faq-button" onclick="toggleAnswer(this)">
+                  <button class="faq-button">
                     <div class="">
                       <span class="questionsList">Осуществляете ли доставку домокомплектов в другие страны?</span>
                     </div>
@@ -293,7 +297,7 @@
                   <div class="separator"></div>
                 </div>
                 <div class="faq-item">
-                  <button class="faq-button" onclick="toggleAnswer(this)">
+                  <button class="faq-button">
                     <div class="">
                       <span class="questionsList">В какие сроки дом может быть установлен на участке?</span>
                     </div>

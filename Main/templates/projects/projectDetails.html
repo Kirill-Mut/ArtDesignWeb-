@@ -150,8 +150,10 @@
                         </div>
                     </div>
                     <div class="dModel">
-                        <span class="dModelHead">{{ house.description }}</span>
-                        <div id="modelContainer">Заглушка модели</div>
+                        <div class="modelDescription">
+                            <span class="dModelHead">{{ house.description }}</span>
+                        </div>
+                        <div id="modelContainer"></div>
                     </div>
                     <div class="slider2">
                         <div id="carouselInternalPhotos" class="carousel slide" data-bs-ride="carousel">
@@ -205,10 +207,11 @@
                                         <td colspan="2">Нет комнат.</td>
                                     </tr>
                                     {% endfor %}
-                                </div>
-                            <div class="livingArea">Общая площадь {{ house.total_area }} м²</div>
+                                    <div class="livingArea">Общая площадь {{ house.total_area }} м²</div>
                             <div class="livingArea">Жилая площадь {{ house.total_area }} м²</div>
                             <div class="price">Цена {{ house.price }} Руб.</div>
+                                </div>
+                            
                             <!-- <button class="payBtn" onclick="window.location.href='{% url 'pay_tinkoff' %}?price={{ house.price }}&title={{ house.title|urlencode }}'">
                                 <span>КУПИТЬ</span>
                             </button>-->

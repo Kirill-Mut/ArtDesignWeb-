@@ -259,13 +259,24 @@ svg {
   object-fit: cover;
 }
 .dModelHead{
-  float:left;
-  width:40%;
+  
+  width:50%;
   height: 90%;
   border-radius: 1px solid black;
-  padding:20px;
+  font-size: 24px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
 }
-.modelContainer{
+.modelDescription{
+  width:450px;
+  height: 400px;
+  float:left;
+  margin-left: 165px;
+  margin-top: 265px;
+}
+#modelContainer{
   float:right;
   width:40%;
   height: 90%;
@@ -309,6 +320,7 @@ svg {
   height: 400px;
   margin-left: 450px;
 }
+
 .PlaneText{
   font-size: 24px;
   font-weight: bold;
